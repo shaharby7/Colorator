@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Colorator</string>
+    <string name="commit_process_button">Commit Process</string>
+    <string name="menu_item_open_detector_options">Detect color options</string>
+    <string name="menu_item_open_emphasizer_options">Emphasizer\'s options</string>
+    <string name="chose_detector_spinner">Detect by</string>
+    <string name="go">GO!</string>
 </resources>

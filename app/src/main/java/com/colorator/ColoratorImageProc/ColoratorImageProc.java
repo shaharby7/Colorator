@@ -1,9 +1,9 @@
 package com.colorator.ColoratorImageProc;
 
-import android.widget.ImageView;
+import android.util.Log;
 
-import com.colorator.ColoratorImageProc.Emphasizer.GeneralEmphasizer;
-import com.colorator.ColoratorImageProc.Detector.GeneralDetector;
+import com.colorator.ColoratorImageProc.Detector.DetectorAbstractClass;
+import com.colorator.ColoratorImageProc.Emphasizer.IntegratedEmphasizers;
 
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.core.Core;
@@ -11,50 +11,65 @@ import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.imgproc.Imgproc;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
+
 public class ColoratorImageProc {
+    public String TAG = "ColoratorImageProc";
 
-    private GeneralDetector detector = new GeneralDetector();
-    private GeneralEmphasizer emphasizer = new GeneralEmphasizer();
+    private DetectorAbstractClass mDetector;
+    private IntegratedEmphasizers mEmphasizer = new IntegratedEmphasizers();
+    private Mat mFrameInProcess;
+    private boolean mCommitProcess;
 
-    private Mat mRgba;
-    private Mat mRgbaF;
-    private Mat mRgbaT;
-    private Mat standardizedHsv;
-    private Mat finalImage;
+    public void allocateImageSize(int height, int width) {
+        mFrameInProcess = new Mat(height, width, CvType.CV_8UC4);
+    }
 
-    public ColoratorImageProc(int height, int width) {
-        mRgba = new Mat(height, width, CvType.CV_8UC4);
-        mRgbaF = new Mat(height, width, CvType.CV_8UC4);
-        mRgbaT = new Mat(width, width, CvType.CV_8UC4);
-        standardizedHsv = new Mat(height, width, CvType.CV_8UC4);
-        finalImage = new Mat(height, width, CvType.CV_8UC4);
+    public void setDetector(String detectorClassName, Map detectorArgs) {
+        try {
+            Class<?> detectorClass = Class.forName(detectorClassName);
+            Constructor<?> detectorConstructor = detectorClass.getConstructor(Map.class);
+            mDetector = (DetectorAbstractClass) detectorConstructor.newInstance(detectorArgs);
+
+        } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException ex) {
+            Log.e(TAG, "Unknown Detector class " + detectorClassName);
+            ex.printStackTrace();
+        }
     }
 
     public Mat pipeline(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
         standardizeCameraImage(inputFrame);
-        Mat mask = detector.detect(standardizedHsv);
-        emphasizer.emphasize(standardizedHsv, mask);
-        prepareFinalImage();
-        return finalImage;
+        if (mCommitProcess) {
+            Mat mask = mDetector.detect(mFrameInProcess);
+            mEmphasizer.emphasize(mFrameInProcess, mask);
+        }
+        standardizeImageToPreview();
+        return mFrameInProcess;
+    }
+
+    public void setCommitProcess(boolean commitProcess) {
+        mCommitProcess = commitProcess;
     }
 
     private void standardizeCameraImage(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
-        mRgba = inputFrame.rgba();
-        Core.transpose(mRgba, mRgbaT);
-        Imgproc.resize(mRgbaT, mRgbaF, mRgbaF.size(), 0, 0, 0);
-        Core.flip(mRgbaF, mRgba, 1);
-        Imgproc.cvtColor(mRgba, standardizedHsv, Imgproc.COLOR_RGB2HSV);
+
+        mFrameInProcess = inputFrame.rgba();
+        Mat RgbaT = new Mat(mFrameInProcess.width(), mFrameInProcess.width(), CvType.CV_8UC4);
+        Core.transpose(mFrameInProcess, RgbaT);
+        Imgproc.resize(RgbaT, mFrameInProcess, mFrameInProcess.size(), 0, 0, 0);
+        Core.flip(mFrameInProcess, mFrameInProcess, 1);
+        Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_RGB2HSV);
+
+
     }
 
-    private void prepareFinalImage() {
-        Imgproc.cvtColor(standardizedHsv, finalImage, Imgproc.COLOR_HSV2BGR);
+    private void standardizeImageToPreview() {
+        Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_HSV2BGR);
     }
 
     public void releaseResources() {
-        mRgba.release();
-        mRgbaF.release();
-        mRgbaT.release();
-        standardizedHsv.release();
-        finalImage.release();
+        mFrameInProcess.release();
     }
 }

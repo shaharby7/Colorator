@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.colorator.customviews.MyRangeSeekbar
+        android:id="@+id/HValuesSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:max="255"
+        app:min="0"
+        app:startMax="200"
+        app:startMin="55"
+        app:titleText="H values" />
+
+    <com.colorator.customviews.MyRangeSeekbar
+        android:id="@+id/SValuesSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:max="255"
+        app:min="0"
+        app:startMax="200"
+        app:startMin="55"
+        app:titleText="S values" />
+
+    <com.colorator.customviews.MyRangeSeekbar
+        android:id="@+id/VValuesSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:max="255"
+        app:min="0"
+        app:startMax="200"
+        app:startMin="55"
+        app:titleText="V values" />
+</LinearLayout>

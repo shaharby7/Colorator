@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/open_detector_options"
+        android:title="@string/menu_item_open_detector_options" />
+    <item
+        android:id="@+id/open_emphasizer_options"
+        android:title="@string/menu_item_open_emphasizer_options" />
+</menu>

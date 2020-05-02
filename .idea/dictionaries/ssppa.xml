@@ -2,7 +2,12 @@
   <dictionary name="ssppa">
     <words>
       <w>colorator</w>
+      <w>colorpicker</w>
+      <w>dont</w>
       <w>emphasizer</w>
+      <w>proc</w>
+      <w>seekbar</w>
+      <w>seekbars</w>
     </words>
   </dictionary>
 </component>

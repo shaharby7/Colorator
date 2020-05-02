@@ -1,111 +1,58 @@
 package com.colorator;
 
 import com.colorator.ColoratorImageProc.ColoratorImageProc;
+import com.colorator.ColoratorOptions.DetectorOptionsFragment;
 
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;;
-import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
-import android.view.SurfaceView;
-import android.view.WindowManager;
+import android.widget.Toast;
 
-import org.opencv.android.JavaCameraView;
-import org.opencv.android.BaseLoaderCallback;
-import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
-import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
-import org.opencv.android.LoaderCallbackInterface;
-import org.opencv.android.OpenCVLoader;
-import org.opencv.core.Core;
-import org.opencv.core.CvType;
-import org.opencv.core.Mat;
-import org.opencv.core.Scalar;
-import org.opencv.imgproc.Imgproc;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import java.util.ArrayList;
-import java.util.List;
+public class MainActivity extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity implements CvCameraViewListener2 {
-
-    // Used for logging success or failure messages
-    private static final String TAG = "OCVSample::Activity";
-    private ColoratorImageProc mColoratorImageProc;
-
-    // Loads camera view of OpenCV for us to use. This lets us see using OpenCV
-    private CameraBridgeViewBase mOpenCvCameraView;
-
-    private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
-        @Override
-        public void onManagerConnected(int status) {
-            switch (status) {
-                case LoaderCallbackInterface.SUCCESS: {
-                    Log.i(TAG, "OpenCV loaded successfully");
-                    mOpenCvCameraView.enableView();
-                }
-                break;
-                default: {
-                    super.onManagerConnected(status);
-                }
-                break;
-            }
-        }
-    };
-
-    public MainActivity() {
-        Log.i(TAG, "Instantiated new " + this.getClass());
-    }
-
+    public ColoratorImageProc mColoratorImageProc = new ColoratorImageProc();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.i(TAG, "called onCreate");
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
         setContentView(R.layout.activity_main);
-
-        mOpenCvCameraView = (JavaCameraView) findViewById(R.id.show_camera_activity_java_surface_view);
-
-        mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
-
-        mOpenCvCameraView.setCvCameraViewListener(this);
+//        loadFragment(new OpenCVFragment(mColoratorImageProc));
+        loadFragment(new DetectorOptionsFragment(mColoratorImageProc));
     }
 
     @Override
-    public void onPause() {
-        super.onPause();
-        if (mOpenCvCameraView != null)
-            mOpenCvCameraView.disableView();
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        if (!OpenCVLoader.initDebug()) {
-            Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
-            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, this, mLoaderCallback);
-        } else {
-            Log.d(TAG, "OpenCV library found inside package. Using it!");
-            mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.open_detector_options:
+                loadFragment(new DetectorOptionsFragment(mColoratorImageProc));
+                return true;
+            case R.id.open_emphasizer_options:
+                Toast.makeText(getApplicationContext(), "Item 2 Selected", Toast.LENGTH_LONG).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
-    public void onDestroy() {
-        super.onDestroy();
-        if (mOpenCvCameraView != null)
-            mOpenCvCameraView.disableView();
-    }
 
-    public void onCameraViewStarted(int width, int height) {
-        mColoratorImageProc = new ColoratorImageProc(height, width);
-    }
-
-    public void onCameraViewStopped() {
-        mColoratorImageProc.releaseResources();
-    }
-
-    public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
-        return mColoratorImageProc.pipeline(inputFrame);
+    public void loadFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.main_fragments_container, fragment);
+        fragmentTransaction.addToBackStack(fragment.toString());
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        fragmentTransaction.commit();
     }
 }
