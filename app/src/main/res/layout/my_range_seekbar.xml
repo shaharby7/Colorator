@@ -29,7 +29,7 @@
             app:left_thumb_image="@drawable/thumb"
             app:left_thumb_image_pressed="@drawable/thumb_pressed"
             app:right_thumb_image="@drawable/thumb"
-            app:right_thumb_image_pressed="@drawable/thumb_pressed" />
+            app:right_thumb_image_pressed="@drawable/thumb_pressed"/>
 
         <TextView
             android:id="@+id/textMin"

@@ -9,29 +9,35 @@
         android:id="@+id/HValuesSeekbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:max="255"
+        app:max="360"
         app:min="0"
-        app:startMax="200"
-        app:startMin="55"
+        app:startMax="180"
+        app:startMin="0"
         app:titleText="H values" />
 
     <com.colorator.customviews.MyRangeSeekbar
         android:id="@+id/SValuesSeekbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:max="255"
+        app:max="100"
         app:min="0"
-        app:startMax="200"
-        app:startMin="55"
+        app:startMax="100"
+        app:startMin="0"
         app:titleText="S values" />
 
     <com.colorator.customviews.MyRangeSeekbar
         android:id="@+id/VValuesSeekbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:max="255"
+        app:max="100"
         app:min="0"
-        app:startMax="200"
-        app:startMin="55"
+        app:startMax="100"
+        app:startMin="0"
         app:titleText="V values" />
+
+    <com.colorator.customviews.PaletteView
+        android:id="@+id/hsv_preview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"/>
 </LinearLayout>

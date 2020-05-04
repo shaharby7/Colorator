@@ -2,6 +2,7 @@ package com.colorator.ColoratorOptions;
 
 import com.colorator.R;
 import com.colorator.customviews.MyRangeSeekbar;
+import com.colorator.customviews.PaletteView;
 import com.crystal.crystalrangeseekbar.interfaces.OnRangeSeekbarFinalValueListener;
 
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
     private View mRootView;
     private MyRangeSeekbar mHRangeSeekbar, mSRangeSeekbar, mVRangeSeekbar;
     private int mMinH, mMaxH, mMinS, mMaxS, mMinV, mMaxV;
+    private PaletteView mPaletteView;
 
 
     @Override
@@ -34,6 +36,9 @@ public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
         super.onCreate(savedInstanceState);
         mRootView = inflater.inflate(R.layout.colorpicker_detector_options, container, false);
         setRageSeekbars();
+        mPaletteView = mRootView.findViewById(R.id.hsv_preview);
+        mPaletteView.setInitialParams((int) ((mHRangeSeekbar.mStartMax + mHRangeSeekbar.mStartMin) / 2),
+                mSRangeSeekbar.mStartMin, mSRangeSeekbar.mStartMax, mVRangeSeekbar.mStartMin, mVRangeSeekbar.mStartMax);
         return mRootView;
     }
 
@@ -46,6 +51,7 @@ public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
             public void finalValue(Number minValue, Number maxValue) {
                 mMaxH = maxValue.intValue();
                 mMinH = minValue.intValue();
+                mPaletteView.setHue((int) ((mMaxH + mMinH) / 2));
             }
         });
 
@@ -57,6 +63,7 @@ public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
             public void finalValue(Number minValue, Number maxValue) {
                 mMaxS = maxValue.intValue();
                 mMinS = minValue.intValue();
+                mPaletteView.setSat(mMinS, mMaxS);
             }
         });
 
@@ -68,6 +75,7 @@ public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
             public void finalValue(Number minValue, Number maxValue) {
                 mMaxV = maxValue.intValue();
                 mMinV = minValue.intValue();
+                mPaletteView.setVal(mMinV, mMaxV);
             }
         });
     }
