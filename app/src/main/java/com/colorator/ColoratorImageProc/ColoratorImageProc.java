@@ -3,8 +3,10 @@ package com.colorator.ColoratorImageProc;
 import android.util.Log;
 
 import com.colorator.ColoratorImageProc.Detector.DetectorAbstractClass;
+import com.colorator.ColoratorImageProc.Detector.RangesDetector;
 import com.colorator.ColoratorImageProc.Emphasizer.IntegratedEmphasizers;
 
+import org.json.JSONObject;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
@@ -17,8 +19,7 @@ import java.util.Map;
 
 public class ColoratorImageProc {
     public String TAG = "ColoratorImageProc";
-
-    private DetectorAbstractClass mDetector;
+    private DetectorAbstractClass mDetector = new RangesDetector();
     private IntegratedEmphasizers mEmphasizer = new IntegratedEmphasizers();
     private Mat mFrameInProcess;
     private boolean mCommitProcess;
@@ -27,10 +28,10 @@ public class ColoratorImageProc {
         mFrameInProcess = new Mat(height, width, CvType.CV_8UC4);
     }
 
-    public void setDetector(String detectorClassName, Map detectorArgs) {
+    public void setDetector(String detectorClassName, JSONObject detectorArgs) {
         try {
             Class<?> detectorClass = Class.forName(detectorClassName);
-            Constructor<?> detectorConstructor = detectorClass.getConstructor(Map.class);
+            Constructor<?> detectorConstructor = detectorClass.getConstructor(JSONObject.class);
             mDetector = (DetectorAbstractClass) detectorConstructor.newInstance(detectorArgs);
 
         } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException ex) {

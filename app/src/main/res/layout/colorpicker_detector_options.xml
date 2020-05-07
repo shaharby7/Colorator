@@ -35,9 +35,32 @@
         app:startMin="0"
         app:titleText="V values" />
 
-    <com.colorator.customviews.PaletteView
-        android:id="@+id/hsv_preview"
-        android:layout_width="100dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_gravity="right"/>
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.colorator.customviews.PaletteView
+            android:id="@+id/hsv_preview"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+            android:id="@+id/current_hue_seekbar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:rotation="270"
+            android:layout_gravity="center"
+            app:bar_color="#F7BB88"
+            app:bar_highlight_color="#E07416"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:thumb_image="@drawable/thumb"
+            app:thumb_image_pressed="@drawable/thumb_pressed"/>
+    </LinearLayout>
 </LinearLayout>

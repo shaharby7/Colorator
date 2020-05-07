@@ -73,19 +73,25 @@ public class PaletteView extends View {
 
     public void setHue(int hue) {
         mHue = (float) hue;
-        refreshSatGradient();
+        if (!hasNeverBeenDrawned) {
+            refreshSatGradient();
+        }
     }
 
     public void setSat(int minSat, int maxSat) {
         mMinSat = (float) minSat / 100;
         mMaxSat = (float) maxSat / 100;
-        refreshSatGradient();
+        if (!hasNeverBeenDrawned) {
+            refreshSatGradient();
+        }
     }
 
     public void setVal(int minVal, int maxVal) {
         mMinVal = (float) minVal / 100;
         mMaxVal = (float) maxVal / 100;
-        refreshValGradient();
+        if (!hasNeverBeenDrawned) {
+            refreshValGradient();
+        }
     }
 
     private void createFirstTimeGradients() {

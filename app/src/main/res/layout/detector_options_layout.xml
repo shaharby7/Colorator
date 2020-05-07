@@ -22,9 +22,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Spinner
+        <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/detectors_spinner"
-            style="@style/spinner_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:entries="@array/detectors"

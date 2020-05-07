@@ -2,6 +2,7 @@ package com.colorator;
 
 import com.colorator.ColoratorImageProc.ColoratorImageProc;
 import com.colorator.ColoratorOptions.DetectorOptionsFragment;
+import com.colorator.utils.ConfigurationReader;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,13 +14,17 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class MainActivity extends AppCompatActivity {
+import org.json.JSONObject;
 
-    public ColoratorImageProc mColoratorImageProc = new ColoratorImageProc();
+public class MainActivity extends AppCompatActivity {
+    public static ConfigurationReader appConfigurationReader;
+    public ColoratorImageProc mColoratorImageProc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        appConfigurationReader = new ConfigurationReader(getApplicationContext());
+        mColoratorImageProc = new ColoratorImageProc();
         setContentView(R.layout.activity_main);
 //        loadFragment(new OpenCVFragment(mColoratorImageProc));
         loadFragment(new DetectorOptionsFragment(mColoratorImageProc));
@@ -54,5 +59,9 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.addToBackStack(fragment.toString());
         fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         fragmentTransaction.commit();
+    }
+
+    public static JSONObject readConfiguration(String configName) {
+        return appConfigurationReader.getConfigJson(configName);
     }
 }

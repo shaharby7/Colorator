@@ -15,8 +15,9 @@ import com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar;
 
 public class MyRangeSeekbar extends LinearLayout {
     LayoutInflater mInflater;
-    CrystalRangeSeekbar mRangeSeekbar;
+    public CrystalRangeSeekbar mRangeSeekbar;
     public int mStartMin, mStartMax;
+    public OnRangeSeekbarChangeListener mExternalOnChangeListener;
 
     public MyRangeSeekbar(Context context) {
         super(context);
@@ -49,6 +50,10 @@ public class MyRangeSeekbar extends LinearLayout {
         mRangeSeekbar.setOnRangeSeekbarFinalValueListener(finalValueListener);
     }
 
+    public void setOnChangeValueListener(OnRangeSeekbarChangeListener onRangeSeekbarChangeListener) {
+        mExternalOnChangeListener = onRangeSeekbarChangeListener;
+    }
+
     private void setAttrs(Context context, AttributeSet attrs, View rootView) {
         CrystalRangeSeekbar rangeSeekbar = rootView.findViewById(R.id.basic_seekbar);
         TextView titleTextView = rootView.findViewById(R.id.titleTextView);
@@ -76,6 +81,9 @@ public class MyRangeSeekbar extends LinearLayout {
             public void valueChanged(Number minValue, Number maxValue) {
                 tvMin.setText(String.valueOf(minValue));
                 tvMax.setText(String.valueOf(maxValue));
+                if (mExternalOnChangeListener != null) {
+                    mExternalOnChangeListener.valueChanged(minValue, maxValue);
+                }
             }
         });
     }

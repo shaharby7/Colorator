@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "minH": 0,
+      "maxH": 30,
+      "minS": 0,
+      "maxS": 100,
+      "minV": 0,
+      "maxV": 100
+    }
+  ]
+}

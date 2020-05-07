@@ -3,8 +3,9 @@ package com.colorator.ColoratorOptions;
 
 import com.colorator.utils.FragmentWithFragments;
 
-import java.util.Map;
+import org.json.JSONObject;
+
 
 abstract class DetectorArgsAbstractClass extends FragmentWithFragments {
-    abstract Map getDetectorsArgs();
+    abstract JSONObject getDetectorsArgs();
 }

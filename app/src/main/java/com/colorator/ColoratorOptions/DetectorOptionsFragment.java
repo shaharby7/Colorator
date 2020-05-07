@@ -14,15 +14,11 @@ import com.colorator.ColoratorImageProc.ColoratorImageProc;
 import com.colorator.MainActivity;
 import com.colorator.OpenCVFragment;
 import com.colorator.R;
-import com.colorator.utils.ConfigurationReader;
 import com.colorator.utils.FragmentWithFragments;
 
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.Map;
-import java.util.Objects;
 
 
 public class DetectorOptionsFragment extends FragmentWithFragments {
@@ -31,7 +27,7 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
     private Spinner mSpinner;
     private Button mSubmitButton;
     private ViewGroup mArgsContainer;
-    private static JSONObject mDetectorsConfiguration;
+    private static JSONObject mDetectorsConfiguration = MainActivity.readConfiguration("detectors_config");
     private DetectorArgsAbstractClass mDetectorArgsFragment;
 
     public DetectorOptionsFragment(ColoratorImageProc mainActivityImageProc) {
@@ -43,7 +39,6 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
                              Bundle savedInstanceState) {
         Log.i(TAG, "called onCreateView");
         super.onCreate(savedInstanceState);
-        loadDetectorsConfigurations();
         View view = inflater.inflate(R.layout.detector_options_layout, container, false);
         mSpinner = view.findViewById(R.id.detectors_spinner);
         mArgsContainer = view.findViewById(R.id.detectors_args_container);
@@ -64,7 +59,7 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
             String actualDetectorClass = mDetectorsConfiguration
                     .getJSONObject(mSpinner.getSelectedItem().toString())
                     .getString("ActualDetectorClass");
-            Map detectorArgs = mDetectorArgsFragment.getDetectorsArgs();
+            JSONObject detectorArgs = mDetectorArgsFragment.getDetectorsArgs();
             mColoratorImageProc.setDetector(actualDetectorClass, detectorArgs);
 
         } catch (JSONException ex) {
@@ -72,11 +67,6 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
         }
     }
 
-    private void loadDetectorsConfigurations() {
-        mDetectorsConfiguration = new ConfigurationReader(
-                Objects.requireNonNull(getActivity()).getApplicationContext())
-                .getConfigJson("detectors_config");
-    }
 
     private void setDetectorsArgsView() {
         try {
