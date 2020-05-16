@@ -38,8 +38,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_with_hint">
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/spinner_with_hint"/>
 
 
     <Button
@@ -48,8 +47,6 @@
         android:layout_height="wrap_content"
         android:text="@string/go"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

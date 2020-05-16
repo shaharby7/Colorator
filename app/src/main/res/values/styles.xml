@@ -22,4 +22,9 @@
         <item name="android:popupBackground">#DFFFFFFF</item>
     </style>
 
+    <style name="searchbox_style" parent="@style/Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/defaultText</item>
+        <item name="android:textColorHint">@color/defaultText</item>
+    </style>
+
 </resources>

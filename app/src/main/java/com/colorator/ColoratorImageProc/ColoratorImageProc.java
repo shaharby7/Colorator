@@ -33,7 +33,6 @@ public class ColoratorImageProc {
             Class<?> detectorClass = Class.forName(detectorClassName);
             Constructor<?> detectorConstructor = detectorClass.getConstructor(JSONObject.class);
             mDetector = (DetectorAbstractClass) detectorConstructor.newInstance(detectorArgs);
-
         } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException ex) {
             Log.e(TAG, "Unknown Detector class " + detectorClassName);
             ex.printStackTrace();

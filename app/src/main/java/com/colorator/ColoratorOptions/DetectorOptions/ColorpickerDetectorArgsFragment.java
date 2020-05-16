@@ -1,4 +1,4 @@
-package com.colorator.ColoratorOptions;
+package com.colorator.ColoratorOptions.DetectorOptions;
 
 import com.colorator.R;
 import com.colorator.customviews.MyRangeSeekbar;
@@ -56,7 +56,7 @@ public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
         mMaxV = mVRangeSeekbar.mStartMax;
         mMinV = mVRangeSeekbar.mStartMin;
         mVRangeSeekbar.mRangeSeekbar.setBarGradientStart(Color.BLACK).setBarGradientEnd(Color.WHITE)
-                .setBarColorMode(CrystalSeekbar.ColorMode.GRADIENT).setBarHighlightColor(R.color.halfTransparent)
+                .setBarColorMode(CrystalSeekbar.ColorMode.GRADIENT).setBarHighlightColor(R.color.veryTransparent)
                 .apply();
         mVRangeSeekbar.setOnChangeValueListener(new OnRangeSeekbarChangeListener() {
             @Override
@@ -72,7 +72,7 @@ public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
 
     private void setSRangeSeekbar() {
         mSRangeSeekbar = mRootView.findViewById(R.id.SValuesSeekbar);
-        mSRangeSeekbar.mRangeSeekbar.setBarHighlightColor(R.color.halfTransparent)
+        mSRangeSeekbar.mRangeSeekbar.setBarHighlightColor(R.color.veryTransparent)
                 .setBarColorMode(CrystalSeekbar.ColorMode.GRADIENT).setBarGradientStart(Color.WHITE)
                 .setBarGradientEnd(Color.HSVToColor(new float[]{mCurrentH, 1, 1})).apply();
         mMaxS = mSRangeSeekbar.mStartMax;

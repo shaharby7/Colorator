@@ -6,5 +6,6 @@
     <color name="defaultBackground">#000000</color>
     <color name="defaultText">#fff</color>
     <color name="fullTransparent">#00FFFFFF</color>
-    <color name="halfTransparent">#0D18FF00</color>
+    <color name="veryTransparent">#0DFFFFFF</color>
+    <color name="halfTransparent">#80FFFFFF</color>
 </resources>

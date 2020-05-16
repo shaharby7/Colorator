@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="detectors">
+        <item>color names</item>
         <item>color picker</item>
     </string-array>
 </resources>

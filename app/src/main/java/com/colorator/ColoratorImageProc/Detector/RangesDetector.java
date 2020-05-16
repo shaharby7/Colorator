@@ -1,7 +1,6 @@
 package com.colorator.ColoratorImageProc.Detector;
 
 import com.colorator.MainActivity;
-import com.colorator.utils.ConfigurationReader;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -13,6 +12,8 @@ import org.opencv.core.Core;
 
 public class RangesDetector extends DetectorAbstractClass {
     private static JSONObject mSavedRangesConfiguration = MainActivity.readConfiguration("saved_color_ranges");
+    private int mHeight, mWidth;
+    private Mat mOutput, mRangeMask;
 
     public RangesDetector(JSONObject detectorArgs) {
         super(detectorArgs);
@@ -29,6 +30,13 @@ public class RangesDetector extends DetectorAbstractClass {
         }
         mDetectorArgs = detectorArgs;
         convertHsvScalesToOpenCV();
+    }
+
+    private void allocateMats(int height, int width) {
+        mHeight = height;
+        mWidth = width;
+        mOutput = new Mat(mHeight, mWidth, 0);
+        mRangeMask = new Mat(mHeight, mWidth, 0);
     }
 
     private void convertHsvScalesToOpenCV() {
@@ -54,8 +62,7 @@ public class RangesDetector extends DetectorAbstractClass {
 
 
     private Mat getMaskOfRange(Mat inputImage, JSONObject rangeDescription) {
-
-        Mat mask = new Mat();
+        mRangeMask.setTo(new Scalar(0));
         try {
             Core.inRange(inputImage,
                     new Scalar(rangeDescription.getInt("minH"),
@@ -64,25 +71,28 @@ public class RangesDetector extends DetectorAbstractClass {
                     new Scalar(rangeDescription.getInt("maxH"),
                             rangeDescription.getInt("maxS"),
                             rangeDescription.getInt("maxV")),
-                    mask);
+                    mRangeMask);
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return mask;
+        return mRangeMask;
     }
 
     @Override
     public Mat detect(Mat inputImage) {
-        Mat output = new Mat(inputImage.height(), inputImage.width(), 0);
+        if (mHeight!=inputImage.height()||mWidth!=inputImage.width()){
+            allocateMats(inputImage.height(),inputImage.width());
+        }
+        mOutput.setTo(new Scalar(0));
         try {
             JSONArray allRanges = mDetectorArgs.getJSONArray("Ranges");
             for (int i = 0; i < allRanges.length(); i++) {
                 JSONObject typedRange = (JSONObject) allRanges.getJSONObject(i);
-                Core.bitwise_or(output, getMaskOfRange(inputImage, typedRange), output);
+                Core.bitwise_or(mOutput, getMaskOfRange(inputImage, typedRange), mOutput);
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return output;
+        return mOutput;
     }
 }

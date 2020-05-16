@@ -1,0 +1,8597 @@
+{
+  "Acid green": {
+    "Hex": "#B0BF1A",
+    "minH": 55.0,
+    "maxH": 75.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 33,
+    "maxV": 53
+  },
+  "Aero": {
+    "Hex": "#7CB9E8",
+    "minH": 196.0,
+    "maxH": 216.0,
+    "minS": 37,
+    "maxS": 57,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Aero blue": {
+    "Hex": "#C0E8D5",
+    "minH": 141.0,
+    "maxH": 161.0,
+    "minS": 7,
+    "maxS": 27,
+    "minV": 81,
+    "maxV": 100
+  },
+  "African violet": {
+    "Hex": "#B284BE",
+    "minH": 278.0,
+    "maxH": 298.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Air superiority blue": {
+    "Hex": "#72A0C1",
+    "minH": 195.0,
+    "maxH": 215.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Alabaster": {
+    "Hex": "#EDEAE0",
+    "minH": 40.0,
+    "maxH": 60.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Alice blue": {
+    "Hex": "#F0F8FF",
+    "minH": 198.0,
+    "maxH": 218.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Alloy orange": {
+    "Hex": "#C46210",
+    "minH": 17.0,
+    "maxH": 37.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 67,
+    "maxV": 87
+  },
+  "Almond": {
+    "Hex": "#EFDECD",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Amaranth": {
+    "Hex": "#E52B50",
+    "minH": 338.0,
+    "maxH": 358.0,
+    "minS": 71,
+    "maxS": 91,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Amaranth (M&P)": {
+    "Hex": "#9F2B68",
+    "minH": 318.0,
+    "maxH": 338.0,
+    "minS": 63,
+    "maxS": 83,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Amaranth pink": {
+    "Hex": "#F19CBB",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 25,
+    "maxS": 45,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Amaranth purple": {
+    "Hex": "#AB274F",
+    "minH": 332.0,
+    "maxH": 352.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Amaranth red": {
+    "Hex": "#D3212D",
+    "minH": 346.0,
+    "maxH": 360.0,
+    "minS": 74,
+    "maxS": 94,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Amazon": {
+    "Hex": "#3B7A57",
+    "minH": 137.0,
+    "maxH": 157.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 38,
+    "maxV": 58
+  },
+  "Amber": {
+    "Hex": "#FFBF00",
+    "minH": 35.0,
+    "maxH": 55.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Amber (SAE\/ECE)": {
+    "Hex": "#FF7E00",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Amethyst": {
+    "Hex": "#9966CC",
+    "minH": 260.0,
+    "maxH": 280.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Android green": {
+    "Hex": "#A4C639",
+    "minH": 64.0,
+    "maxH": 84.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Antique brass": {
+    "Hex": "#CD9575",
+    "minH": 12.0,
+    "maxH": 32.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Antique bronze": {
+    "Hex": "#665D1E",
+    "minH": 43.0,
+    "maxH": 63.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Antique fuchsia": {
+    "Hex": "#915C83",
+    "minH": 306.0,
+    "maxH": 326.0,
+    "minS": 27,
+    "maxS": 47,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Antique ruby": {
+    "Hex": "#841B2D",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 42,
+    "maxV": 62
+  },
+  "Antique white": {
+    "Hex": "#FAEBD7",
+    "minH": 24.0,
+    "maxH": 44.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Ao (English)": {
+    "Hex": "#008000",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Apple green": {
+    "Hex": "#8DB600",
+    "minH": 64.0,
+    "maxH": 84.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Apricot": {
+    "Hex": "#FBCEB1",
+    "minH": 14.0,
+    "maxH": 34.0,
+    "minS": 19,
+    "maxS": 39,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Aqua": {
+    "Hex": "#00FFFF",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Aquamarine": {
+    "Hex": "#7FFFD4",
+    "minH": 150.0,
+    "maxH": 170.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Arctic lime": {
+    "Hex": "#D0FF14",
+    "minH": 62.0,
+    "maxH": 82.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Army green": {
+    "Hex": "#4B5320",
+    "minH": 59.0,
+    "maxH": 79.0,
+    "minS": 51,
+    "maxS": 71,
+    "minV": 23,
+    "maxV": 43
+  },
+  "Artichoke": {
+    "Hex": "#8F9779",
+    "minH": 66.0,
+    "maxH": 86.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Arylide yellow": {
+    "Hex": "#E9D66B",
+    "minH": 41.0,
+    "maxH": 61.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Ash gray": {
+    "Hex": "#B2BEB5",
+    "minH": 125.0,
+    "maxH": 145.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Asparagus": {
+    "Hex": "#87A96B",
+    "minH": 83.0,
+    "maxH": 103.0,
+    "minS": 27,
+    "maxS": 47,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Atomic tangerine": {
+    "Hex": "#FF9966",
+    "minH": 10.0,
+    "maxH": 30.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Auburn": {
+    "Hex": "#A52A2A",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Aureolin": {
+    "Hex": "#FDEE00",
+    "minH": 46.0,
+    "maxH": 66.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Avocado": {
+    "Hex": "#568203",
+    "minH": 71.0,
+    "maxH": 91.0,
+    "minS": 88,
+    "maxS": 100,
+    "minV": 41,
+    "maxV": 61
+  },
+  "Azure": {
+    "Hex": "#007FFF",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Azure (X11\/web color)": {
+    "Hex": "#F0FFFF",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Baby blue": {
+    "Hex": "#89CFF0",
+    "minH": 189.0,
+    "maxH": 209.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Baby blue eyes": {
+    "Hex": "#A1CAF1",
+    "minH": 199.0,
+    "maxH": 219.0,
+    "minS": 23,
+    "maxS": 43,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Baby pink": {
+    "Hex": "#F4C2C2",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Baby powder": {
+    "Hex": "#FEFEFA",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 0,
+    "maxS": 12,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Baker-Miller pink": {
+    "Hex": "#FF91AF",
+    "minH": 334.0,
+    "maxH": 354.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Banana Mania": {
+    "Hex": "#FAE7B5",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Barbie Pink": {
+    "Hex": "#DA1884",
+    "minH": 317.0,
+    "maxH": 337.0,
+    "minS": 79,
+    "maxS": 99,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Barn red": {
+    "Hex": "#7C0A02",
+    "minH": 0.0,
+    "maxH": 14.0,
+    "minS": 88,
+    "maxS": 100,
+    "minV": 39,
+    "maxV": 59
+  },
+  "Battleship grey": {
+    "Hex": "#848482",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 0,
+    "maxS": 12,
+    "minV": 42,
+    "maxV": 62
+  },
+  "Beau blue": {
+    "Hex": "#BCD4E6",
+    "minH": 196.0,
+    "maxH": 216.0,
+    "minS": 8,
+    "maxS": 28,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Beaver": {
+    "Hex": "#9F8170",
+    "minH": 12.0,
+    "maxH": 32.0,
+    "minS": 20,
+    "maxS": 40,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Beige": {
+    "Hex": "#F5F5DC",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 0,
+    "maxS": 20,
+    "minV": 86,
+    "maxV": 100
+  },
+  "B'dazzled blue": {
+    "Hex": "#2E5894",
+    "minH": 205.0,
+    "maxH": 225.0,
+    "minS": 59,
+    "maxS": 79,
+    "minV": 48,
+    "maxV": 68
+  },
+  "Big dip o\u2019ruby": {
+    "Hex": "#9C2542",
+    "minH": 335.0,
+    "maxH": 355.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 51,
+    "maxV": 71
+  },
+  "Bisque": {
+    "Hex": "#FFE4C4",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 13,
+    "maxS": 33,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Bistre": {
+    "Hex": "#3D2B1F",
+    "minH": 14.0,
+    "maxH": 34.0,
+    "minS": 39,
+    "maxS": 59,
+    "minV": 14,
+    "maxV": 34
+  },
+  "Bistre brown": {
+    "Hex": "#967117",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Bitter lemon": {
+    "Hex": "#CAE00D",
+    "minH": 56.0,
+    "maxH": 76.0,
+    "minS": 84,
+    "maxS": 100,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Bitter lime": {
+    "Hex": "#BFFF00",
+    "minH": 65.0,
+    "maxH": 85.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Bittersweet": {
+    "Hex": "#FE6F5E",
+    "minH": 0.0,
+    "maxH": 16.0,
+    "minS": 53,
+    "maxS": 73,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Bittersweet shimmer": {
+    "Hex": "#BF4F51",
+    "minH": 349.0,
+    "maxH": 360.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Black": {
+    "Hex": "#000000",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 0,
+    "maxV": 10
+  },
+  "Black bean": {
+    "Hex": "#3D0C02",
+    "minH": 0.0,
+    "maxH": 20.0,
+    "minS": 87,
+    "maxS": 100,
+    "minV": 14,
+    "maxV": 34
+  },
+  "Black chocolate": {
+    "Hex": "#1B1811",
+    "minH": 32.0,
+    "maxH": 52.0,
+    "minS": 27,
+    "maxS": 47,
+    "minV": 1,
+    "maxV": 21
+  },
+  "Black coffee": {
+    "Hex": "#3B2F2F",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 13,
+    "maxV": 33
+  },
+  "Black coral": {
+    "Hex": "#54626F",
+    "minH": 199.0,
+    "maxH": 219.0,
+    "minS": 14,
+    "maxS": 34,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Black olive": {
+    "Hex": "#3B3C36",
+    "minH": 60.0,
+    "maxH": 80.0,
+    "minS": 0,
+    "maxS": 20,
+    "minV": 14,
+    "maxV": 34
+  },
+  "Black Shadows": {
+    "Hex": "#BFAFB2",
+    "minH": 339.0,
+    "maxH": 359.0,
+    "minS": 0,
+    "maxS": 18,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Blanched almond": {
+    "Hex": "#FFEBCD",
+    "minH": 26.0,
+    "maxH": 46.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Blast-off bronze": {
+    "Hex": "#A57164",
+    "minH": 2.0,
+    "maxH": 22.0,
+    "minS": 29,
+    "maxS": 49,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Bleu de France": {
+    "Hex": "#318CE7",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 69,
+    "maxS": 89,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Blizzard blue": {
+    "Hex": "#ACE5EE",
+    "minH": 178.0,
+    "maxH": 198.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Blond": {
+    "Hex": "#FAF0BE",
+    "minH": 40.0,
+    "maxH": 60.0,
+    "minS": 14,
+    "maxS": 34,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Blood red": {
+    "Hex": "#660000",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Blue": {
+    "Hex": "#0000FF",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Blue (Crayola)": {
+    "Hex": "#1F75FE",
+    "minH": 207.0,
+    "maxH": 227.0,
+    "minS": 78,
+    "maxS": 98,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Blue (Munsell)": {
+    "Hex": "#0093AF",
+    "minH": 180.0,
+    "maxH": 200.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Blue (NCS)": {
+    "Hex": "#0087BD",
+    "minH": 187.0,
+    "maxH": 207.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 64,
+    "maxV": 84
+  },
+  "Blue (Pantone)": {
+    "Hex": "#0018A8",
+    "minH": 221.0,
+    "maxH": 241.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Blue (pigment)": {
+    "Hex": "#333399",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Blue (RYB)": {
+    "Hex": "#0247FE",
+    "minH": 214.0,
+    "maxH": 234.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Blue bell": {
+    "Hex": "#A2A2D0",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 12,
+    "maxS": 32,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Blue-gray": {
+    "Hex": "#6699CC",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Blue-green": {
+    "Hex": "#0D98BA",
+    "minH": 182.0,
+    "maxH": 202.0,
+    "minS": 83,
+    "maxS": 100,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Blue-green (color wheel)": {
+    "Hex": "#064E40",
+    "minH": 158.0,
+    "maxH": 178.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 21,
+    "maxV": 41
+  },
+  "Blue jeans": {
+    "Hex": "#5DADEC",
+    "minH": 196.0,
+    "maxH": 216.0,
+    "minS": 51,
+    "maxS": 71,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Blue sapphire": {
+    "Hex": "#126180",
+    "minH": 187.0,
+    "maxH": 207.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Blue-violet": {
+    "Hex": "#8A2BE2",
+    "minH": 261.0,
+    "maxH": 281.0,
+    "minS": 71,
+    "maxS": 91,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Blue-violet (Crayola)": {
+    "Hex": "#7366BD",
+    "minH": 239.0,
+    "maxH": 259.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 64,
+    "maxV": 84
+  },
+  "Blue-violet (color wheel)": {
+    "Hex": "#4D1A7F",
+    "minH": 260.0,
+    "maxH": 280.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 64,
+    "maxV": 84
+  },
+  "Blue yonder": {
+    "Hex": "#5072A7",
+    "minH": 207.0,
+    "maxH": 227.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Bluetiful": {
+    "Hex": "#3C69E7",
+    "minH": 214.0,
+    "maxH": 234.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Blush": {
+    "Hex": "#DE5D83",
+    "minH": 332.0,
+    "maxH": 352.0,
+    "minS": 48,
+    "maxS": 68,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Bole": {
+    "Hex": "#79443B",
+    "minH": 0.0,
+    "maxH": 19.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Bone": {
+    "Hex": "#E3DAC9",
+    "minH": 29.0,
+    "maxH": 49.0,
+    "minS": 1,
+    "maxS": 21,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Bottle green": {
+    "Hex": "#006A4E",
+    "minH": 154.0,
+    "maxH": 174.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 32,
+    "maxV": 52
+  },
+  "Brandy": {
+    "Hex": "#87413F",
+    "minH": 0.0,
+    "maxH": 12.0,
+    "minS": 43,
+    "maxS": 63,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Brick red": {
+    "Hex": "#CB4154",
+    "minH": 342.0,
+    "maxH": 360.0,
+    "minS": 58,
+    "maxS": 78,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Bright green": {
+    "Hex": "#66FF00",
+    "minH": 86.0,
+    "maxH": 106.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Bright lilac": {
+    "Hex": "#D891EF",
+    "minH": 275.0,
+    "maxH": 295.0,
+    "minS": 29,
+    "maxS": 49,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Bright maroon": {
+    "Hex": "#C32148",
+    "minH": 336.0,
+    "maxH": 356.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Bright navy blue": {
+    "Hex": "#1974D2",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 78,
+    "maxS": 98,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Bright yellow (Crayola)": {
+    "Hex": "#FFAA1D",
+    "minH": 27.0,
+    "maxH": 47.0,
+    "minS": 79,
+    "maxS": 99,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Brilliant rose": {
+    "Hex": "#FF55A3",
+    "minH": 322.0,
+    "maxH": 342.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Brink pink": {
+    "Hex": "#FB607F",
+    "minH": 338.0,
+    "maxH": 358.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 88,
+    "maxV": 100
+  },
+  "British racing green": {
+    "Hex": "#004225",
+    "minH": 144.0,
+    "maxH": 164.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 16,
+    "maxV": 36
+  },
+  "Bronze": {
+    "Hex": "#CD7F32",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Brown": {
+    "Hex": "#88540B",
+    "minH": 25.0,
+    "maxH": 45.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Brown sugar": {
+    "Hex": "#AF6E4D",
+    "minH": 10.0,
+    "maxH": 30.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Brunswick green": {
+    "Hex": "#1B4D3E",
+    "minH": 152.0,
+    "maxH": 172.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 20,
+    "maxV": 40
+  },
+  "Bud green": {
+    "Hex": "#7BB661",
+    "minH": 92.0,
+    "maxH": 112.0,
+    "minS": 37,
+    "maxS": 57,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Buff": {
+    "Hex": "#F0DC82",
+    "minH": 39.0,
+    "maxH": 59.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Burgundy": {
+    "Hex": "#800020",
+    "minH": 335.0,
+    "maxH": 355.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Burlywood": {
+    "Hex": "#DEB887",
+    "minH": 24.0,
+    "maxH": 44.0,
+    "minS": 29,
+    "maxS": 49,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Burnished brown": {
+    "Hex": "#A17A74",
+    "minH": 0.0,
+    "maxH": 18.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 53,
+    "maxV": 73
+  },
+  "Burnt orange": {
+    "Hex": "#CC5500",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Burnt sienna": {
+    "Hex": "#E97451",
+    "minH": 4.0,
+    "maxH": 24.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Burnt umber": {
+    "Hex": "#8A3324",
+    "minH": 0.0,
+    "maxH": 19.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 44,
+    "maxV": 64
+  },
+  "Byzantine": {
+    "Hex": "#BD33A4",
+    "minH": 301.0,
+    "maxH": 321.0,
+    "minS": 63,
+    "maxS": 83,
+    "minV": 64,
+    "maxV": 84
+  },
+  "Byzantium": {
+    "Hex": "#702963",
+    "minH": 301.0,
+    "maxH": 321.0,
+    "minS": 53,
+    "maxS": 73,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Cadet": {
+    "Hex": "#536872",
+    "minH": 189.0,
+    "maxH": 209.0,
+    "minS": 17,
+    "maxS": 37,
+    "minV": 35,
+    "maxV": 55
+  },
+  "Cadet blue": {
+    "Hex": "#5F9EA0",
+    "minH": 172.0,
+    "maxH": 192.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 53,
+    "maxV": 73
+  },
+  "Cadet blue (Crayola)": {
+    "Hex": "#A9B2C3",
+    "minH": 209.0,
+    "maxH": 229.0,
+    "minS": 3,
+    "maxS": 23,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Cadet grey": {
+    "Hex": "#91A3B0",
+    "minH": 195.0,
+    "maxH": 215.0,
+    "minS": 8,
+    "maxS": 28,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Cadmium green": {
+    "Hex": "#006B3C",
+    "minH": 144.0,
+    "maxH": 164.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 32,
+    "maxV": 52
+  },
+  "Cadmium orange": {
+    "Hex": "#ED872D",
+    "minH": 18.0,
+    "maxH": 38.0,
+    "minS": 71,
+    "maxS": 91,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Cadmium red": {
+    "Hex": "#E30022",
+    "minH": 341.0,
+    "maxH": 360.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Cadmium yellow": {
+    "Hex": "#FFF600",
+    "minH": 48.0,
+    "maxH": 68.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Caf\u00e9 au lait": {
+    "Hex": "#A67B5B",
+    "minH": 16.0,
+    "maxH": 36.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Caf\u00e9 noir": {
+    "Hex": "#4B3621",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 19,
+    "maxV": 39
+  },
+  "Cambridge blue": {
+    "Hex": "#A3C1AD",
+    "minH": 130.0,
+    "maxH": 150.0,
+    "minS": 6,
+    "maxS": 26,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Camel": {
+    "Hex": "#C19A6B",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Cameo pink": {
+    "Hex": "#EFBBCC",
+    "minH": 330.0,
+    "maxH": 350.0,
+    "minS": 12,
+    "maxS": 32,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Canary": {
+    "Hex": "#FFFF99",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 30,
+    "maxS": 50,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Canary yellow": {
+    "Hex": "#FFEF00",
+    "minH": 46.0,
+    "maxH": 66.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Candy apple red": {
+    "Hex": "#FF0800",
+    "minH": 0.0,
+    "maxH": 12.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Candy pink": {
+    "Hex": "#E4717A",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Capri": {
+    "Hex": "#00BFFF",
+    "minH": 185.0,
+    "maxH": 205.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Caput mortuum": {
+    "Hex": "#592720",
+    "minH": 0.0,
+    "maxH": 17.0,
+    "minS": 54,
+    "maxS": 74,
+    "minV": 25,
+    "maxV": 45
+  },
+  "Cardinal": {
+    "Hex": "#C41E3A",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 67,
+    "maxV": 87
+  },
+  "Caribbean green": {
+    "Hex": "#00CC99",
+    "minH": 155.0,
+    "maxH": 175.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Carmine": {
+    "Hex": "#960018",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Carmine (M&P)": {
+    "Hex": "#D70040",
+    "minH": 332.0,
+    "maxH": 352.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 74,
+    "maxV": 94
+  },
+  "Carnation pink": {
+    "Hex": "#FFA6C9",
+    "minH": 326.0,
+    "maxH": 346.0,
+    "minS": 25,
+    "maxS": 45,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Carnelian": {
+    "Hex": "#B31B1B",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Carolina blue": {
+    "Hex": "#56A0D3",
+    "minH": 194.0,
+    "maxH": 214.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Carrot orange": {
+    "Hex": "#ED9121",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Castleton green": {
+    "Hex": "#00563F",
+    "minH": 154.0,
+    "maxH": 174.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 24,
+    "maxV": 44
+  },
+  "Catawba": {
+    "Hex": "#703642",
+    "minH": 338.0,
+    "maxH": 358.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Cedar Chest": {
+    "Hex": "#C95A49",
+    "minH": 0.0,
+    "maxH": 18.0,
+    "minS": 54,
+    "maxS": 74,
+    "minV": 69,
+    "maxV": 89
+  },
+  "Celadon": {
+    "Hex": "#ACE1AF",
+    "minH": 113.0,
+    "maxH": 133.0,
+    "minS": 14,
+    "maxS": 34,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Celadon blue": {
+    "Hex": "#007BA7",
+    "minH": 186.0,
+    "maxH": 206.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Celadon green": {
+    "Hex": "#2F847C",
+    "minH": 164.0,
+    "maxH": 184.0,
+    "minS": 54,
+    "maxS": 74,
+    "minV": 42,
+    "maxV": 62
+  },
+  "Celeste": {
+    "Hex": "#B2FFFF",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 20,
+    "maxS": 40,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Celtic blue": {
+    "Hex": "#246BCE",
+    "minH": 205.0,
+    "maxH": 225.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Cerise": {
+    "Hex": "#DE3163",
+    "minH": 333.0,
+    "maxH": 353.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Cerulean": {
+    "Hex": "#007BA7",
+    "minH": 186.0,
+    "maxH": 206.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Cerulean blue": {
+    "Hex": "#2A52BE",
+    "minH": 214.0,
+    "maxH": 234.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Cerulean frost": {
+    "Hex": "#6D9BC3",
+    "minH": 198.0,
+    "maxH": 218.0,
+    "minS": 34,
+    "maxS": 54,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Cerulean (Crayola)": {
+    "Hex": "#1DACD6",
+    "minH": 184.0,
+    "maxH": 204.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 74,
+    "maxV": 94
+  },
+  "CG blue": {
+    "Hex": "#007AA5",
+    "minH": 186.0,
+    "maxH": 206.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "CG red": {
+    "Hex": "#E03C31",
+    "minH": 0.0,
+    "maxH": 14.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Champagne": {
+    "Hex": "#F7E7CE",
+    "minH": 27.0,
+    "maxH": 47.0,
+    "minS": 7,
+    "maxS": 27,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Champagne pink": {
+    "Hex": "#F1DDCF",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Charcoal": {
+    "Hex": "#36454F",
+    "minH": 194.0,
+    "maxH": 214.0,
+    "minS": 22,
+    "maxS": 42,
+    "minV": 21,
+    "maxV": 41
+  },
+  "Charleston green": {
+    "Hex": "#232B2B",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 9,
+    "maxS": 29,
+    "minV": 7,
+    "maxV": 27
+  },
+  "Charm pink": {
+    "Hex": "#E68FAC",
+    "minH": 330.0,
+    "maxH": 350.0,
+    "minS": 28,
+    "maxS": 48,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Chartreuse (traditional)": {
+    "Hex": "#DFFF00",
+    "minH": 58.0,
+    "maxH": 78.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Chartreuse (web)": {
+    "Hex": "#7FFF00",
+    "minH": 80.0,
+    "maxH": 100.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Cherry blossom pink": {
+    "Hex": "#FFB7C5",
+    "minH": 338.0,
+    "maxH": 358.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Chestnut": {
+    "Hex": "#954535",
+    "minH": 0.0,
+    "maxH": 20.0,
+    "minS": 54,
+    "maxS": 74,
+    "minV": 48,
+    "maxV": 68
+  },
+  "China pink": {
+    "Hex": "#DE6FA1",
+    "minH": 323.0,
+    "maxH": 343.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 77,
+    "maxV": 97
+  },
+  "China rose": {
+    "Hex": "#A8516E",
+    "minH": 330.0,
+    "maxH": 350.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Chinese red": {
+    "Hex": "#AA381E",
+    "minH": 1.0,
+    "maxH": 21.0,
+    "minS": 72,
+    "maxS": 92,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Chinese violet": {
+    "Hex": "#856088",
+    "minH": 286.0,
+    "maxH": 306.0,
+    "minS": 19,
+    "maxS": 39,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Chinese yellow": {
+    "Hex": "#FFB200",
+    "minH": 32.0,
+    "maxH": 52.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Chocolate (traditional)": {
+    "Hex": "#7B3F00",
+    "minH": 21.0,
+    "maxH": 41.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 38,
+    "maxV": 58
+  },
+  "Chocolate (web)": {
+    "Hex": "#D2691E",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Chrome yellow": {
+    "Hex": "#FFA700",
+    "minH": 29.0,
+    "maxH": 49.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Cinereous": {
+    "Hex": "#98817B",
+    "minH": 2.0,
+    "maxH": 22.0,
+    "minS": 9,
+    "maxS": 29,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Cinnabar": {
+    "Hex": "#E34234",
+    "minH": 0.0,
+    "maxH": 15.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Cinnamon Satin": {
+    "Hex": "#CD607E",
+    "minH": 333.0,
+    "maxH": 353.0,
+    "minS": 43,
+    "maxS": 63,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Citrine": {
+    "Hex": "#E4D00A",
+    "minH": 44.0,
+    "maxH": 64.0,
+    "minS": 86,
+    "maxS": 100,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Citron": {
+    "Hex": "#9FA91F",
+    "minH": 54.0,
+    "maxH": 74.0,
+    "minS": 72,
+    "maxS": 92,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Claret": {
+    "Hex": "#7F1734",
+    "minH": 333.0,
+    "maxH": 353.0,
+    "minS": 72,
+    "maxS": 92,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Cobalt blue": {
+    "Hex": "#0047AB",
+    "minH": 205.0,
+    "maxH": 225.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Cocoa brown": {
+    "Hex": "#D2691E",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Coffee": {
+    "Hex": "#6F4E37",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Columbia Blue": {
+    "Hex": "#B9D9EB",
+    "minH": 192.0,
+    "maxH": 212.0,
+    "minS": 11,
+    "maxS": 31,
+    "minV": 82,
+    "maxV": 100
+  },
+  "Congo pink": {
+    "Hex": "#F88379",
+    "minH": 0.0,
+    "maxH": 15.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Cool grey": {
+    "Hex": "#8C92AC",
+    "minH": 219.0,
+    "maxH": 239.0,
+    "minS": 9,
+    "maxS": 29,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Copper": {
+    "Hex": "#B87333",
+    "minH": 19.0,
+    "maxH": 39.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Copper (Crayola)": {
+    "Hex": "#DA8A67",
+    "minH": 8.0,
+    "maxH": 28.0,
+    "minS": 43,
+    "maxS": 63,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Copper penny": {
+    "Hex": "#AD6F69",
+    "minH": 0.0,
+    "maxH": 15.0,
+    "minS": 29,
+    "maxS": 49,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Copper red": {
+    "Hex": "#CB6D51",
+    "minH": 4.0,
+    "maxH": 24.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Copper rose": {
+    "Hex": "#996666",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 23,
+    "maxS": 43,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Coquelicot": {
+    "Hex": "#FF3800",
+    "minH": 3.0,
+    "maxH": 23.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Coral": {
+    "Hex": "#FF7F50",
+    "minH": 6.0,
+    "maxH": 26.0,
+    "minS": 59,
+    "maxS": 79,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Coral pink": {
+    "Hex": "#F88379",
+    "minH": 0.0,
+    "maxH": 15.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Cordovan": {
+    "Hex": "#893F45",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 44,
+    "maxV": 64
+  },
+  "Corn": {
+    "Hex": "#FBEC5D",
+    "minH": 44.0,
+    "maxH": 64.0,
+    "minS": 53,
+    "maxS": 73,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Cornflower blue": {
+    "Hex": "#6495ED",
+    "minH": 209.0,
+    "maxH": 229.0,
+    "minS": 48,
+    "maxS": 68,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Cornsilk": {
+    "Hex": "#FFF8DC",
+    "minH": 38.0,
+    "maxH": 58.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Cosmic cobalt": {
+    "Hex": "#2E2D88",
+    "minH": 231.0,
+    "maxH": 251.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Cosmic latte": {
+    "Hex": "#FFF8E7",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 0,
+    "maxS": 19,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Coyote brown": {
+    "Hex": "#81613C",
+    "minH": 22.0,
+    "maxH": 42.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 41,
+    "maxV": 61
+  },
+  "Cotton candy": {
+    "Hex": "#FFBCD9",
+    "minH": 324.0,
+    "maxH": 344.0,
+    "minS": 16,
+    "maxS": 36,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Cream": {
+    "Hex": "#FFFDD0",
+    "minH": 47.0,
+    "maxH": 67.0,
+    "minS": 8,
+    "maxS": 28,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Crimson": {
+    "Hex": "#DC143C",
+    "minH": 338.0,
+    "maxH": 358.0,
+    "minS": 81,
+    "maxS": 100,
+    "minV": 76,
+    "maxV": 96
+  },
+  "Crimson (UA)": {
+    "Hex": "#9E1B32",
+    "minH": 339.0,
+    "maxH": 359.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Cultured": {
+    "Hex": "#F5F5F5",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Cyan": {
+    "Hex": "#00FFFF",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Cyan (process)": {
+    "Hex": "#00B7EB",
+    "minH": 183.0,
+    "maxH": 203.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 82,
+    "maxV": 100
+  },
+  "Cyber grape": {
+    "Hex": "#58427C",
+    "minH": 253.0,
+    "maxH": 273.0,
+    "minS": 37,
+    "maxS": 57,
+    "minV": 39,
+    "maxV": 59
+  },
+  "Cyber yellow": {
+    "Hex": "#FFD300",
+    "minH": 40.0,
+    "maxH": 60.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Cyclamen": {
+    "Hex": "#F56FA1",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Dark blue-gray": {
+    "Hex": "#666699",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 23,
+    "maxS": 43,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Dark brown": {
+    "Hex": "#654321",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Dark byzantium": {
+    "Hex": "#5D3954",
+    "minH": 305.0,
+    "maxH": 325.0,
+    "minS": 29,
+    "maxS": 49,
+    "minV": 26,
+    "maxV": 46
+  },
+  "Dark cornflower blue": {
+    "Hex": "#26428B",
+    "minH": 213.0,
+    "maxH": 233.0,
+    "minS": 63,
+    "maxS": 83,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Dark cyan": {
+    "Hex": "#008B8B",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Dark electric blue": {
+    "Hex": "#536878",
+    "minH": 196.0,
+    "maxH": 216.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Dark goldenrod": {
+    "Hex": "#B8860B",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 84,
+    "maxS": 100,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Dark green": {
+    "Hex": "#013220",
+    "minH": 148.0,
+    "maxH": 168.0,
+    "minS": 88,
+    "maxS": 100,
+    "minV": 10,
+    "maxV": 30
+  },
+  "Dark green (X11)": {
+    "Hex": "#006400",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 29,
+    "maxV": 49
+  },
+  "Dark jungle green": {
+    "Hex": "#1A2421",
+    "minH": 152.0,
+    "maxH": 172.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 4,
+    "maxV": 24
+  },
+  "Dark khaki": {
+    "Hex": "#BDB76B",
+    "minH": 46.0,
+    "maxH": 66.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 64,
+    "maxV": 84
+  },
+  "Dark lava": {
+    "Hex": "#483C32",
+    "minH": 17.0,
+    "maxH": 37.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 18,
+    "maxV": 38
+  },
+  "Dark liver": {
+    "Hex": "#534B4F",
+    "minH": 320.0,
+    "maxH": 340.0,
+    "minS": 0,
+    "maxS": 20,
+    "minV": 23,
+    "maxV": 43
+  },
+  "Dark liver (horses)": {
+    "Hex": "#543D37",
+    "minH": 2.0,
+    "maxH": 22.0,
+    "minS": 25,
+    "maxS": 45,
+    "minV": 23,
+    "maxV": 43
+  },
+  "Dark magenta": {
+    "Hex": "#8B008B",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Dark moss green": {
+    "Hex": "#4A5D23",
+    "minH": 70.0,
+    "maxH": 90.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 26,
+    "maxV": 46
+  },
+  "Dark olive green": {
+    "Hex": "#556B2F",
+    "minH": 72.0,
+    "maxH": 92.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 32,
+    "maxV": 52
+  },
+  "Dark orange": {
+    "Hex": "#FF8C00",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Dark orchid": {
+    "Hex": "#9932CC",
+    "minH": 270.0,
+    "maxH": 290.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Dark pastel green": {
+    "Hex": "#03C03C",
+    "minH": 128.0,
+    "maxH": 148.0,
+    "minS": 88,
+    "maxS": 100,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Dark purple": {
+    "Hex": "#301934",
+    "minH": 281.0,
+    "maxH": 301.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 10,
+    "maxV": 30
+  },
+  "Dark red": {
+    "Hex": "#8B0000",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Dark salmon": {
+    "Hex": "#E9967A",
+    "minH": 5.0,
+    "maxH": 25.0,
+    "minS": 38,
+    "maxS": 58,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Dark sea green": {
+    "Hex": "#8FBC8F",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 14,
+    "maxS": 34,
+    "minV": 64,
+    "maxV": 84
+  },
+  "Dark sienna": {
+    "Hex": "#3C1414",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 14,
+    "maxV": 34
+  },
+  "Dark sky blue": {
+    "Hex": "#8CBED6",
+    "minH": 189.0,
+    "maxH": 209.0,
+    "minS": 25,
+    "maxS": 45,
+    "minV": 74,
+    "maxV": 94
+  },
+  "Dark slate blue": {
+    "Hex": "#483D8B",
+    "minH": 238.0,
+    "maxH": 258.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Dark slate gray": {
+    "Hex": "#2F4F4F",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 21,
+    "maxV": 41
+  },
+  "Dark spring green": {
+    "Hex": "#177245",
+    "minH": 140.0,
+    "maxH": 160.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 35,
+    "maxV": 55
+  },
+  "Dark turquoise": {
+    "Hex": "#00CED1",
+    "minH": 171.0,
+    "maxH": 191.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Dark violet": {
+    "Hex": "#9400D3",
+    "minH": 272.0,
+    "maxH": 292.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Dartmouth green": {
+    "Hex": "#00703C",
+    "minH": 142.0,
+    "maxH": 162.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Davy's grey": {
+    "Hex": "#555555",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 23,
+    "maxV": 43
+  },
+  "Deep cerise": {
+    "Hex": "#DA3287",
+    "minH": 320.0,
+    "maxH": 340.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Deep champagne": {
+    "Hex": "#FAD6A5",
+    "minH": 25.0,
+    "maxH": 45.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Deep chestnut": {
+    "Hex": "#B94E48",
+    "minH": 0.0,
+    "maxH": 13.0,
+    "minS": 51,
+    "maxS": 71,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Deep jungle green": {
+    "Hex": "#004B49",
+    "minH": 168.0,
+    "maxH": 188.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 19,
+    "maxV": 39
+  },
+  "Deep pink": {
+    "Hex": "#FF1493",
+    "minH": 318.0,
+    "maxH": 338.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Deep saffron": {
+    "Hex": "#FF9933",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Deep sky blue": {
+    "Hex": "#00BFFF",
+    "minH": 185.0,
+    "maxH": 205.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Deep Space Sparkle": {
+    "Hex": "#4A646C",
+    "minH": 184.0,
+    "maxH": 204.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 32,
+    "maxV": 52
+  },
+  "Deep taupe": {
+    "Hex": "#7E5E60",
+    "minH": 346.0,
+    "maxH": 360.0,
+    "minS": 15,
+    "maxS": 35,
+    "minV": 39,
+    "maxV": 59
+  },
+  "Denim": {
+    "Hex": "#1560BD",
+    "minH": 203.0,
+    "maxH": 223.0,
+    "minS": 79,
+    "maxS": 99,
+    "minV": 64,
+    "maxV": 84
+  },
+  "Denim blue": {
+    "Hex": "#2243B6",
+    "minH": 217.0,
+    "maxH": 237.0,
+    "minS": 71,
+    "maxS": 91,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Desert": {
+    "Hex": "#C19A6B",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Desert sand": {
+    "Hex": "#EDC9AF",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 16,
+    "maxS": 36,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Dim gray": {
+    "Hex": "#696969",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 31,
+    "maxV": 51
+  },
+  "Dodger blue": {
+    "Hex": "#1E90FF",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 78,
+    "maxS": 98,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Dogwood rose": {
+    "Hex": "#D71868",
+    "minH": 325.0,
+    "maxH": 345.0,
+    "minS": 79,
+    "maxS": 99,
+    "minV": 74,
+    "maxV": 94
+  },
+  "Drab": {
+    "Hex": "#967117",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Duke blue": {
+    "Hex": "#00009C",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 51,
+    "maxV": 71
+  },
+  "Dutch white": {
+    "Hex": "#EFDFBB",
+    "minH": 32.0,
+    "maxH": 52.0,
+    "minS": 12,
+    "maxS": 32,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Earth yellow": {
+    "Hex": "#E1A95F",
+    "minH": 24.0,
+    "maxH": 44.0,
+    "minS": 48,
+    "maxS": 68,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Ebony": {
+    "Hex": "#555D50",
+    "minH": 87.0,
+    "maxH": 107.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 26,
+    "maxV": 46
+  },
+  "Ecru": {
+    "Hex": "#C2B280",
+    "minH": 35.0,
+    "maxH": 55.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Eerie black": {
+    "Hex": "#1B1B1B",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 1,
+    "maxV": 21
+  },
+  "Eggplant": {
+    "Hex": "#614051",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 28,
+    "maxV": 48
+  },
+  "Eggshell": {
+    "Hex": "#F0EAD6",
+    "minH": 36.0,
+    "maxH": 56.0,
+    "minS": 1,
+    "maxS": 21,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Egyptian blue": {
+    "Hex": "#1034A6",
+    "minH": 216.0,
+    "maxH": 236.0,
+    "minS": 80,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Electric blue": {
+    "Hex": "#7DF9FF",
+    "minH": 173.0,
+    "maxH": 193.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Electric green": {
+    "Hex": "#00FF00",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Electric indigo": {
+    "Hex": "#6F00FF",
+    "minH": 256.0,
+    "maxH": 276.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Electric lime": {
+    "Hex": "#CCFF00",
+    "minH": 62.0,
+    "maxH": 82.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Electric purple": {
+    "Hex": "#BF00FF",
+    "minH": 275.0,
+    "maxH": 295.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Electric violet": {
+    "Hex": "#8F00FF",
+    "minH": 264.0,
+    "maxH": 284.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Emerald": {
+    "Hex": "#50C878",
+    "minH": 130.0,
+    "maxH": 150.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Eminence": {
+    "Hex": "#6C3082",
+    "minH": 274.0,
+    "maxH": 294.0,
+    "minS": 53,
+    "maxS": 73,
+    "minV": 41,
+    "maxV": 61
+  },
+  "English green": {
+    "Hex": "#1B4D3E",
+    "minH": 152.0,
+    "maxH": 172.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 20,
+    "maxV": 40
+  },
+  "English lavender": {
+    "Hex": "#B48395",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 17,
+    "maxS": 37,
+    "minV": 61,
+    "maxV": 81
+  },
+  "English red": {
+    "Hex": "#AB4B52",
+    "minH": 346.0,
+    "maxH": 360.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 57,
+    "maxV": 77
+  },
+  "English vermillion": {
+    "Hex": "#CC474B",
+    "minH": 348.0,
+    "maxH": 360.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 70,
+    "maxV": 90
+  },
+  "English violet": {
+    "Hex": "#563C5C",
+    "minH": 279.0,
+    "maxH": 299.0,
+    "minS": 25,
+    "maxS": 45,
+    "minV": 26,
+    "maxV": 46
+  },
+  "Erin": {
+    "Hex": "#00FF40",
+    "minH": 125.0,
+    "maxH": 145.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Eton blue": {
+    "Hex": "#96C8A2",
+    "minH": 124.0,
+    "maxH": 144.0,
+    "minS": 15,
+    "maxS": 35,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Fallow": {
+    "Hex": "#C19A6B",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Falu red": {
+    "Hex": "#801818",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 71,
+    "maxS": 91,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Fandango": {
+    "Hex": "#B53389",
+    "minH": 310.0,
+    "maxH": 330.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Fandango pink": {
+    "Hex": "#DE5285",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 53,
+    "maxS": 73,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Fashion fuchsia": {
+    "Hex": "#F400A1",
+    "minH": 310.0,
+    "maxH": 330.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Fawn": {
+    "Hex": "#E5AA70",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Feldgrau": {
+    "Hex": "#4D5D53",
+    "minH": 133.0,
+    "maxH": 153.0,
+    "minS": 7,
+    "maxS": 27,
+    "minV": 26,
+    "maxV": 46
+  },
+  "Fern green": {
+    "Hex": "#4F7942",
+    "minH": 96.0,
+    "maxH": 116.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Field drab": {
+    "Hex": "#6C541E",
+    "minH": 32.0,
+    "maxH": 52.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 32,
+    "maxV": 52
+  },
+  "Fiery rose": {
+    "Hex": "#FF5470",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Firebrick": {
+    "Hex": "#B22222",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 71,
+    "maxS": 91,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Fire engine red": {
+    "Hex": "#CE2029",
+    "minH": 347.0,
+    "maxH": 360.0,
+    "minS": 74,
+    "maxS": 94,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Fire opal": {
+    "Hex": "#E95C4B",
+    "minH": 0.0,
+    "maxH": 16.0,
+    "minS": 58,
+    "maxS": 78,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Flame": {
+    "Hex": "#E25822",
+    "minH": 7.0,
+    "maxH": 27.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Flax": {
+    "Hex": "#EEDC82",
+    "minH": 40.0,
+    "maxH": 60.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Flirt": {
+    "Hex": "#A2006D",
+    "minH": 310.0,
+    "maxH": 330.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 54,
+    "maxV": 74
+  },
+  "Floral white": {
+    "Hex": "#FFFAF0",
+    "minH": 30.0,
+    "maxH": 50.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Fluorescent blue": {
+    "Hex": "#15F4EE",
+    "minH": 168.0,
+    "maxH": 188.0,
+    "minS": 81,
+    "maxS": 100,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Forest green (Crayola)": {
+    "Hex": "#5FA777",
+    "minH": 130.0,
+    "maxH": 150.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Forest green (traditional)": {
+    "Hex": "#014421",
+    "minH": 139.0,
+    "maxH": 159.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 17,
+    "maxV": 37
+  },
+  "Forest green (web)": {
+    "Hex": "#228B22",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 45,
+    "maxV": 65
+  },
+  "French beige": {
+    "Hex": "#A67B5B",
+    "minH": 16.0,
+    "maxH": 36.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 55,
+    "maxV": 75
+  },
+  "French bistre": {
+    "Hex": "#856D4D",
+    "minH": 24.0,
+    "maxH": 44.0,
+    "minS": 32,
+    "maxS": 52,
+    "minV": 42,
+    "maxV": 62
+  },
+  "French blue": {
+    "Hex": "#0072BB",
+    "minH": 193.0,
+    "maxH": 213.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 63,
+    "maxV": 83
+  },
+  "French fuchsia": {
+    "Hex": "#FD3F92",
+    "minH": 324.0,
+    "maxH": 344.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 89,
+    "maxV": 100
+  },
+  "French lilac": {
+    "Hex": "#86608E",
+    "minH": 280.0,
+    "maxH": 300.0,
+    "minS": 22,
+    "maxS": 42,
+    "minV": 46,
+    "maxV": 66
+  },
+  "French lime": {
+    "Hex": "#9EFD38",
+    "minH": 79.0,
+    "maxH": 99.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 89,
+    "maxV": 100
+  },
+  "French mauve": {
+    "Hex": "#D473D4",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 73,
+    "maxV": 93
+  },
+  "French pink": {
+    "Hex": "#FD6C9E",
+    "minH": 329.0,
+    "maxH": 349.0,
+    "minS": 47,
+    "maxS": 67,
+    "minV": 89,
+    "maxV": 100
+  },
+  "French raspberry": {
+    "Hex": "#C72C48",
+    "minH": 339.0,
+    "maxH": 359.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 68,
+    "maxV": 88
+  },
+  "French rose": {
+    "Hex": "#F64A8A",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 60,
+    "maxS": 80,
+    "minV": 86,
+    "maxV": 100
+  },
+  "French sky blue": {
+    "Hex": "#77B5FE",
+    "minH": 202.0,
+    "maxH": 222.0,
+    "minS": 43,
+    "maxS": 63,
+    "minV": 90,
+    "maxV": 100
+  },
+  "French violet": {
+    "Hex": "#8806CE",
+    "minH": 269.0,
+    "maxH": 289.0,
+    "minS": 87,
+    "maxS": 100,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Frostbite": {
+    "Hex": "#E936A7",
+    "minH": 312.0,
+    "maxH": 332.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Fuchsia": {
+    "Hex": "#FF00FF",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Fuchsia (Crayola)": {
+    "Hex": "#C154C1",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Fuchsia purple": {
+    "Hex": "#CC397B",
+    "minH": 323.0,
+    "maxH": 343.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Fuchsia rose": {
+    "Hex": "#C74375",
+    "minH": 327.0,
+    "maxH": 347.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Fulvous": {
+    "Hex": "#E48400",
+    "minH": 25.0,
+    "maxH": 45.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Fuzzy Wuzzy": {
+    "Hex": "#87421F",
+    "minH": 10.0,
+    "maxH": 30.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Gainsboro": {
+    "Hex": "#DCDCDC",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 76,
+    "maxV": 96
+  },
+  "Gamboge": {
+    "Hex": "#E49B0F",
+    "minH": 29.0,
+    "maxH": 49.0,
+    "minS": 83,
+    "maxS": 100,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Generic viridian": {
+    "Hex": "#007F66",
+    "minH": 158.0,
+    "maxH": 178.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Ghost white": {
+    "Hex": "#F8F8FF",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 0,
+    "maxS": 13,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Glaucous": {
+    "Hex": "#6082B6",
+    "minH": 206.0,
+    "maxH": 226.0,
+    "minS": 37,
+    "maxS": 57,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Glossy grape": {
+    "Hex": "#AB92B3",
+    "minH": 275.0,
+    "maxH": 295.0,
+    "minS": 8,
+    "maxS": 28,
+    "minV": 60,
+    "maxV": 80
+  },
+  "GO green": {
+    "Hex": "#00AB66",
+    "minH": 146.0,
+    "maxH": 166.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Gold": {
+    "Hex": "#A57C00",
+    "minH": 36.0,
+    "maxH": 56.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Gold (metallic)": {
+    "Hex": "#D4AF37",
+    "minH": 36.0,
+    "maxH": 56.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Gold (web) (Golden)": {
+    "Hex": "#FFD700",
+    "minH": 41.0,
+    "maxH": 61.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Gold (Crayola)": {
+    "Hex": "#E6BE8A",
+    "minH": 24.0,
+    "maxH": 44.0,
+    "minS": 30,
+    "maxS": 50,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Gold Fusion": {
+    "Hex": "#85754E",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 42,
+    "maxV": 62
+  },
+  "Golden brown": {
+    "Hex": "#996515",
+    "minH": 26.0,
+    "maxH": 46.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Golden poppy": {
+    "Hex": "#FCC200",
+    "minH": 36.0,
+    "maxH": 56.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Golden yellow": {
+    "Hex": "#FFDF00",
+    "minH": 42.0,
+    "maxH": 62.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Goldenrod": {
+    "Hex": "#DAA520",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Granite gray": {
+    "Hex": "#676767",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Granny Smith apple": {
+    "Hex": "#A8E4A0",
+    "minH": 103.0,
+    "maxH": 123.0,
+    "minS": 20,
+    "maxS": 40,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Gray (web)": {
+    "Hex": "#808080",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Gray (X11 gray)": {
+    "Hex": "#BEBEBE",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Green": {
+    "Hex": "#00FF00",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Green (Crayola)": {
+    "Hex": "#1CAC78",
+    "minH": 148.0,
+    "maxH": 168.0,
+    "minS": 74,
+    "maxS": 94,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Green (web)": {
+    "Hex": "#008000",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Green (Munsell)": {
+    "Hex": "#00A877",
+    "minH": 153.0,
+    "maxH": 173.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Green (NCS)": {
+    "Hex": "#009F6B",
+    "minH": 150.0,
+    "maxH": 170.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Green (Pantone)": {
+    "Hex": "#00AD43",
+    "minH": 133.0,
+    "maxH": 153.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Green (pigment)": {
+    "Hex": "#00A550",
+    "minH": 139.0,
+    "maxH": 159.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Green (RYB)": {
+    "Hex": "#66B032",
+    "minH": 85.0,
+    "maxH": 105.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Green-blue": {
+    "Hex": "#1164B4",
+    "minH": 199.0,
+    "maxH": 219.0,
+    "minS": 81,
+    "maxS": 100,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Green-blue (Crayola)": {
+    "Hex": "#2887C8",
+    "minH": 194.0,
+    "maxH": 214.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Green-cyan": {
+    "Hex": "#009966",
+    "minH": 150.0,
+    "maxH": 170.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Green Lizard": {
+    "Hex": "#A7F432",
+    "minH": 74.0,
+    "maxH": 94.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Green Sheen": {
+    "Hex": "#6EAEA1",
+    "minH": 158.0,
+    "maxH": 178.0,
+    "minS": 27,
+    "maxS": 47,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Green-yellow": {
+    "Hex": "#ADFF2F",
+    "minH": 74.0,
+    "maxH": 94.0,
+    "minS": 72,
+    "maxS": 92,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Green-yellow (Crayola)": {
+    "Hex": "#F0E891",
+    "minH": 45.0,
+    "maxH": 65.0,
+    "minS": 30,
+    "maxS": 50,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Grullo": {
+    "Hex": "#A99A86",
+    "minH": 24.0,
+    "maxH": 44.0,
+    "minS": 11,
+    "maxS": 31,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Gunmetal": {
+    "Hex": "#2a3439",
+    "minH": 190.0,
+    "maxH": 210.0,
+    "minS": 5,
+    "maxS": 25,
+    "minV": 9,
+    "maxV": 29
+  },
+  "Han blue": {
+    "Hex": "#446CCF",
+    "minH": 213.0,
+    "maxH": 233.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Han purple": {
+    "Hex": "#5218FA",
+    "minH": 245.0,
+    "maxH": 265.0,
+    "minS": 80,
+    "maxS": 100,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Hansa yellow": {
+    "Hex": "#E9D66B",
+    "minH": 41.0,
+    "maxH": 61.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Harlequin": {
+    "Hex": "#3FFF00",
+    "minH": 95.0,
+    "maxH": 115.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Harvest gold": {
+    "Hex": "#DA9100",
+    "minH": 30.0,
+    "maxH": 50.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Heat Wave": {
+    "Hex": "#FF7A00",
+    "minH": 19.0,
+    "maxH": 39.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Heliotrope": {
+    "Hex": "#DF73FF",
+    "minH": 276.0,
+    "maxH": 296.0,
+    "minS": 45,
+    "maxS": 65,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Heliotrope gray": {
+    "Hex": "#AA98A9",
+    "minH": 293.0,
+    "maxH": 313.0,
+    "minS": 1,
+    "maxS": 21,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Hollywood cerise": {
+    "Hex": "#F400A1",
+    "minH": 310.0,
+    "maxH": 330.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Honeydew": {
+    "Hex": "#F0FFF0",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Honolulu blue": {
+    "Hex": "#006DB0",
+    "minH": 193.0,
+    "maxH": 213.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Hooker's green": {
+    "Hex": "#49796B",
+    "minH": 153.0,
+    "maxH": 173.0,
+    "minS": 30,
+    "maxS": 50,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Hot magenta": {
+    "Hex": "#FF1DCE",
+    "minH": 303.0,
+    "maxH": 323.0,
+    "minS": 79,
+    "maxS": 99,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Hot pink": {
+    "Hex": "#FF69B4",
+    "minH": 320.0,
+    "maxH": 340.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Hunter green": {
+    "Hex": "#355E3B",
+    "minH": 119.0,
+    "maxH": 139.0,
+    "minS": 34,
+    "maxS": 54,
+    "minV": 27,
+    "maxV": 47
+  },
+  "Iceberg": {
+    "Hex": "#71A6D2",
+    "minH": 197.0,
+    "maxH": 217.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Icterine": {
+    "Hex": "#FCF75E",
+    "minH": 48.0,
+    "maxH": 68.0,
+    "minS": 53,
+    "maxS": 73,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Illuminating emerald": {
+    "Hex": "#319177",
+    "minH": 154.0,
+    "maxH": 174.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Imperial red": {
+    "Hex": "#ED2939",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Inchworm": {
+    "Hex": "#B2EC5D",
+    "minH": 74.0,
+    "maxH": 94.0,
+    "minS": 51,
+    "maxS": 71,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Independence": {
+    "Hex": "#4C516D",
+    "minH": 221.0,
+    "maxH": 241.0,
+    "minS": 20,
+    "maxS": 40,
+    "minV": 33,
+    "maxV": 53
+  },
+  "India green": {
+    "Hex": "#138808",
+    "minH": 105.0,
+    "maxH": 125.0,
+    "minS": 84,
+    "maxS": 100,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Indian red": {
+    "Hex": "#CD5C5C",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 45,
+    "maxS": 65,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Indian yellow": {
+    "Hex": "#E3A857",
+    "minH": 25.0,
+    "maxH": 45.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Indigo": {
+    "Hex": "#4B0082",
+    "minH": 256.0,
+    "maxH": 276.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 41,
+    "maxV": 61
+  },
+  "Indigo dye": {
+    "Hex": "#00416A",
+    "minH": 193.0,
+    "maxH": 213.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 32,
+    "maxV": 52
+  },
+  "International orange (aerospace)": {
+    "Hex": "#FF4F00",
+    "minH": 9.0,
+    "maxH": 29.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "International orange (engineering)": {
+    "Hex": "#BA160C",
+    "minH": 0.0,
+    "maxH": 13.0,
+    "minS": 84,
+    "maxS": 100,
+    "minV": 63,
+    "maxV": 83
+  },
+  "International orange (Golden Gate Bridge)": {
+    "Hex": "#C0362C",
+    "minH": 0.0,
+    "maxH": 14.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Iris": {
+    "Hex": "#5A4FCF",
+    "minH": 235.0,
+    "maxH": 255.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Irresistible": {
+    "Hex": "#B3446C",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Isabelline": {
+    "Hex": "#F4F0EC",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 0,
+    "maxS": 13,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Italian sky blue": {
+    "Hex": "#B2FFFF",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 20,
+    "maxS": 40,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Ivory": {
+    "Hex": "#FFFFF0",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Jade": {
+    "Hex": "#00A86B",
+    "minH": 148.0,
+    "maxH": 168.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Japanese carmine": {
+    "Hex": "#9D2933",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Japanese violet": {
+    "Hex": "#5B3256",
+    "minH": 297.0,
+    "maxH": 317.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 26,
+    "maxV": 46
+  },
+  "Jasmine": {
+    "Hex": "#F8DE7E",
+    "minH": 37.0,
+    "maxH": 57.0,
+    "minS": 39,
+    "maxS": 59,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Jazzberry jam": {
+    "Hex": "#A50B5E",
+    "minH": 318.0,
+    "maxH": 338.0,
+    "minS": 83,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Jet": {
+    "Hex": "#343434",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 10,
+    "maxV": 30
+  },
+  "Jonquil": {
+    "Hex": "#F4CA16",
+    "minH": 39.0,
+    "maxH": 59.0,
+    "minS": 81,
+    "maxS": 100,
+    "minV": 86,
+    "maxV": 100
+  },
+  "June bud": {
+    "Hex": "#BDDA57",
+    "minH": 63.0,
+    "maxH": 83.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Jungle green": {
+    "Hex": "#29AB87",
+    "minH": 153.0,
+    "maxH": 173.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Kelly green": {
+    "Hex": "#4CBB17",
+    "minH": 91.0,
+    "maxH": 111.0,
+    "minS": 78,
+    "maxS": 98,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Keppel": {
+    "Hex": "#3AB09E",
+    "minH": 161.0,
+    "maxH": 181.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Key lime": {
+    "Hex": "#E8F48C",
+    "minH": 57.0,
+    "maxH": 77.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Khaki (web)": {
+    "Hex": "#C3B091",
+    "minH": 27.0,
+    "maxH": 47.0,
+    "minS": 16,
+    "maxS": 36,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Khaki (X11) (Light khaki)": {
+    "Hex": "#F0E68C",
+    "minH": 44.0,
+    "maxH": 64.0,
+    "minS": 32,
+    "maxS": 52,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Kobe": {
+    "Hex": "#882D17",
+    "minH": 2.0,
+    "maxH": 22.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Kobi": {
+    "Hex": "#E79FC4",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Kobicha": {
+    "Hex": "#6B4423",
+    "minH": 18.0,
+    "maxH": 38.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 32,
+    "maxV": 52
+  },
+  "Kombu green": {
+    "Hex": "#354230",
+    "minH": 93.0,
+    "maxH": 113.0,
+    "minS": 17,
+    "maxS": 37,
+    "minV": 16,
+    "maxV": 36
+  },
+  "KSU purple": {
+    "Hex": "#512888",
+    "minH": 256.0,
+    "maxH": 276.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Languid lavender": {
+    "Hex": "#D6CADD",
+    "minH": 268.0,
+    "maxH": 288.0,
+    "minS": 0,
+    "maxS": 19,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Lapis lazuli": {
+    "Hex": "#26619C",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 51,
+    "maxV": 71
+  },
+  "Laser lemon": {
+    "Hex": "#FFFF66",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Laurel green": {
+    "Hex": "#A9BA9D",
+    "minH": 85.0,
+    "maxH": 105.0,
+    "minS": 6,
+    "maxS": 26,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Lava": {
+    "Hex": "#CF1020",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Lavender (floral)": {
+    "Hex": "#B57EDC",
+    "minH": 265.0,
+    "maxH": 285.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 76,
+    "maxV": 96
+  },
+  "Lavender (web)": {
+    "Hex": "#E6E6FA",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 0,
+    "maxS": 18,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Lavender blue": {
+    "Hex": "#CCCCFF",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lavender blush": {
+    "Hex": "#FFF0F5",
+    "minH": 330.0,
+    "maxH": 350.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lavender gray": {
+    "Hex": "#C4C3D0",
+    "minH": 235.0,
+    "maxH": 255.0,
+    "minS": 0,
+    "maxS": 16,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Lawn green": {
+    "Hex": "#7CFC00",
+    "minH": 80.0,
+    "maxH": 100.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Lemon": {
+    "Hex": "#FFF700",
+    "minH": 48.0,
+    "maxH": 68.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lemon chiffon": {
+    "Hex": "#FFFACD",
+    "minH": 44.0,
+    "maxH": 64.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lemon curry": {
+    "Hex": "#CCA01D",
+    "minH": 35.0,
+    "maxH": 55.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Lemon glacier": {
+    "Hex": "#FDFF00",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lemon meringue": {
+    "Hex": "#F6EABE",
+    "minH": 37.0,
+    "maxH": 57.0,
+    "minS": 13,
+    "maxS": 33,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Lemon yellow": {
+    "Hex": "#FFF44F",
+    "minH": 46.0,
+    "maxH": 66.0,
+    "minS": 59,
+    "maxS": 79,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lemon yellow (Crayola)": {
+    "Hex": "#FFFF9F",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 28,
+    "maxS": 48,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Liberty": {
+    "Hex": "#545AA7",
+    "minH": 226.0,
+    "maxH": 246.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Light blue": {
+    "Hex": "#ADD8E6",
+    "minH": 185.0,
+    "maxH": 205.0,
+    "minS": 15,
+    "maxS": 35,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Light coral": {
+    "Hex": "#F08080",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 37,
+    "maxS": 57,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Light cornflower blue": {
+    "Hex": "#93CCEA",
+    "minH": 191.0,
+    "maxH": 211.0,
+    "minS": 27,
+    "maxS": 47,
+    "minV": 82,
+    "maxV": 100
+  },
+  "Light cyan": {
+    "Hex": "#E0FFFF",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 2,
+    "maxS": 22,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Light French beige": {
+    "Hex": "#C8AD7F",
+    "minH": 28.0,
+    "maxH": 48.0,
+    "minS": 27,
+    "maxS": 47,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Light goldenrod yellow": {
+    "Hex": "#FAFAD2",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 6,
+    "maxS": 26,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Light gray": {
+    "Hex": "#D3D3D3",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Light green": {
+    "Hex": "#90EE90",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 29,
+    "maxS": 49,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Light orange": {
+    "Hex": "#FED8B1",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 20,
+    "maxS": 40,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Light periwinkle": {
+    "Hex": "#C5CBE1",
+    "minH": 218.0,
+    "maxH": 238.0,
+    "minS": 2,
+    "maxS": 22,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Light pink": {
+    "Hex": "#FFB6C1",
+    "minH": 341.0,
+    "maxH": 360.0,
+    "minS": 19,
+    "maxS": 39,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Light salmon": {
+    "Hex": "#FFA07A",
+    "minH": 7.0,
+    "maxH": 27.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Light sea green": {
+    "Hex": "#20B2AA",
+    "minH": 167.0,
+    "maxH": 187.0,
+    "minS": 72,
+    "maxS": 92,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Light sky blue": {
+    "Hex": "#87CEFA",
+    "minH": 193.0,
+    "maxH": 213.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Light slate gray": {
+    "Hex": "#778899",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 12,
+    "maxS": 32,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Light steel blue": {
+    "Hex": "#B0C4DE",
+    "minH": 204.0,
+    "maxH": 224.0,
+    "minS": 11,
+    "maxS": 31,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Light yellow": {
+    "Hex": "#FFFFE0",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 2,
+    "maxS": 22,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lilac": {
+    "Hex": "#C8A2C8",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 9,
+    "maxS": 29,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Lilac Luster": {
+    "Hex": "#AE98AA",
+    "minH": 301.0,
+    "maxH": 321.0,
+    "minS": 3,
+    "maxS": 23,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Lime (color wheel)": {
+    "Hex": "#BFFF00",
+    "minH": 65.0,
+    "maxH": 85.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lime (web) (X11 green)": {
+    "Hex": "#00FF00",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Lime green": {
+    "Hex": "#32CD32",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Lincoln green": {
+    "Hex": "#195905",
+    "minH": 96.0,
+    "maxH": 116.0,
+    "minS": 84,
+    "maxS": 100,
+    "minV": 25,
+    "maxV": 45
+  },
+  "Linen": {
+    "Hex": "#FAF0E6",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 0,
+    "maxS": 18,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Lion": {
+    "Hex": "#C19A6B",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Liseran purple": {
+    "Hex": "#DE6FA1",
+    "minH": 323.0,
+    "maxH": 343.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Little boy blue": {
+    "Hex": "#6CA0DC",
+    "minH": 202.0,
+    "maxH": 222.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 76,
+    "maxV": 96
+  },
+  "Liver": {
+    "Hex": "#674C47",
+    "minH": 0.0,
+    "maxH": 19.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Liver (dogs)": {
+    "Hex": "#B86D29",
+    "minH": 19.0,
+    "maxH": 39.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Liver (organ)": {
+    "Hex": "#6C2E1F",
+    "minH": 2.0,
+    "maxH": 22.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 32,
+    "maxV": 52
+  },
+  "Liver chestnut": {
+    "Hex": "#987456",
+    "minH": 17.0,
+    "maxH": 37.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Livid": {
+    "Hex": "#6699CC",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Macaroni and Cheese": {
+    "Hex": "#FFBD88",
+    "minH": 17.0,
+    "maxH": 37.0,
+    "minS": 37,
+    "maxS": 57,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Madder Lake": {
+    "Hex": "#CC3336",
+    "minH": 349.0,
+    "maxH": 360.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Magenta": {
+    "Hex": "#FF00FF",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Magenta (Crayola)": {
+    "Hex": "#F653A6",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Magenta (dye)": {
+    "Hex": "#CA1F7B",
+    "minH": 318.0,
+    "maxH": 338.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 69,
+    "maxV": 89
+  },
+  "Magenta (Pantone)": {
+    "Hex": "#D0417E",
+    "minH": 324.0,
+    "maxH": 344.0,
+    "minS": 59,
+    "maxS": 79,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Magenta (process)": {
+    "Hex": "#FF0090",
+    "minH": 316.0,
+    "maxH": 336.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Magenta haze": {
+    "Hex": "#9F4576",
+    "minH": 317.0,
+    "maxH": 337.0,
+    "minS": 47,
+    "maxS": 67,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Magic mint": {
+    "Hex": "#AAF0D1",
+    "minH": 143.0,
+    "maxH": 163.0,
+    "minS": 19,
+    "maxS": 39,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Magnolia": {
+    "Hex": "#F2E8D7",
+    "minH": 28.0,
+    "maxH": 48.0,
+    "minS": 1,
+    "maxS": 21,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Mahogany": {
+    "Hex": "#C04000",
+    "minH": 10.0,
+    "maxH": 30.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Maize": {
+    "Hex": "#FBEC5D",
+    "minH": 44.0,
+    "maxH": 64.0,
+    "minS": 53,
+    "maxS": 73,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Maize (Crayola)": {
+    "Hex": "#F2C649",
+    "minH": 34.0,
+    "maxH": 54.0,
+    "minS": 60,
+    "maxS": 80,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Majorelle blue": {
+    "Hex": "#6050DC",
+    "minH": 237.0,
+    "maxH": 257.0,
+    "minS": 54,
+    "maxS": 74,
+    "minV": 76,
+    "maxV": 96
+  },
+  "Malachite": {
+    "Hex": "#0BDA51",
+    "minH": 130.0,
+    "maxH": 150.0,
+    "minS": 85,
+    "maxS": 100,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Manatee": {
+    "Hex": "#979AAA",
+    "minH": 221.0,
+    "maxH": 241.0,
+    "minS": 1,
+    "maxS": 21,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Mandarin": {
+    "Hex": "#F37A48",
+    "minH": 8.0,
+    "maxH": 28.0,
+    "minS": 60,
+    "maxS": 80,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Mango": {
+    "Hex": "#FDBE02",
+    "minH": 36.0,
+    "maxH": 56.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Mango Tango": {
+    "Hex": "#FF8243",
+    "minH": 10.0,
+    "maxH": 30.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Mantis": {
+    "Hex": "#74C365",
+    "minH": 100.0,
+    "maxH": 120.0,
+    "minS": 38,
+    "maxS": 58,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Mardi Gras": {
+    "Hex": "#880085",
+    "minH": 291.0,
+    "maxH": 311.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Marigold": {
+    "Hex": "#EAA221",
+    "minH": 29.0,
+    "maxH": 49.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Maroon (Crayola)": {
+    "Hex": "#C32148",
+    "minH": 336.0,
+    "maxH": 356.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Maroon (web)": {
+    "Hex": "#800000",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Maroon (X11)": {
+    "Hex": "#B03060",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 63,
+    "maxS": 83,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Mauve": {
+    "Hex": "#E0B0FF",
+    "minH": 266.0,
+    "maxH": 286.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Mauve taupe": {
+    "Hex": "#915F6D",
+    "minH": 333.0,
+    "maxH": 353.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Mauvelous": {
+    "Hex": "#EF98AA",
+    "minH": 338.0,
+    "maxH": 358.0,
+    "minS": 26,
+    "maxS": 46,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Maximum blue": {
+    "Hex": "#47ABCC",
+    "minH": 185.0,
+    "maxH": 205.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Maximum blue green": {
+    "Hex": "#30BFBF",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Maximum blue purple": {
+    "Hex": "#ACACE6",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 15,
+    "maxS": 35,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Maximum green": {
+    "Hex": "#5E8C31",
+    "minH": 80.0,
+    "maxH": 100.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Maximum green yellow": {
+    "Hex": "#D9E650",
+    "minH": 55.0,
+    "maxH": 75.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Maximum purple": {
+    "Hex": "#733380",
+    "minH": 280.0,
+    "maxH": 300.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Maximum red": {
+    "Hex": "#D92121",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Maximum red purple": {
+    "Hex": "#A63A79",
+    "minH": 315.0,
+    "maxH": 335.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Maximum yellow": {
+    "Hex": "#FAFA37",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Maximum yellow red": {
+    "Hex": "#F2BA49",
+    "minH": 30.0,
+    "maxH": 50.0,
+    "minS": 60,
+    "maxS": 80,
+    "minV": 85,
+    "maxV": 100
+  },
+  "May green": {
+    "Hex": "#4C9141",
+    "minH": 102.0,
+    "maxH": 122.0,
+    "minS": 45,
+    "maxS": 65,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Maya blue": {
+    "Hex": "#73C2FB",
+    "minH": 195.0,
+    "maxH": 215.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Medium aquamarine": {
+    "Hex": "#66DDAA",
+    "minH": 144.0,
+    "maxH": 164.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Medium blue": {
+    "Hex": "#0000CD",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Medium candy apple red": {
+    "Hex": "#E2062C",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 87,
+    "maxS": 100,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Medium carmine": {
+    "Hex": "#AF4035",
+    "minH": 0.0,
+    "maxH": 15.0,
+    "minS": 60,
+    "maxS": 80,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Medium champagne": {
+    "Hex": "#F3E5AB",
+    "minH": 38.0,
+    "maxH": 58.0,
+    "minS": 20,
+    "maxS": 40,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Medium orchid": {
+    "Hex": "#BA55D3",
+    "minH": 278.0,
+    "maxH": 298.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Medium purple": {
+    "Hex": "#9370DB",
+    "minH": 250.0,
+    "maxH": 270.0,
+    "minS": 39,
+    "maxS": 59,
+    "minV": 76,
+    "maxV": 96
+  },
+  "Medium sea green": {
+    "Hex": "#3CB371",
+    "minH": 137.0,
+    "maxH": 157.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Medium slate blue": {
+    "Hex": "#7B68EE",
+    "minH": 239.0,
+    "maxH": 259.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Medium spring green": {
+    "Hex": "#00FA9A",
+    "minH": 147.0,
+    "maxH": 167.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Medium turquoise": {
+    "Hex": "#48D1CC",
+    "minH": 168.0,
+    "maxH": 188.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Medium violet-red": {
+    "Hex": "#C71585",
+    "minH": 312.0,
+    "maxH": 332.0,
+    "minS": 79,
+    "maxS": 99,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Mellow apricot": {
+    "Hex": "#F8B878",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Mellow yellow": {
+    "Hex": "#F8DE7E",
+    "minH": 37.0,
+    "maxH": 57.0,
+    "minS": 39,
+    "maxS": 59,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Melon": {
+    "Hex": "#FEBAAD",
+    "minH": 0.0,
+    "maxH": 20.0,
+    "minS": 22,
+    "maxS": 42,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Metallic gold": {
+    "Hex": "#D3AF37",
+    "minH": 36.0,
+    "maxH": 56.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Metallic Seaweed": {
+    "Hex": "#0A7E8C",
+    "minH": 176.0,
+    "maxH": 196.0,
+    "minS": 83,
+    "maxS": 100,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Metallic Sunburst": {
+    "Hex": "#9C7C38",
+    "minH": 31.0,
+    "maxH": 51.0,
+    "minS": 54,
+    "maxS": 74,
+    "minV": 51,
+    "maxV": 71
+  },
+  "Mexican pink": {
+    "Hex": "#E4007C",
+    "minH": 317.0,
+    "maxH": 337.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Middle blue": {
+    "Hex": "#7ED4E6",
+    "minH": 180.0,
+    "maxH": 200.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Middle blue green": {
+    "Hex": "#8DD9CC",
+    "minH": 160.0,
+    "maxH": 180.0,
+    "minS": 25,
+    "maxS": 45,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Middle blue purple": {
+    "Hex": "#8B72BE",
+    "minH": 250.0,
+    "maxH": 270.0,
+    "minS": 30,
+    "maxS": 50,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Middle grey": {
+    "Hex": "#8B8680",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 0,
+    "maxS": 18,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Middle green": {
+    "Hex": "#4D8C57",
+    "minH": 120.0,
+    "maxH": 140.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Middle green yellow": {
+    "Hex": "#ACBF60",
+    "minH": 62.0,
+    "maxH": 82.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Middle purple": {
+    "Hex": "#D982B5",
+    "minH": 315.0,
+    "maxH": 335.0,
+    "minS": 30,
+    "maxS": 50,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Middle red": {
+    "Hex": "#E58E73",
+    "minH": 5.0,
+    "maxH": 25.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Middle red purple": {
+    "Hex": "#A55353",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Middle yellow": {
+    "Hex": "#FFEB00",
+    "minH": 45.0,
+    "maxH": 65.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Middle yellow red": {
+    "Hex": "#ECB176",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Midnight": {
+    "Hex": "#702670",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Midnight blue": {
+    "Hex": "#191970",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Midnight green (eagle green)": {
+    "Hex": "#004953",
+    "minH": 177.0,
+    "maxH": 197.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 23,
+    "maxV": 43
+  },
+  "Mikado yellow": {
+    "Hex": "#FFC40C",
+    "minH": 35.0,
+    "maxH": 55.0,
+    "minS": 85,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Mimi pink": {
+    "Hex": "#FFDAE9",
+    "minH": 326.0,
+    "maxH": 346.0,
+    "minS": 5,
+    "maxS": 25,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Mindaro": {
+    "Hex": "#E3F988",
+    "minH": 62.0,
+    "maxH": 82.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Ming": {
+    "Hex": "#36747D",
+    "minH": 178.0,
+    "maxH": 198.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 39,
+    "maxV": 59
+  },
+  "Minion yellow": {
+    "Hex": "#F5E050",
+    "minH": 42.0,
+    "maxH": 62.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Mint": {
+    "Hex": "#3EB489",
+    "minH": 148.0,
+    "maxH": 168.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Mint cream": {
+    "Hex": "#F5FFFA",
+    "minH": 140.0,
+    "maxH": 160.0,
+    "minS": 0,
+    "maxS": 14,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Mint green": {
+    "Hex": "#98FF98",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 30,
+    "maxS": 50,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Misty moss": {
+    "Hex": "#BBB477",
+    "minH": 44.0,
+    "maxH": 64.0,
+    "minS": 26,
+    "maxS": 46,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Misty rose": {
+    "Hex": "#FFE4E1",
+    "minH": 0.0,
+    "maxH": 16.0,
+    "minS": 2,
+    "maxS": 22,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Mode beige": {
+    "Hex": "#967117",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Morning blue": {
+    "Hex": "#8DA399",
+    "minH": 143.0,
+    "maxH": 163.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 54,
+    "maxV": 74
+  },
+  "Moss green": {
+    "Hex": "#8A9A5B",
+    "minH": 65.0,
+    "maxH": 85.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Mountain Meadow": {
+    "Hex": "#30BA8F",
+    "minH": 151.0,
+    "maxH": 171.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Mountbatten pink": {
+    "Hex": "#997A8D",
+    "minH": 313.0,
+    "maxH": 333.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 50,
+    "maxV": 70
+  },
+  "MSU green": {
+    "Hex": "#18453B",
+    "minH": 157.0,
+    "maxH": 177.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 17,
+    "maxV": 37
+  },
+  "Mulberry": {
+    "Hex": "#C54B8C",
+    "minH": 318.0,
+    "maxH": 338.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 67,
+    "maxV": 87
+  },
+  "Mulberry (Crayola)": {
+    "Hex": "#C8509B",
+    "minH": 313.0,
+    "maxH": 333.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Mustard": {
+    "Hex": "#FFDB58",
+    "minH": 37.0,
+    "maxH": 57.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Myrtle green": {
+    "Hex": "#317873",
+    "minH": 166.0,
+    "maxH": 186.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Mystic": {
+    "Hex": "#D65282",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 74,
+    "maxV": 94
+  },
+  "Mystic maroon": {
+    "Hex": "#AD4379",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Nadeshiko pink": {
+    "Hex": "#F6ADC6",
+    "minH": 329.0,
+    "maxH": 349.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Naples yellow": {
+    "Hex": "#FADA5E",
+    "minH": 38.0,
+    "maxH": 58.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Navajo white": {
+    "Hex": "#FFDEAD",
+    "minH": 26.0,
+    "maxH": 46.0,
+    "minS": 22,
+    "maxS": 42,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Navy blue": {
+    "Hex": "#000080",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Navy blue (Crayola)": {
+    "Hex": "#1974D2",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 78,
+    "maxS": 98,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Neon blue": {
+    "Hex": "#4666FF",
+    "minH": 220.0,
+    "maxH": 240.0,
+    "minS": 63,
+    "maxS": 83,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Neon Carrot": {
+    "Hex": "#FFA343",
+    "minH": 21.0,
+    "maxH": 41.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Neon green": {
+    "Hex": "#39FF14",
+    "minH": 101.0,
+    "maxH": 121.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Neon fuchsia": {
+    "Hex": "#FE4164",
+    "minH": 339.0,
+    "maxH": 359.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 90,
+    "maxV": 100
+  },
+  "New York pink": {
+    "Hex": "#D7837F",
+    "minH": 0.0,
+    "maxH": 13.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 74,
+    "maxV": 94
+  },
+  "Nickel": {
+    "Hex": "#727472",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 0,
+    "maxS": 12,
+    "minV": 36,
+    "maxV": 56
+  },
+  "Non-photo blue": {
+    "Hex": "#A4DDED",
+    "minH": 183.0,
+    "maxH": 203.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Nyanza": {
+    "Hex": "#E9FFDB",
+    "minH": 87.0,
+    "maxH": 107.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Ocean Blue": {
+    "Hex": "#4F42B5",
+    "minH": 237.0,
+    "maxH": 257.0,
+    "minS": 54,
+    "maxS": 74,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Ocean green": {
+    "Hex": "#48BF91",
+    "minH": 147.0,
+    "maxH": 167.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Ochre": {
+    "Hex": "#CC7722",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Old burgundy": {
+    "Hex": "#43302E",
+    "minH": 0.0,
+    "maxH": 16.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 16,
+    "maxV": 36
+  },
+  "Old gold": {
+    "Hex": "#CFB53B",
+    "minH": 39.0,
+    "maxH": 59.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Old lace": {
+    "Hex": "#FDF5E6",
+    "minH": 29.0,
+    "maxH": 49.0,
+    "minS": 0,
+    "maxS": 19,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Old lavender": {
+    "Hex": "#796878",
+    "minH": 294.0,
+    "maxH": 314.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Old mauve": {
+    "Hex": "#673147",
+    "minH": 326.0,
+    "maxH": 346.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Old rose": {
+    "Hex": "#C08081",
+    "minH": 349.0,
+    "maxH": 360.0,
+    "minS": 23,
+    "maxS": 43,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Old silver": {
+    "Hex": "#848482",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 0,
+    "maxS": 12,
+    "minV": 42,
+    "maxV": 62
+  },
+  "Olive": {
+    "Hex": "#808000",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Olive Drab (#3)": {
+    "Hex": "#6B8E23",
+    "minH": 70.0,
+    "maxH": 90.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 46,
+    "maxV": 66
+  },
+  "Olive Drab #7": {
+    "Hex": "#3C341F",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 38,
+    "maxS": 58,
+    "minV": 14,
+    "maxV": 34
+  },
+  "Olive green": {
+    "Hex": "#B5B35C",
+    "minH": 49.0,
+    "maxH": 69.0,
+    "minS": 39,
+    "maxS": 59,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Olivine": {
+    "Hex": "#9AB973",
+    "minH": 77.0,
+    "maxH": 97.0,
+    "minS": 28,
+    "maxS": 48,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Onyx": {
+    "Hex": "#353839",
+    "minH": 185.0,
+    "maxH": 205.0,
+    "minS": 0,
+    "maxS": 17,
+    "minV": 12,
+    "maxV": 32
+  },
+  "Opal": {
+    "Hex": "#A8C3BC",
+    "minH": 154.0,
+    "maxH": 174.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Opera mauve": {
+    "Hex": "#B784A7",
+    "minH": 309.0,
+    "maxH": 329.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Orange": {
+    "Hex": "#FF7F00",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Orange (Crayola)": {
+    "Hex": "#FF7538",
+    "minH": 8.0,
+    "maxH": 28.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Orange (Pantone)": {
+    "Hex": "#FF5800",
+    "minH": 11.0,
+    "maxH": 31.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Orange (web)": {
+    "Hex": "#FFA500",
+    "minH": 29.0,
+    "maxH": 49.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Orange peel": {
+    "Hex": "#FF9F00",
+    "minH": 27.0,
+    "maxH": 47.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Orange-red": {
+    "Hex": "#FF681F",
+    "minH": 10.0,
+    "maxH": 30.0,
+    "minS": 78,
+    "maxS": 98,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Orange-red (Crayola)": {
+    "Hex": "#FF5349",
+    "minH": 0.0,
+    "maxH": 14.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Orange soda": {
+    "Hex": "#FA5B3D",
+    "minH": 0.0,
+    "maxH": 20.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Orange-yellow": {
+    "Hex": "#F5BD1F",
+    "minH": 34.0,
+    "maxH": 54.0,
+    "minS": 77,
+    "maxS": 97,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Orange-yellow (Crayola)": {
+    "Hex": "#F8D568",
+    "minH": 35.0,
+    "maxH": 55.0,
+    "minS": 48,
+    "maxS": 68,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Orchid": {
+    "Hex": "#DA70D6",
+    "minH": 292.0,
+    "maxH": 312.0,
+    "minS": 39,
+    "maxS": 59,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Orchid pink": {
+    "Hex": "#F2BDCD",
+    "minH": 332.0,
+    "maxH": 352.0,
+    "minS": 12,
+    "maxS": 32,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Orchid (Crayola)": {
+    "Hex": "#E29CD2",
+    "minH": 304.0,
+    "maxH": 324.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Outer space (Crayola)": {
+    "Hex": "#2D383A",
+    "minH": 179.0,
+    "maxH": 199.0,
+    "minS": 12,
+    "maxS": 32,
+    "minV": 13,
+    "maxV": 33
+  },
+  "Outrageous Orange": {
+    "Hex": "#FF6E4A",
+    "minH": 2.0,
+    "maxH": 22.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Oxblood": {
+    "Hex": "#800020",
+    "minH": 335.0,
+    "maxH": 355.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Oxford blue": {
+    "Hex": "#002147",
+    "minH": 202.0,
+    "maxH": 222.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 18,
+    "maxV": 38
+  },
+  "OU Crimson red": {
+    "Hex": "#841617",
+    "minH": 350.0,
+    "maxH": 360.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 42,
+    "maxV": 62
+  },
+  "Pacific blue": {
+    "Hex": "#1CA9C9",
+    "minH": 181.0,
+    "maxH": 201.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 69,
+    "maxV": 89
+  },
+  "Pakistan green": {
+    "Hex": "#006600",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Palatinate purple": {
+    "Hex": "#682860",
+    "minH": 298.0,
+    "maxH": 318.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 31,
+    "maxV": 51
+  },
+  "Pale aqua": {
+    "Hex": "#BCD4E6",
+    "minH": 196.0,
+    "maxH": 216.0,
+    "minS": 8,
+    "maxS": 28,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Pale cerulean": {
+    "Hex": "#9BC4E2",
+    "minH": 195.0,
+    "maxH": 215.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Pale pink": {
+    "Hex": "#FADADD",
+    "minH": 344.0,
+    "maxH": 360.0,
+    "minS": 3,
+    "maxS": 23,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Pale purple (Pantone)": {
+    "Hex": "#FAE6FA",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 0,
+    "maxS": 18,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Pale silver": {
+    "Hex": "#C9C0BB",
+    "minH": 11.0,
+    "maxH": 31.0,
+    "minS": 0,
+    "maxS": 17,
+    "minV": 69,
+    "maxV": 89
+  },
+  "Pale spring bud": {
+    "Hex": "#ECEBBD",
+    "minH": 49.0,
+    "maxH": 69.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Pansy purple": {
+    "Hex": "#78184A",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Paolo Veronese green": {
+    "Hex": "#009B7D",
+    "minH": 158.0,
+    "maxH": 178.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 51,
+    "maxV": 71
+  },
+  "Papaya whip": {
+    "Hex": "#FFEFD5",
+    "minH": 27.0,
+    "maxH": 47.0,
+    "minS": 6,
+    "maxS": 26,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Paradise pink": {
+    "Hex": "#E63E62",
+    "minH": 337.0,
+    "maxH": 357.0,
+    "minS": 63,
+    "maxS": 83,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Paris Green": {
+    "Hex": "#50C878",
+    "minH": 130.0,
+    "maxH": 150.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Pastel pink": {
+    "Hex": "#DEA5A4",
+    "minH": 0.0,
+    "maxH": 11.0,
+    "minS": 16,
+    "maxS": 36,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Patriarch": {
+    "Hex": "#800080",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Payne's grey": {
+    "Hex": "#536878",
+    "minH": 196.0,
+    "maxH": 216.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Peach": {
+    "Hex": "#FFE5B4",
+    "minH": 29.0,
+    "maxH": 49.0,
+    "minS": 19,
+    "maxS": 39,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Peach (Crayola)": {
+    "Hex": "#FFCBA4",
+    "minH": 16.0,
+    "maxH": 36.0,
+    "minS": 26,
+    "maxS": 46,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Peach puff": {
+    "Hex": "#FFDAB9",
+    "minH": 18.0,
+    "maxH": 38.0,
+    "minS": 17,
+    "maxS": 37,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Pear": {
+    "Hex": "#D1E231",
+    "minH": 56.0,
+    "maxH": 76.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Pearly purple": {
+    "Hex": "#B768A2",
+    "minH": 306.0,
+    "maxH": 326.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Periwinkle": {
+    "Hex": "#CCCCFF",
+    "minH": 230.0,
+    "maxH": 250.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Periwinkle (Crayola)": {
+    "Hex": "#C3CDE6",
+    "minH": 213.0,
+    "maxH": 233.0,
+    "minS": 5,
+    "maxS": 25,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Permanent Geranium Lake": {
+    "Hex": "#E12C2C",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Persian blue": {
+    "Hex": "#1C39BB",
+    "minH": 219.0,
+    "maxH": 239.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Persian green": {
+    "Hex": "#00A693",
+    "minH": 163.0,
+    "maxH": 183.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Persian indigo": {
+    "Hex": "#32127A",
+    "minH": 248.0,
+    "maxH": 268.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 38,
+    "maxV": 58
+  },
+  "Persian orange": {
+    "Hex": "#D99058",
+    "minH": 16.0,
+    "maxH": 36.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Persian pink": {
+    "Hex": "#F77FBE",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 39,
+    "maxS": 59,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Persian plum": {
+    "Hex": "#701C1C",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Persian red": {
+    "Hex": "#CC3333",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Persian rose": {
+    "Hex": "#FE28A2",
+    "minH": 316.0,
+    "maxH": 336.0,
+    "minS": 74,
+    "maxS": 94,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Persimmon": {
+    "Hex": "#EC5800",
+    "minH": 12.0,
+    "maxH": 32.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Pewter Blue": {
+    "Hex": "#8BA8B7",
+    "minH": 190.0,
+    "maxH": 210.0,
+    "minS": 14,
+    "maxS": 34,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Phlox": {
+    "Hex": "#DF00FF",
+    "minH": 282.0,
+    "maxH": 302.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Phthalo blue": {
+    "Hex": "#000F89",
+    "minH": 223.0,
+    "maxH": 243.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 44,
+    "maxV": 64
+  },
+  "Phthalo green": {
+    "Hex": "#123524",
+    "minH": 141.0,
+    "maxH": 161.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 11,
+    "maxV": 31
+  },
+  "Picotee blue": {
+    "Hex": "#2E2787",
+    "minH": 234.0,
+    "maxH": 254.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Pictorial carmine": {
+    "Hex": "#C30B4E",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 84,
+    "maxS": 100,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Piggy pink": {
+    "Hex": "#FDDDE6",
+    "minH": 333.0,
+    "maxH": 353.0,
+    "minS": 3,
+    "maxS": 23,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Pine green": {
+    "Hex": "#01796F",
+    "minH": 165.0,
+    "maxH": 185.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 37,
+    "maxV": 57
+  },
+  "Pine tree": {
+    "Hex": "#2A2F23",
+    "minH": 75.0,
+    "maxH": 95.0,
+    "minS": 16,
+    "maxS": 36,
+    "minV": 8,
+    "maxV": 28
+  },
+  "Pink": {
+    "Hex": "#FFC0CB",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 15,
+    "maxS": 35,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Pink (Pantone)": {
+    "Hex": "#D74894",
+    "minH": 318.0,
+    "maxH": 338.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 74,
+    "maxV": 94
+  },
+  "Pink flamingo": {
+    "Hex": "#FC74FD",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Pink lace": {
+    "Hex": "#FFDDF4",
+    "minH": 309.0,
+    "maxH": 329.0,
+    "minS": 3,
+    "maxS": 23,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Pink lavender": {
+    "Hex": "#D8B2D1",
+    "minH": 301.0,
+    "maxH": 321.0,
+    "minS": 8,
+    "maxS": 28,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Pink Sherbet": {
+    "Hex": "#F78FA7",
+    "minH": 336.0,
+    "maxH": 356.0,
+    "minS": 32,
+    "maxS": 52,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Pistachio": {
+    "Hex": "#93C572",
+    "minH": 86.0,
+    "maxH": 106.0,
+    "minS": 32,
+    "maxS": 52,
+    "minV": 67,
+    "maxV": 87
+  },
+  "Platinum": {
+    "Hex": "#E5E4E2",
+    "minH": 30.0,
+    "maxH": 50.0,
+    "minS": 0,
+    "maxS": 11,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Plum": {
+    "Hex": "#8E4585",
+    "minH": 297.0,
+    "maxH": 317.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 46,
+    "maxV": 66
+  },
+  "Plum (web)": {
+    "Hex": "#DDA0DD",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Plump Purple": {
+    "Hex": "#5946B2",
+    "minH": 241.0,
+    "maxH": 261.0,
+    "minS": 51,
+    "maxS": 71,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Polished Pine": {
+    "Hex": "#5DA493",
+    "minH": 156.0,
+    "maxH": 176.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 54,
+    "maxV": 74
+  },
+  "Pomp and Power": {
+    "Hex": "#86608E",
+    "minH": 280.0,
+    "maxH": 300.0,
+    "minS": 22,
+    "maxS": 42,
+    "minV": 46,
+    "maxV": 66
+  },
+  "Popstar": {
+    "Hex": "#BE4F62",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 48,
+    "maxS": 68,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Portland Orange": {
+    "Hex": "#FF5A36",
+    "minH": 1.0,
+    "maxH": 21.0,
+    "minS": 69,
+    "maxS": 89,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Powder blue": {
+    "Hex": "#B0E0E6",
+    "minH": 177.0,
+    "maxH": 197.0,
+    "minS": 13,
+    "maxS": 33,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Princeton orange": {
+    "Hex": "#F58025",
+    "minH": 16.0,
+    "maxH": 36.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Prune": {
+    "Hex": "#701C1C",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Prussian blue": {
+    "Hex": "#003153",
+    "minH": 195.0,
+    "maxH": 215.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 23,
+    "maxV": 43
+  },
+  "Psychedelic purple": {
+    "Hex": "#DF00FF",
+    "minH": 282.0,
+    "maxH": 302.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Puce": {
+    "Hex": "#CC8899",
+    "minH": 335.0,
+    "maxH": 355.0,
+    "minS": 23,
+    "maxS": 43,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Pullman Brown (UPS Brown)": {
+    "Hex": "#644117",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 29,
+    "maxV": 49
+  },
+  "Pumpkin": {
+    "Hex": "#FF7518",
+    "minH": 14.0,
+    "maxH": 34.0,
+    "minS": 81,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Purple": {
+    "Hex": "#6A0DAD",
+    "minH": 265.0,
+    "maxH": 285.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Purple (web)": {
+    "Hex": "#800080",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Purple (Munsell)": {
+    "Hex": "#9F00C5",
+    "minH": 278.0,
+    "maxH": 298.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 67,
+    "maxV": 87
+  },
+  "Purple (X11)": {
+    "Hex": "#A020F0",
+    "minH": 267.0,
+    "maxH": 287.0,
+    "minS": 77,
+    "maxS": 97,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Purple mountain majesty": {
+    "Hex": "#9678B6",
+    "minH": 259.0,
+    "maxH": 279.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Purple navy": {
+    "Hex": "#4E5180",
+    "minH": 226.0,
+    "maxH": 246.0,
+    "minS": 29,
+    "maxS": 49,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Purple pizzazz": {
+    "Hex": "#FE4EDA",
+    "minH": 302.0,
+    "maxH": 322.0,
+    "minS": 59,
+    "maxS": 79,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Purple Plum": {
+    "Hex": "#9C51B6",
+    "minH": 275.0,
+    "maxH": 295.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Purpureus": {
+    "Hex": "#9A4EAE",
+    "minH": 278.0,
+    "maxH": 298.0,
+    "minS": 45,
+    "maxS": 65,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Queen blue": {
+    "Hex": "#436B95",
+    "minH": 201.0,
+    "maxH": 221.0,
+    "minS": 45,
+    "maxS": 65,
+    "minV": 48,
+    "maxV": 68
+  },
+  "Queen pink": {
+    "Hex": "#E8CCD7",
+    "minH": 326.0,
+    "maxH": 346.0,
+    "minS": 2,
+    "maxS": 22,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Quick Silver": {
+    "Hex": "#A6A6A6",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Quinacridone magenta": {
+    "Hex": "#8E3A59",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 46,
+    "maxV": 66
+  },
+  "Radical Red": {
+    "Hex": "#FF355E",
+    "minH": 338.0,
+    "maxH": 358.0,
+    "minS": 69,
+    "maxS": 89,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Raisin black": {
+    "Hex": "#242124",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 0,
+    "maxS": 18,
+    "minV": 4,
+    "maxV": 24
+  },
+  "Rajah": {
+    "Hex": "#FBAB60",
+    "minH": 19.0,
+    "maxH": 39.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Raspberry": {
+    "Hex": "#E30B5D",
+    "minH": 327.0,
+    "maxH": 347.0,
+    "minS": 85,
+    "maxS": 100,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Raspberry glace": {
+    "Hex": "#915F6D",
+    "minH": 333.0,
+    "maxH": 353.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Raspberry rose": {
+    "Hex": "#B3446C",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Raw sienna": {
+    "Hex": "#D68A59",
+    "minH": 14.0,
+    "maxH": 34.0,
+    "minS": 48,
+    "maxS": 68,
+    "minV": 74,
+    "maxV": 94
+  },
+  "Raw umber": {
+    "Hex": "#826644",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 38,
+    "maxS": 58,
+    "minV": 41,
+    "maxV": 61
+  },
+  "Razzle dazzle rose": {
+    "Hex": "#FF33CC",
+    "minH": 305.0,
+    "maxH": 325.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Razzmatazz": {
+    "Hex": "#E3256B",
+    "minH": 328.0,
+    "maxH": 348.0,
+    "minS": 74,
+    "maxS": 94,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Razzmic Berry": {
+    "Hex": "#8D4E85",
+    "minH": 298.0,
+    "maxH": 318.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Rebecca Purple": {
+    "Hex": "#663399",
+    "minH": 260.0,
+    "maxH": 280.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Red": {
+    "Hex": "#FF0000",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Red (Crayola)": {
+    "Hex": "#EE204D",
+    "minH": 337.0,
+    "maxH": 357.0,
+    "minS": 77,
+    "maxS": 97,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Red (Munsell)": {
+    "Hex": "#F2003C",
+    "minH": 335.0,
+    "maxH": 355.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Red (NCS)": {
+    "Hex": "#C40233",
+    "minH": 335.0,
+    "maxH": 355.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 67,
+    "maxV": 87
+  },
+  "Red (Pantone)": {
+    "Hex": "#ED2939",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Red (pigment)": {
+    "Hex": "#ED1C24",
+    "minH": 348.0,
+    "maxH": 360.0,
+    "minS": 78,
+    "maxS": 98,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Red (RYB)": {
+    "Hex": "#FE2712",
+    "minH": 0.0,
+    "maxH": 15.0,
+    "minS": 83,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Red-orange": {
+    "Hex": "#FF5349",
+    "minH": 0.0,
+    "maxH": 13.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Red-orange (Crayola)": {
+    "Hex": "#FF681F",
+    "minH": 10.0,
+    "maxH": 30.0,
+    "minS": 78,
+    "maxS": 98,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Red-orange (Color wheel)": {
+    "Hex": "#FF4500",
+    "minH": 6.0,
+    "maxH": 26.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Red-purple": {
+    "Hex": "#E40078",
+    "minH": 318.0,
+    "maxH": 338.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Red Salsa": {
+    "Hex": "#FD3A4A",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Red-violet": {
+    "Hex": "#C71585",
+    "minH": 312.0,
+    "maxH": 332.0,
+    "minS": 79,
+    "maxS": 99,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Red-violet (Crayola)": {
+    "Hex": "#C0448F",
+    "minH": 314.0,
+    "maxH": 334.0,
+    "minS": 55,
+    "maxS": 75,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Red-violet (Color wheel)": {
+    "Hex": "#922B3E",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Redwood": {
+    "Hex": "#A45A52",
+    "minH": 0.0,
+    "maxH": 16.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 54,
+    "maxV": 74
+  },
+  "Resolution blue": {
+    "Hex": "#002387",
+    "minH": 214.0,
+    "maxH": 234.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Rhythm": {
+    "Hex": "#777696",
+    "minH": 232.0,
+    "maxH": 252.0,
+    "minS": 11,
+    "maxS": 31,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Rich black": {
+    "Hex": "#004040",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 15,
+    "maxV": 35
+  },
+  "Rich black (FOGRA29)": {
+    "Hex": "#010B13",
+    "minH": 197.0,
+    "maxH": 217.0,
+    "minS": 85,
+    "maxS": 100,
+    "minV": 0,
+    "maxV": 18
+  },
+  "Rich black (FOGRA39)": {
+    "Hex": "#010203",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 0,
+    "maxV": 11
+  },
+  "Rifle green": {
+    "Hex": "#444C38",
+    "minH": 74.0,
+    "maxH": 94.0,
+    "minS": 16,
+    "maxS": 36,
+    "minV": 20,
+    "maxV": 40
+  },
+  "Robin egg blue": {
+    "Hex": "#00CCCC",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Rocket metallic": {
+    "Hex": "#8A7F80",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 18,
+    "minV": 44,
+    "maxV": 64
+  },
+  "Roman silver": {
+    "Hex": "#838996",
+    "minH": 211.0,
+    "maxH": 231.0,
+    "minS": 3,
+    "maxS": 23,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Rose": {
+    "Hex": "#FF007F",
+    "minH": 320.0,
+    "maxH": 340.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Rose bonbon": {
+    "Hex": "#F9429E",
+    "minH": 320.0,
+    "maxH": 340.0,
+    "minS": 63,
+    "maxS": 83,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Rose Dust": {
+    "Hex": "#9E5E6F",
+    "minH": 334.0,
+    "maxH": 354.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Rose ebony": {
+    "Hex": "#674846",
+    "minH": 0.0,
+    "maxH": 14.0,
+    "minS": 22,
+    "maxS": 42,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Rose madder": {
+    "Hex": "#E32636",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Rose pink": {
+    "Hex": "#FF66CC",
+    "minH": 310.0,
+    "maxH": 330.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Rose quartz": {
+    "Hex": "#AA98A9",
+    "minH": 293.0,
+    "maxH": 313.0,
+    "minS": 1,
+    "maxS": 21,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Rose red": {
+    "Hex": "#C21E56",
+    "minH": 330.0,
+    "maxH": 350.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Rose taupe": {
+    "Hex": "#905D5D",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 25,
+    "maxS": 45,
+    "minV": 46,
+    "maxV": 66
+  },
+  "Rose vale": {
+    "Hex": "#AB4E52",
+    "minH": 347.0,
+    "maxH": 360.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Rosewood": {
+    "Hex": "#65000B",
+    "minH": 343.0,
+    "maxH": 360.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Rosso corsa": {
+    "Hex": "#D40000",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Rosy brown": {
+    "Hex": "#BC8F8F",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 14,
+    "maxS": 34,
+    "minV": 64,
+    "maxV": 84
+  },
+  "Royal blue (dark)": {
+    "Hex": "#002366",
+    "minH": 209.0,
+    "maxH": 229.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Royal blue (light)": {
+    "Hex": "#4169E1",
+    "minH": 215.0,
+    "maxH": 235.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Royal purple": {
+    "Hex": "#7851A9",
+    "minH": 257.0,
+    "maxH": 277.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Royal yellow": {
+    "Hex": "#FADA5E",
+    "minH": 38.0,
+    "maxH": 58.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Ruber": {
+    "Hex": "#CE4676",
+    "minH": 329.0,
+    "maxH": 349.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Rubine red": {
+    "Hex": "#D10056",
+    "minH": 325.0,
+    "maxH": 345.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Ruby": {
+    "Hex": "#E0115F",
+    "minH": 327.0,
+    "maxH": 347.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Ruby red": {
+    "Hex": "#9B111E",
+    "minH": 344.0,
+    "maxH": 360.0,
+    "minS": 79,
+    "maxS": 99,
+    "minV": 51,
+    "maxV": 71
+  },
+  "Rufous": {
+    "Hex": "#A81C07",
+    "minH": 0.0,
+    "maxH": 18.0,
+    "minS": 86,
+    "maxS": 100,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Russet": {
+    "Hex": "#80461B",
+    "minH": 16.0,
+    "maxH": 36.0,
+    "minS": 69,
+    "maxS": 89,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Russian green": {
+    "Hex": "#679267",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 19,
+    "maxS": 39,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Russian violet": {
+    "Hex": "#32174D",
+    "minH": 260.0,
+    "maxH": 280.0,
+    "minS": 60,
+    "maxS": 80,
+    "minV": 20,
+    "maxV": 40
+  },
+  "Rust": {
+    "Hex": "#B7410E",
+    "minH": 8.0,
+    "maxH": 28.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Rusty red": {
+    "Hex": "#DA2C43",
+    "minH": 342.0,
+    "maxH": 360.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Sacramento State green": {
+    "Hex": "#043927",
+    "minH": 150.0,
+    "maxH": 170.0,
+    "minS": 83,
+    "maxS": 100,
+    "minV": 12,
+    "maxV": 32
+  },
+  "Saddle brown": {
+    "Hex": "#8B4513",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Safety orange": {
+    "Hex": "#FF7800",
+    "minH": 18.0,
+    "maxH": 38.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Safety orange (blaze orange)": {
+    "Hex": "#FF6700",
+    "minH": 14.0,
+    "maxH": 34.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Safety yellow": {
+    "Hex": "#EED202",
+    "minH": 43.0,
+    "maxH": 63.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Saffron": {
+    "Hex": "#F4C430",
+    "minH": 35.0,
+    "maxH": 55.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Sage": {
+    "Hex": "#BCB88A",
+    "minH": 45.0,
+    "maxH": 65.0,
+    "minS": 17,
+    "maxS": 37,
+    "minV": 64,
+    "maxV": 84
+  },
+  "St. Patrick's blue": {
+    "Hex": "#23297A",
+    "minH": 226.0,
+    "maxH": 246.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 38,
+    "maxV": 58
+  },
+  "Salmon": {
+    "Hex": "#FA8072",
+    "minH": 0.0,
+    "maxH": 16.0,
+    "minS": 44,
+    "maxS": 64,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Salmon pink": {
+    "Hex": "#FF91A4",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Sand": {
+    "Hex": "#C2B280",
+    "minH": 35.0,
+    "maxH": 55.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Sand dune": {
+    "Hex": "#967117",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Sandy brown": {
+    "Hex": "#F4A460",
+    "minH": 18.0,
+    "maxH": 38.0,
+    "minS": 51,
+    "maxS": 71,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Sap green": {
+    "Hex": "#507D2A",
+    "minH": 83.0,
+    "maxH": 103.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 39,
+    "maxV": 59
+  },
+  "Sapphire": {
+    "Hex": "#0F52BA",
+    "minH": 206.0,
+    "maxH": 226.0,
+    "minS": 82,
+    "maxS": 100,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Sapphire blue": {
+    "Hex": "#0067A5",
+    "minH": 193.0,
+    "maxH": 213.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Sapphire (Crayola)": {
+    "Hex": "#0067A5",
+    "minH": 205.0,
+    "maxH": 225.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 25,
+    "maxV": 45
+  },
+  "Satin sheen gold": {
+    "Hex": "#CBA135",
+    "minH": 33.0,
+    "maxH": 53.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Scarlet": {
+    "Hex": "#FF2400",
+    "minH": 0.0,
+    "maxH": 18.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Schauss pink": {
+    "Hex": "#FF91AF",
+    "minH": 334.0,
+    "maxH": 354.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 90,
+    "maxV": 100
+  },
+  "School bus yellow": {
+    "Hex": "#FFD800",
+    "minH": 41.0,
+    "maxH": 61.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Screamin' Green": {
+    "Hex": "#66FF66",
+    "minH": 110.0,
+    "maxH": 130.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Sea green": {
+    "Hex": "#2E8B57",
+    "minH": 136.0,
+    "maxH": 156.0,
+    "minS": 57,
+    "maxS": 77,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Sea green (Crayola)": {
+    "Hex": "#00FFCD",
+    "minH": 158.0,
+    "maxH": 178.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Seal brown": {
+    "Hex": "#59260B",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 10,
+    "maxV": 30
+  },
+  "Seashell": {
+    "Hex": "#FFF5EE",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 0,
+    "maxS": 17,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Selective yellow": {
+    "Hex": "#FFBA00",
+    "minH": 34.0,
+    "maxH": 54.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Sepia": {
+    "Hex": "#704214",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 72,
+    "maxS": 92,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Shadow": {
+    "Hex": "#8A795D",
+    "minH": 27.0,
+    "maxH": 47.0,
+    "minS": 23,
+    "maxS": 43,
+    "minV": 44,
+    "maxV": 64
+  },
+  "Shadow blue": {
+    "Hex": "#778BA5",
+    "minH": 204.0,
+    "maxH": 224.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Shamrock green": {
+    "Hex": "#009E60",
+    "minH": 146.0,
+    "maxH": 166.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Sheen green": {
+    "Hex": "#8FD400",
+    "minH": 70.0,
+    "maxH": 90.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Shimmering Blush": {
+    "Hex": "#D98695",
+    "minH": 339.0,
+    "maxH": 359.0,
+    "minS": 28,
+    "maxS": 48,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Shiny Shamrock": {
+    "Hex": "#5FA778",
+    "minH": 131.0,
+    "maxH": 151.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Shocking pink": {
+    "Hex": "#FC0FC0",
+    "minH": 305.0,
+    "maxH": 325.0,
+    "minS": 84,
+    "maxS": 100,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Shocking pink (Crayola)": {
+    "Hex": "#FF6FFF",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Sienna": {
+    "Hex": "#882D17",
+    "minH": 2.0,
+    "maxH": 22.0,
+    "minS": 73,
+    "maxS": 93,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Silver": {
+    "Hex": "#C0C0C0",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Silver (Crayola)": {
+    "Hex": "#C9C0BB",
+    "minH": 11.0,
+    "maxH": 31.0,
+    "minS": 0,
+    "maxS": 17,
+    "minV": 69,
+    "maxV": 89
+  },
+  "Silver (Metallic)": {
+    "Hex": "#AAA9AD",
+    "minH": 245.0,
+    "maxH": 265.0,
+    "minS": 0,
+    "maxS": 12,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Silver chalice": {
+    "Hex": "#ACACAC",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 57,
+    "maxV": 77
+  },
+  "Silver pink": {
+    "Hex": "#C4AEAD",
+    "minH": 0.0,
+    "maxH": 13.0,
+    "minS": 2,
+    "maxS": 22,
+    "minV": 67,
+    "maxV": 87
+  },
+  "Silver sand": {
+    "Hex": "#BFC1C2",
+    "minH": 190.0,
+    "maxH": 210.0,
+    "minS": 0,
+    "maxS": 12,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Sinopia": {
+    "Hex": "#CB410B",
+    "minH": 7.0,
+    "maxH": 27.0,
+    "minS": 85,
+    "maxS": 100,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Sizzling Red": {
+    "Hex": "#FF3855",
+    "minH": 341.0,
+    "maxH": 360.0,
+    "minS": 68,
+    "maxS": 88,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Sizzling Sunrise": {
+    "Hex": "#FFDB00",
+    "minH": 42.0,
+    "maxH": 62.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Skobeloff": {
+    "Hex": "#007474",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 35,
+    "maxV": 55
+  },
+  "Sky blue": {
+    "Hex": "#87CEEB",
+    "minH": 187.0,
+    "maxH": 207.0,
+    "minS": 33,
+    "maxS": 53,
+    "minV": 82,
+    "maxV": 100
+  },
+  "Sky blue (Crayola)": {
+    "Hex": "#76D7EA",
+    "minH": 180.0,
+    "maxH": 200.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 82,
+    "maxV": 100
+  },
+  "Sky magenta": {
+    "Hex": "#CF71AF",
+    "minH": 310.0,
+    "maxH": 330.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Slate blue": {
+    "Hex": "#6A5ACD",
+    "minH": 238.0,
+    "maxH": 258.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Slate gray": {
+    "Hex": "#708090",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 12,
+    "maxS": 32,
+    "minV": 46,
+    "maxV": 66
+  },
+  "Slimy green": {
+    "Hex": "#299617",
+    "minH": 101.0,
+    "maxH": 121.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Smitten": {
+    "Hex": "#C84186",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 58,
+    "maxS": 78,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Smoky black": {
+    "Hex": "#100C08",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 0,
+    "maxV": 16
+  },
+  "Snow": {
+    "Hex": "#FFFAFA",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 0,
+    "maxS": 12,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Solid pink": {
+    "Hex": "#893843",
+    "minH": 342.0,
+    "maxH": 360.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 44,
+    "maxV": 64
+  },
+  "Sonic silver": {
+    "Hex": "#757575",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 36,
+    "maxV": 56
+  },
+  "Space cadet": {
+    "Hex": "#1D2951",
+    "minH": 216.0,
+    "maxH": 236.0,
+    "minS": 54,
+    "maxS": 74,
+    "minV": 22,
+    "maxV": 42
+  },
+  "Spanish bistre": {
+    "Hex": "#807532",
+    "minH": 42.0,
+    "maxH": 62.0,
+    "minS": 51,
+    "maxS": 71,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Spanish blue": {
+    "Hex": "#0070B8",
+    "minH": 193.0,
+    "maxH": 213.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Spanish carmine": {
+    "Hex": "#D10047",
+    "minH": 330.0,
+    "maxH": 350.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Spanish gray": {
+    "Hex": "#989898",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Spanish green": {
+    "Hex": "#009150",
+    "minH": 143.0,
+    "maxH": 163.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Spanish orange": {
+    "Hex": "#E86100",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 81,
+    "maxV": 100
+  },
+  "Spanish pink": {
+    "Hex": "#F7BFBE",
+    "minH": 0.0,
+    "maxH": 11.0,
+    "minS": 13,
+    "maxS": 33,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Spanish red": {
+    "Hex": "#E60026",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Spanish sky blue": {
+    "Hex": "#00FFFF",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Spanish violet": {
+    "Hex": "#4C2882",
+    "minH": 254.0,
+    "maxH": 274.0,
+    "minS": 59,
+    "maxS": 79,
+    "minV": 41,
+    "maxV": 61
+  },
+  "Spanish viridian": {
+    "Hex": "#007F5C",
+    "minH": 153.0,
+    "maxH": 173.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Spring bud": {
+    "Hex": "#A7FC00",
+    "minH": 70.0,
+    "maxH": 90.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Spring Frost": {
+    "Hex": "#87FF2A",
+    "minH": 84.0,
+    "maxH": 104.0,
+    "minS": 74,
+    "maxS": 94,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Spring green": {
+    "Hex": "#00FF7F",
+    "minH": 140.0,
+    "maxH": 160.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Spring green (Crayola)": {
+    "Hex": "#ECEBBD",
+    "minH": 49.0,
+    "maxH": 69.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Star command blue": {
+    "Hex": "#007BB8",
+    "minH": 190.0,
+    "maxH": 210.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 62,
+    "maxV": 82
+  },
+  "Steel blue": {
+    "Hex": "#4682B4",
+    "minH": 197.0,
+    "maxH": 217.0,
+    "minS": 51,
+    "maxS": 71,
+    "minV": 61,
+    "maxV": 81
+  },
+  "Steel pink": {
+    "Hex": "#CC33CC",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Steel Teal": {
+    "Hex": "#5F8A8B",
+    "minH": 171.0,
+    "maxH": 191.0,
+    "minS": 22,
+    "maxS": 42,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Stil de grain yellow": {
+    "Hex": "#FADA5E",
+    "minH": 38.0,
+    "maxH": 58.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Straw": {
+    "Hex": "#E4D96F",
+    "minH": 44.0,
+    "maxH": 64.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Sugar Plum": {
+    "Hex": "#914E75",
+    "minH": 315.0,
+    "maxH": 335.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Sunglow": {
+    "Hex": "#FFCC33",
+    "minH": 35.0,
+    "maxH": 55.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Sunray": {
+    "Hex": "#E3AB57",
+    "minH": 26.0,
+    "maxH": 46.0,
+    "minS": 52,
+    "maxS": 72,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Sunset": {
+    "Hex": "#FAD6A5",
+    "minH": 25.0,
+    "maxH": 45.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Super pink": {
+    "Hex": "#CF6BA9",
+    "minH": 313.0,
+    "maxH": 333.0,
+    "minS": 38,
+    "maxS": 58,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Sweet Brown": {
+    "Hex": "#A83731",
+    "minH": 0.0,
+    "maxH": 13.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Tan": {
+    "Hex": "#D2B48C",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 23,
+    "maxS": 43,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Tan (Crayola)": {
+    "Hex": "#D99A6C",
+    "minH": 24.0,
+    "maxH": 44.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Tangerine": {
+    "Hex": "#F28500",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Tango pink": {
+    "Hex": "#E4717A",
+    "minH": 345.0,
+    "maxH": 360.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Tart Orange": {
+    "Hex": "#FB4D46",
+    "minH": 0.0,
+    "maxH": 12.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Taupe": {
+    "Hex": "#483C32",
+    "minH": 17.0,
+    "maxH": 37.0,
+    "minS": 21,
+    "maxS": 41,
+    "minV": 18,
+    "maxV": 38
+  },
+  "Taupe gray": {
+    "Hex": "#8B8589",
+    "minH": 310.0,
+    "maxH": 330.0,
+    "minS": 0,
+    "maxS": 14,
+    "minV": 45,
+    "maxV": 65
+  },
+  "Tea green": {
+    "Hex": "#D0F0C0",
+    "minH": 90.0,
+    "maxH": 110.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Tea rose": {
+    "Hex": "#F88379",
+    "minH": 0.0,
+    "maxH": 15.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Tea rose 2": {
+    "Hex": "#F4C2C2",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Teal": {
+    "Hex": "#008080",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 40,
+    "maxV": 60
+  },
+  "Teal blue": {
+    "Hex": "#367588",
+    "minH": 184.0,
+    "maxH": 204.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Telemagenta": {
+    "Hex": "#CF3476",
+    "minH": 324.0,
+    "maxH": 344.0,
+    "minS": 65,
+    "maxS": 85,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Tenn\u00e9 (tawny)": {
+    "Hex": "#CD5700",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Terra cotta": {
+    "Hex": "#E2725B",
+    "minH": 0.0,
+    "maxH": 20.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Thistle": {
+    "Hex": "#D8BFD8",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 2,
+    "maxS": 22,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Thulian pink": {
+    "Hex": "#DE6FA1",
+    "minH": 323.0,
+    "maxH": 343.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Tickle Me Pink": {
+    "Hex": "#FC89AC",
+    "minH": 332.0,
+    "maxH": 352.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Tiffany Blue": {
+    "Hex": "#0ABAB5",
+    "minH": 168.0,
+    "maxH": 188.0,
+    "minS": 85,
+    "maxS": 100,
+    "minV": 63,
+    "maxV": 83
+  },
+  "Timberwolf": {
+    "Hex": "#DBD7D2",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 0,
+    "maxS": 14,
+    "minV": 76,
+    "maxV": 96
+  },
+  "Titanium yellow": {
+    "Hex": "#EEE600",
+    "minH": 48.0,
+    "maxH": 68.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Tomato": {
+    "Hex": "#FF6347",
+    "minH": 0.0,
+    "maxH": 19.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Tropical rainforest": {
+    "Hex": "#00755E",
+    "minH": 158.0,
+    "maxH": 178.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 36,
+    "maxV": 56
+  },
+  "True Blue": {
+    "Hex": "#2D68C4",
+    "minH": 197.0,
+    "maxH": 217.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 71,
+    "maxV": 91
+  },
+  "Trypan Blue": {
+    "Hex": "#1C05B3",
+    "minH": 238.0,
+    "maxH": 258.0,
+    "minS": 85,
+    "maxS": 100,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Tufts blue": {
+    "Hex": "#3E8EDE",
+    "minH": 200.0,
+    "maxH": 220.0,
+    "minS": 60,
+    "maxS": 80,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Tumbleweed": {
+    "Hex": "#DEAA88",
+    "minH": 14.0,
+    "maxH": 34.0,
+    "minS": 29,
+    "maxS": 49,
+    "minV": 77,
+    "maxV": 97
+  },
+  "Turquoise": {
+    "Hex": "#40E0D0",
+    "minH": 164.0,
+    "maxH": 184.0,
+    "minS": 61,
+    "maxS": 81,
+    "minV": 78,
+    "maxV": 98
+  },
+  "Turquoise blue": {
+    "Hex": "#00FFEF",
+    "minH": 166.0,
+    "maxH": 186.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Turquoise green": {
+    "Hex": "#A0D6B4",
+    "minH": 132.0,
+    "maxH": 152.0,
+    "minS": 15,
+    "maxS": 35,
+    "minV": 74,
+    "maxV": 94
+  },
+  "Turtle green": {
+    "Hex": "#8A9A5B",
+    "minH": 65.0,
+    "maxH": 85.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Tuscan": {
+    "Hex": "#FAD6A5",
+    "minH": 25.0,
+    "maxH": 45.0,
+    "minS": 24,
+    "maxS": 44,
+    "minV": 88,
+    "maxV": 100
+  },
+  "Tuscan brown": {
+    "Hex": "#6F4E37",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 40,
+    "maxS": 60,
+    "minV": 34,
+    "maxV": 54
+  },
+  "Tuscan red": {
+    "Hex": "#7C4848",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 32,
+    "maxS": 52,
+    "minV": 39,
+    "maxV": 59
+  },
+  "Tuscan tan": {
+    "Hex": "#A67B5B",
+    "minH": 16.0,
+    "maxH": 36.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Tuscany": {
+    "Hex": "#C09999",
+    "minH": 0.0,
+    "maxH": 10.0,
+    "minS": 10,
+    "maxS": 30,
+    "minV": 65,
+    "maxV": 85
+  },
+  "Twilight lavender": {
+    "Hex": "#8A496B",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 37,
+    "maxS": 57,
+    "minV": 44,
+    "maxV": 64
+  },
+  "Tyrian purple": {
+    "Hex": "#66023C",
+    "minH": 315.0,
+    "maxH": 335.0,
+    "minS": 88,
+    "maxS": 100,
+    "minV": 30,
+    "maxV": 50
+  },
+  "UA blue": {
+    "Hex": "#0033AA",
+    "minH": 212.0,
+    "maxH": 232.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 57,
+    "maxV": 77
+  },
+  "UA red": {
+    "Hex": "#D9004C",
+    "minH": 329.0,
+    "maxH": 349.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Ultramarine": {
+    "Hex": "#3F00FF",
+    "minH": 234.0,
+    "maxH": 254.0,
+    "minS": 83,
+    "maxS": 100,
+    "minV": 46,
+    "maxV": 66
+  },
+  "Ultramarine blue": {
+    "Hex": "#4166F5",
+    "minH": 218.0,
+    "maxH": 238.0,
+    "minS": 63,
+    "maxS": 83,
+    "minV": 86,
+    "maxV": 100
+  },
+  "Ultra pink": {
+    "Hex": "#FF6FFF",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 46,
+    "maxS": 66,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Ultra red": {
+    "Hex": "#FC6C85",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 47,
+    "maxS": 67,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Umber": {
+    "Hex": "#635147",
+    "minH": 11.0,
+    "maxH": 31.0,
+    "minS": 18,
+    "maxS": 38,
+    "minV": 29,
+    "maxV": 49
+  },
+  "Unbleached silk": {
+    "Hex": "#FFDDCA",
+    "minH": 12.0,
+    "maxH": 32.0,
+    "minS": 11,
+    "maxS": 31,
+    "minV": 90,
+    "maxV": 100
+  },
+  "United Nations blue": {
+    "Hex": "#5B92E5",
+    "minH": 206.0,
+    "maxH": 226.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 80,
+    "maxV": 100
+  },
+  "Unmellow yellow": {
+    "Hex": "#FFFF66",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 90,
+    "maxV": 100
+  },
+  "UP Forest green": {
+    "Hex": "#014421",
+    "minH": 139.0,
+    "maxH": 159.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 17,
+    "maxV": 37
+  },
+  "UP maroon": {
+    "Hex": "#7B1113",
+    "minH": 349.0,
+    "maxH": 360.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 38,
+    "maxV": 58
+  },
+  "Upsdell red": {
+    "Hex": "#AE2029",
+    "minH": 346.0,
+    "maxH": 360.0,
+    "minS": 72,
+    "maxS": 92,
+    "minV": 58,
+    "maxV": 78
+  },
+  "Uranian blue": {
+    "Hex": "#AFDBF5",
+    "minH": 192.0,
+    "maxH": 212.0,
+    "minS": 19,
+    "maxS": 39,
+    "minV": 86,
+    "maxV": 100
+  },
+  "USAFA blue": {
+    "Hex": "#004F98",
+    "minH": 199.0,
+    "maxH": 219.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Van Dyke brown": {
+    "Hex": "#664228",
+    "minH": 15.0,
+    "maxH": 35.0,
+    "minS": 50,
+    "maxS": 70,
+    "minV": 0,
+    "maxV": 10
+  },
+  "Vanilla": {
+    "Hex": "#F3E5AB",
+    "minH": 38.0,
+    "maxH": 58.0,
+    "minS": 20,
+    "maxS": 40,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Vanilla ice": {
+    "Hex": "#F38FA9",
+    "minH": 334.0,
+    "maxH": 354.0,
+    "minS": 31,
+    "maxS": 51,
+    "minV": 85,
+    "maxV": 100
+  },
+  "Vegas gold": {
+    "Hex": "#C5B358",
+    "minH": 40.0,
+    "maxH": 60.0,
+    "minS": 45,
+    "maxS": 65,
+    "minV": 67,
+    "maxV": 87
+  },
+  "Venetian red": {
+    "Hex": "#C80815",
+    "minH": 346.0,
+    "maxH": 360.0,
+    "minS": 86,
+    "maxS": 100,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Verdigris": {
+    "Hex": "#43B3AE",
+    "minH": 167.0,
+    "maxH": 187.0,
+    "minS": 53,
+    "maxS": 73,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Vermilion": {
+    "Hex": "#E34234",
+    "minH": 0.0,
+    "maxH": 15.0,
+    "minS": 67,
+    "maxS": 87,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Vermilion 2": {
+    "Hex": "#D9381E",
+    "minH": 0.0,
+    "maxH": 18.0,
+    "minS": 76,
+    "maxS": 96,
+    "minV": 75,
+    "maxV": 95
+  },
+  "Veronica": {
+    "Hex": "#A020F0",
+    "minH": 267.0,
+    "maxH": 287.0,
+    "minS": 77,
+    "maxS": 97,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Violet": {
+    "Hex": "#8F00FF",
+    "minH": 264.0,
+    "maxH": 284.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Violet (color wheel)": {
+    "Hex": "#7F00FF",
+    "minH": 260.0,
+    "maxH": 280.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Violet (crayola)": {
+    "Hex": "#963D7F",
+    "minH": 306.0,
+    "maxH": 326.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 49,
+    "maxV": 69
+  },
+  "Violet (RYB)": {
+    "Hex": "#8601AF",
+    "minH": 276.0,
+    "maxH": 296.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 59,
+    "maxV": 79
+  },
+  "Violet (web)": {
+    "Hex": "#EE82EE",
+    "minH": 290.0,
+    "maxH": 310.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Violet-blue": {
+    "Hex": "#324AB2",
+    "minH": 219.0,
+    "maxH": 239.0,
+    "minS": 62,
+    "maxS": 82,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Violet-blue (Crayola)": {
+    "Hex": "#766EC8",
+    "minH": 236.0,
+    "maxH": 256.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 68,
+    "maxV": 88
+  },
+  "Violet-red": {
+    "Hex": "#F75394",
+    "minH": 326.0,
+    "maxH": 346.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 87,
+    "maxV": 100
+  },
+  "Viridian": {
+    "Hex": "#40826D",
+    "minH": 151.0,
+    "maxH": 171.0,
+    "minS": 41,
+    "maxS": 61,
+    "minV": 41,
+    "maxV": 61
+  },
+  "Viridian green": {
+    "Hex": "#009698",
+    "minH": 171.0,
+    "maxH": 191.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 50,
+    "maxV": 70
+  },
+  "Vivid burgundy": {
+    "Hex": "#9F1D35",
+    "minH": 339.0,
+    "maxH": 359.0,
+    "minS": 72,
+    "maxS": 92,
+    "minV": 52,
+    "maxV": 72
+  },
+  "Vivid sky blue": {
+    "Hex": "#00CCFF",
+    "minH": 182.0,
+    "maxH": 202.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Vivid tangerine": {
+    "Hex": "#FFA089",
+    "minH": 2.0,
+    "maxH": 22.0,
+    "minS": 36,
+    "maxS": 56,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Vivid violet": {
+    "Hex": "#9F00FF",
+    "minH": 267.0,
+    "maxH": 287.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Volt": {
+    "Hex": "#CEFF00",
+    "minH": 62.0,
+    "maxH": 82.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Warm black": {
+    "Hex": "#004242",
+    "minH": 170.0,
+    "maxH": 190.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 15,
+    "maxV": 35
+  },
+  "Wheat": {
+    "Hex": "#F5DEB3",
+    "minH": 29.0,
+    "maxH": 49.0,
+    "minS": 17,
+    "maxS": 37,
+    "minV": 86,
+    "maxV": 100
+  },
+  "White": {
+    "Hex": "#FFFFFF",
+    "minH": 0.0,
+    "maxH": 360.0,
+    "minS": 0,
+    "maxS": 10,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Wild blue yonder": {
+    "Hex": "#A2ADD0",
+    "minH": 216.0,
+    "maxH": 236.0,
+    "minS": 12,
+    "maxS": 32,
+    "minV": 72,
+    "maxV": 92
+  },
+  "Wild orchid": {
+    "Hex": "#D470A2",
+    "minH": 320.0,
+    "maxH": 340.0,
+    "minS": 37,
+    "maxS": 57,
+    "minV": 73,
+    "maxV": 93
+  },
+  "Wild Strawberry": {
+    "Hex": "#FF43A4",
+    "minH": 319.0,
+    "maxH": 339.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Wild watermelon": {
+    "Hex": "#FC6C85",
+    "minH": 340.0,
+    "maxH": 360.0,
+    "minS": 47,
+    "maxS": 67,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Windsor tan": {
+    "Hex": "#A75502",
+    "minH": 20.0,
+    "maxH": 40.0,
+    "minS": 89,
+    "maxS": 100,
+    "minV": 55,
+    "maxV": 75
+  },
+  "Wine": {
+    "Hex": "#722F37",
+    "minH": 343.0,
+    "maxH": 360.0,
+    "minS": 49,
+    "maxS": 69,
+    "minV": 35,
+    "maxV": 55
+  },
+  "Wine dregs": {
+    "Hex": "#673147",
+    "minH": 326.0,
+    "maxH": 346.0,
+    "minS": 42,
+    "maxS": 62,
+    "minV": 30,
+    "maxV": 50
+  },
+  "Winter Sky": {
+    "Hex": "#FF007C",
+    "minH": 321.0,
+    "maxH": 341.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Wintergreen Dream": {
+    "Hex": "#56887D",
+    "minH": 157.0,
+    "maxH": 177.0,
+    "minS": 27,
+    "maxS": 47,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Wisteria": {
+    "Hex": "#C9A0DC",
+    "minH": 271.0,
+    "maxH": 291.0,
+    "minS": 17,
+    "maxS": 37,
+    "minV": 76,
+    "maxV": 96
+  },
+  "Wood brown": {
+    "Hex": "#C19A6B",
+    "minH": 23.0,
+    "maxH": 43.0,
+    "minS": 35,
+    "maxS": 55,
+    "minV": 66,
+    "maxV": 86
+  },
+  "Xanthic": {
+    "Hex": "#EEED09",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 86,
+    "maxS": 100,
+    "minV": 83,
+    "maxV": 100
+  },
+  "Xanadu": {
+    "Hex": "#738678",
+    "minH": 126.0,
+    "maxH": 146.0,
+    "minS": 4,
+    "maxS": 24,
+    "minV": 43,
+    "maxV": 63
+  },
+  "Yale Blue": {
+    "Hex": "#0F4D92",
+    "minH": 202.0,
+    "maxH": 222.0,
+    "minS": 80,
+    "maxS": 100,
+    "minV": 47,
+    "maxV": 67
+  },
+  "Yellow": {
+    "Hex": "#FFFF00",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Yellow (Crayola)": {
+    "Hex": "#FCE883",
+    "minH": 40.0,
+    "maxH": 60.0,
+    "minS": 38,
+    "maxS": 58,
+    "minV": 89,
+    "maxV": 100
+  },
+  "Yellow (Munsell)": {
+    "Hex": "#EFCC00",
+    "minH": 41.0,
+    "maxH": 61.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 84,
+    "maxV": 100
+  },
+  "Yellow (NCS)": {
+    "Hex": "#FFD300",
+    "minH": 40.0,
+    "maxH": 60.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Yellow (Pantone)": {
+    "Hex": "#FEDF00",
+    "minH": 43.0,
+    "maxH": 63.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Yellow (process)": {
+    "Hex": "#FFEF00",
+    "minH": 46.0,
+    "maxH": 66.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Yellow (RYB)": {
+    "Hex": "#FEFE33",
+    "minH": 50.0,
+    "maxH": 70.0,
+    "minS": 70,
+    "maxS": 90,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Yellow-green": {
+    "Hex": "#9ACD32",
+    "minH": 70.0,
+    "maxH": 90.0,
+    "minS": 66,
+    "maxS": 86,
+    "minV": 70,
+    "maxV": 90
+  },
+  "Yellow-green (Crayola)": {
+    "Hex": "#C5E384",
+    "minH": 69.0,
+    "maxH": 89.0,
+    "minS": 32,
+    "maxS": 52,
+    "minV": 79,
+    "maxV": 99
+  },
+  "Yellow-green (Color Wheel)": {
+    "Hex": "#30B21A",
+    "minH": 102.0,
+    "maxH": 122.0,
+    "minS": 75,
+    "maxS": 95,
+    "minV": 60,
+    "maxV": 80
+  },
+  "Yellow Orange": {
+    "Hex": "#FFAE42",
+    "minH": 24.0,
+    "maxH": 44.0,
+    "minS": 64,
+    "maxS": 84,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Yellow Orange (Color Wheel)": {
+    "Hex": "#FF9505",
+    "minH": 26.0,
+    "maxH": 46.0,
+    "minS": 88,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "Yellow Sunshine": {
+    "Hex": "#FFF700",
+    "minH": 48.0,
+    "maxH": 68.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 90,
+    "maxV": 100
+  },
+  "YInMn Blue": {
+    "Hex": "#2E5090",
+    "minH": 209.0,
+    "maxH": 229.0,
+    "minS": 58,
+    "maxS": 78,
+    "minV": 46,
+    "maxV": 66
+  },
+  "Zaffre": {
+    "Hex": "#0014A8",
+    "minH": 223.0,
+    "maxH": 243.0,
+    "minS": 90,
+    "maxS": 100,
+    "minV": 56,
+    "maxV": 76
+  },
+  "Zomp": {
+    "Hex": "#39A78E",
+    "minH": 156.0,
+    "maxH": 176.0,
+    "minS": 56,
+    "maxS": 76,
+    "minV": 55,
+    "maxV": 75
+  }
+}

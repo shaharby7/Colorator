@@ -5,12 +5,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
 import com.colorator.ColoratorImageProc.ColoratorImageProc;
+import com.colorator.ColoratorOptions.DetectorOptions.DetectorArgsAbstractClass;
 import com.colorator.MainActivity;
 import com.colorator.OpenCVFragment;
 import com.colorator.R;
@@ -24,9 +27,8 @@ import org.json.JSONObject;
 public class DetectorOptionsFragment extends FragmentWithFragments {
     public ColoratorImageProc mColoratorImageProc;
     private static final String TAG = "DetectorOptions::Fragment";
-    private Spinner mSpinner;
+    private Spinner mDetectBySpinner;
     private Button mSubmitButton;
-    private ViewGroup mArgsContainer;
     private static JSONObject mDetectorsConfiguration = MainActivity.readConfiguration("detectors_config");
     private DetectorArgsAbstractClass mDetectorArgsFragment;
 
@@ -40,8 +42,7 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
         Log.i(TAG, "called onCreateView");
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.detector_options_layout, container, false);
-        mSpinner = view.findViewById(R.id.detectors_spinner);
-        mArgsContainer = view.findViewById(R.id.detectors_args_container);
+        setDetectBySpinner(view);
         mSubmitButton = view.findViewById(R.id.button_submit_detectors_options);
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,10 +55,24 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
         return view;
     }
 
+    private void setDetectBySpinner(View rootView) {
+        mDetectBySpinner = rootView.findViewById(R.id.detectors_spinner);
+        mDetectBySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                setDetectorsArgsView();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+    }
+
     private void updateDetector() {
         try {
             String actualDetectorClass = mDetectorsConfiguration
-                    .getJSONObject(mSpinner.getSelectedItem().toString())
+                    .getJSONObject(mDetectBySpinner.getSelectedItem().toString())
                     .getString("ActualDetectorClass");
             JSONObject detectorArgs = mDetectorArgsFragment.getDetectorsArgs();
             mColoratorImageProc.setDetector(actualDetectorClass, detectorArgs);
@@ -71,16 +86,14 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
     private void setDetectorsArgsView() {
         try {
             String fragmentName = mDetectorsConfiguration
-                    .getJSONObject(mSpinner.getSelectedItem().toString())
+                    .getJSONObject(mDetectBySpinner.getSelectedItem().toString())
                     .getString("options_fragment_name");
-//            Fragment argsFragment = (Fragment) Class.forName(fragmentName).newInstance();
-            mDetectorArgsFragment = new ColorpickerDetectorArgsFragment();
-            loadFragment(mDetectorArgsFragment, R.id.detectors_args_container);
-        } catch (
-                org.json.JSONException
-//                        | java.lang.InstantiationException |java.lang.ClassNotFoundException | IllegalAccessException
-                        ex
-        ) {
+            Class<?> detectorArgsFragment = Class.forName(fragmentName);
+            mDetectorArgsFragment = (DetectorArgsAbstractClass) detectorArgsFragment.newInstance();
+            loadFragment((Fragment) mDetectorArgsFragment, R.id.detectors_args_container);
+
+        } catch (ClassNotFoundException | IllegalAccessException | java.lang.InstantiationException | JSONException ex) {
+            Log.e(TAG, "Unknown DetectorArgs class");
             ex.printStackTrace();
         }
     }
