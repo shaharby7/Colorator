@@ -1,18 +1,28 @@
 package com.colorator.ColoratorImageProc.Detector;
 
+import android.view.MotionEvent;
+
+import com.colorator.ColoratorImageProc.ColoratorMatManager;
+
 import org.json.JSONObject;
 import org.opencv.core.Mat;
-
-import java.util.Map;
+import org.opencv.core.CvType;
 
 public abstract class DetectorAbstractClass {
     JSONObject mDetectorArgs;
+    ColoratorMatManager mColoratorMatManager;
 
-    public DetectorAbstractClass(JSONObject detectorArgs) {
+    public DetectorAbstractClass(ColoratorMatManager coloratorMatManager, JSONObject detectorArgs) {
         mDetectorArgs = detectorArgs;
+        mColoratorMatManager = coloratorMatManager;
     }
 
-    public DetectorAbstractClass(){}
+    public DetectorAbstractClass(ColoratorMatManager coloratorMatManager) {
+        mColoratorMatManager = coloratorMatManager;
+    }
 
     abstract public Mat detect(Mat inputImage);
+
+    public void onTouch(MotionEvent event, int cameraViewHeight, int cameraViewWidth) {
+    }
 }

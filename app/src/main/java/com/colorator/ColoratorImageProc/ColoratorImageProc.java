@@ -1,38 +1,37 @@
 package com.colorator.ColoratorImageProc;
 
+import android.graphics.ImageFormat;
 import android.util.Log;
+import android.view.MotionEvent;
 
 import com.colorator.ColoratorImageProc.Detector.DetectorAbstractClass;
-import com.colorator.ColoratorImageProc.Detector.RangesDetector;
-import com.colorator.ColoratorImageProc.Emphasizer.IntegratedEmphasizers;
+import com.colorator.ColoratorImageProc.Detector.TestDetector;
+import com.colorator.ColoratorImageProc.Detector.TouchDetector;
+import com.colorator.ColoratorImageProc.Emphasizer.RainbowEmphasizer;
 
 import org.json.JSONObject;
 import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.imgproc.Imgproc;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Map;
 
 public class ColoratorImageProc {
     public String TAG = "ColoratorImageProc";
-    private DetectorAbstractClass mDetector = new RangesDetector();
-    private IntegratedEmphasizers mEmphasizer = new IntegratedEmphasizers();
+    private ColoratorMatManager mColoratorMatManager = new ColoratorMatManager();
+    private DetectorAbstractClass mDetector = new TouchDetector(mColoratorMatManager);
+    private RainbowEmphasizer mEmphasizer = new RainbowEmphasizer(mColoratorMatManager);
     private Mat mFrameInProcess;
     private boolean mCommitProcess;
-
-    public void allocateImageSize(int height, int width) {
-        mFrameInProcess = new Mat(height, width, CvType.CV_8UC4);
-    }
+    private int mPreviewFormat;
 
     public void setDetector(String detectorClassName, JSONObject detectorArgs) {
         try {
             Class<?> detectorClass = Class.forName(detectorClassName);
-            Constructor<?> detectorConstructor = detectorClass.getConstructor(JSONObject.class);
-            mDetector = (DetectorAbstractClass) detectorConstructor.newInstance(detectorArgs);
+            Constructor<?> detectorConstructor = detectorClass.getConstructor(ColoratorMatManager.class, JSONObject.class);
+            mDetector = (DetectorAbstractClass) detectorConstructor.newInstance(mColoratorMatManager, detectorArgs);
         } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException ex) {
             Log.e(TAG, "Unknown Detector class " + detectorClassName);
             ex.printStackTrace();
@@ -40,7 +39,9 @@ public class ColoratorImageProc {
     }
 
     public Mat pipeline(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
+        mPreviewFormat = inputFrame.getPreviewFormat();
         standardizeCameraImage(inputFrame);
+        mColoratorMatManager.resizeAllMats(mFrameInProcess.height(), mFrameInProcess.width());
         if (mCommitProcess) {
             Mat mask = mDetector.detect(mFrameInProcess);
             mEmphasizer.emphasize(mFrameInProcess, mask);
@@ -54,22 +55,27 @@ public class ColoratorImageProc {
     }
 
     private void standardizeCameraImage(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
-
         mFrameInProcess = inputFrame.rgba();
-        Mat RgbaT = new Mat(mFrameInProcess.width(), mFrameInProcess.width(), CvType.CV_8UC4);
-        Core.transpose(mFrameInProcess, RgbaT);
-        Imgproc.resize(RgbaT, mFrameInProcess, mFrameInProcess.size(), 0, 0, 0);
-        Core.flip(mFrameInProcess, mFrameInProcess, 1);
         Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_RGB2HSV);
-
-
     }
 
     private void standardizeImageToPreview() {
-        Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_HSV2BGR);
+        if (mPreviewFormat == ImageFormat.NV21)
+            Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_HSV2RGB, 4);
+        else if (mPreviewFormat == ImageFormat.YV12)
+            Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_HSV2BGR, 4);
     }
 
     public void releaseResources() {
+        mColoratorMatManager.releaseAllMats();
         mFrameInProcess.release();
+    }
+
+    public void onTouch(MotionEvent event, int cameraViewHeight, int cameraViewWidth) {
+        mDetector.onTouch(event, cameraViewHeight, cameraViewWidth);
+    }
+
+    public void allocateFrameImProcess() {
+        mFrameInProcess = mColoratorMatManager.allocateNewMat();
     }
 }

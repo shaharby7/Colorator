@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
@@ -22,6 +23,8 @@ import com.colorator.utils.FragmentWithFragments;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Objects;
 
 
 public class DetectorOptionsFragment extends FragmentWithFragments {
@@ -41,13 +44,14 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
                              Bundle savedInstanceState) {
         Log.i(TAG, "called onCreateView");
         super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.detector_options_layout, container, false);
+        final View view = inflater.inflate(R.layout.detector_options_layout, container, false);
         setDetectBySpinner(view);
         mSubmitButton = view.findViewById(R.id.button_submit_detectors_options);
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 updateDetector();
+                hideKeyboardFrom(Objects.requireNonNull(getContext()), view);
                 ((MainActivity) getActivity()).loadFragment(new OpenCVFragment(mColoratorImageProc));
             }
         });

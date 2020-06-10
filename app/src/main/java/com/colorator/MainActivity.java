@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
         appConfigurationReader = new ConfigurationReader(getApplicationContext());
         mColoratorImageProc = new ColoratorImageProc();
         setContentView(R.layout.activity_main);
-//        loadFragment(new OpenCVFragment(mColoratorImageProc));
-        loadFragment(new DetectorOptionsFragment(mColoratorImageProc));
+        loadFragment(new OpenCVFragment(mColoratorImageProc));
     }
 
     @Override

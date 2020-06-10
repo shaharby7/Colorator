@@ -1,10 +1,15 @@
 package com.colorator.ColoratorImageProc.Detector;
 
+import android.graphics.Color;
+
+import com.colorator.ColoratorImageProc.ColoratorMatManager;
 import com.colorator.MainActivity;
+import com.colorator.utils.CommonScalars;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Scalar;
 import org.opencv.core.Core;
@@ -12,16 +17,17 @@ import org.opencv.core.Core;
 
 public class RangesDetector extends DetectorAbstractClass {
     private static JSONObject mSavedRangesConfiguration = MainActivity.readConfiguration("saved_color_ranges");
-    private int mHeight, mWidth;
     private Mat mOutput, mRangeMask;
+    private boolean isFirstRun = true;
 
-    public RangesDetector(JSONObject detectorArgs) {
-        super(detectorArgs);
+    public RangesDetector(ColoratorMatManager coloratorMatManager, JSONObject detectorArgs) {
+        super(coloratorMatManager, detectorArgs);
         convertHsvScalesToOpenCV();
     }
 
 
-    public RangesDetector() {
+    public RangesDetector(ColoratorMatManager coloratorMatManager) {
+        super(coloratorMatManager);
         JSONObject detectorArgs = new JSONObject();
         try {
             detectorArgs.put("Ranges", mSavedRangesConfiguration.getJSONArray("default"));
@@ -30,13 +36,6 @@ public class RangesDetector extends DetectorAbstractClass {
         }
         mDetectorArgs = detectorArgs;
         convertHsvScalesToOpenCV();
-    }
-
-    private void allocateMats(int height, int width) {
-        mHeight = height;
-        mWidth = width;
-        mOutput = new Mat(mHeight, mWidth, 0);
-        mRangeMask = new Mat(mHeight, mWidth, 0);
     }
 
     private void convertHsvScalesToOpenCV() {
@@ -62,7 +61,7 @@ public class RangesDetector extends DetectorAbstractClass {
 
 
     private Mat getMaskOfRange(Mat inputImage, JSONObject rangeDescription) {
-        mRangeMask.setTo(new Scalar(0));
+        mRangeMask.setTo(CommonScalars.Zeros);
         try {
             Core.inRange(inputImage,
                     new Scalar(rangeDescription.getInt("minH"),
@@ -80,14 +79,16 @@ public class RangesDetector extends DetectorAbstractClass {
 
     @Override
     public Mat detect(Mat inputImage) {
-        if (mHeight!=inputImage.height()||mWidth!=inputImage.width()){
-            allocateMats(inputImage.height(),inputImage.width());
+        if (isFirstRun){
+            mOutput = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
+            mRangeMask = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
+            isFirstRun = false;
         }
-        mOutput.setTo(new Scalar(0));
+        mOutput.setTo(CommonScalars.Zeros);
         try {
             JSONArray allRanges = mDetectorArgs.getJSONArray("Ranges");
             for (int i = 0; i < allRanges.length(); i++) {
-                JSONObject typedRange = (JSONObject) allRanges.getJSONObject(i);
+                JSONObject typedRange = allRanges.getJSONObject(i);
                 Core.bitwise_or(mOutput, getMaskOfRange(inputImage, typedRange), mOutput);
             }
         } catch (JSONException e) {

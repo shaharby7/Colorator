@@ -4,6 +4,7 @@ import com.colorator.ColoratorImageProc.ColoratorImageProc;
 
 import androidx.fragment.app.Fragment;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +15,8 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Switch;
 import android.widget.CompoundButton;
+import android.view.MotionEvent;
+import android.view.View.OnTouchListener;
 
 import org.opencv.android.JavaCameraView;
 import org.opencv.android.BaseLoaderCallback;
@@ -26,7 +29,7 @@ import org.opencv.core.Mat;
 
 import java.util.Objects;
 
-public class OpenCVFragment extends Fragment implements CvCameraViewListener2 {
+public class OpenCVFragment extends Fragment implements CvCameraViewListener2, OnTouchListener {
 
     private static final String TAG = "OCVSample::Fragment";
     private View mView;
@@ -53,6 +56,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2 {
     };
 
     public OpenCVFragment(ColoratorImageProc mainActivityImageProc) {
+        super();
         Log.i(TAG, "Instantiated new " + this.getClass());
         mColoratorImageProc = mainActivityImageProc;
     }
@@ -68,6 +72,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2 {
         mOpenCvCameraView = (JavaCameraView) mView.findViewById(R.id.show_camera_activity_java_surface_view);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
+        mOpenCvCameraView.setOnTouchListener(this);
         mCommitProcessSwitch = (Switch) mView.findViewById(R.id.commit_process_switch);
         mCommitProcessSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -81,7 +86,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2 {
     @Override
     public void onPause() {
         super.onPause();
-//        getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
     }
@@ -89,7 +94,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2 {
     @Override
     public void onResume() {
         super.onResume();
-//        getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         if (!OpenCVLoader.initDebug()) {
             Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
             OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, mAppContext, mLoaderCallback);
@@ -106,7 +111,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2 {
     }
 
     public void onCameraViewStarted(int width, int height) {
-        mColoratorImageProc.allocateImageSize(height, width);
+        mColoratorImageProc.allocateFrameImProcess();
         mColoratorImageProc.setCommitProcess(mCommitProcessSwitch.isChecked());
     }
 
@@ -116,5 +121,12 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2 {
 
     public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
         return mColoratorImageProc.pipeline(inputFrame);
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        mColoratorImageProc.onTouch(event, mOpenCvCameraView.getHeight(), mOpenCvCameraView.getWidth());
+        return true;
     }
 }
