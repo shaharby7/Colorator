@@ -1,5 +1,7 @@
 package com.colorator.ColoratorImageProc;
 
+import com.colorator.utils.CommonScalars;
+
 import org.opencv.core.Mat;
 import org.opencv.core.CvType;
 
@@ -25,6 +27,16 @@ public class ColoratorMatManager {
 
     public Mat allocateNewMat(int matType) {
         Mat newMat = new Mat(mHeight, mWidth, matType);
+        switch (matType){
+            case 0:
+                newMat.setTo(CommonScalars.Zeros);
+                break;
+            case 16:
+                newMat.setTo(CommonScalars.Ones3C);
+                break;
+            default:
+                break;
+        }
         mAllMats.add(newMat);
         return newMat;
     }

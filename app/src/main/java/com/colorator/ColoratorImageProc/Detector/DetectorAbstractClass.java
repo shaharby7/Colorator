@@ -7,6 +7,7 @@ import com.colorator.ColoratorImageProc.ColoratorMatManager;
 import org.json.JSONObject;
 import org.opencv.core.Mat;
 import org.opencv.core.CvType;
+import org.opencv.core.Point;
 
 public abstract class DetectorAbstractClass {
     JSONObject mDetectorArgs;
@@ -23,6 +24,6 @@ public abstract class DetectorAbstractClass {
 
     abstract public Mat detect(Mat inputImage);
 
-    public void onTouch(MotionEvent event, int cameraViewHeight, int cameraViewWidth) {
+    public void onTouch(MotionEvent event, Point actualTouchPoint) {
     }
 }

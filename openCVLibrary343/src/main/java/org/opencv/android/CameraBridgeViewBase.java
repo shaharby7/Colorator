@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.opencv.BuildConfig;
 import org.opencv.R;
+import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Size;
+import org.opencv.imgproc.Imgproc;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -14,6 +16,7 @@ import android.content.DialogInterface;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -142,7 +145,7 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
          * The returned values - is a modified frame which needs to be displayed on the screen.
          * TODO: pass the parameters specifying the format of the frame (BPP, YUV or RGB and etc)
          */
-        public Mat onCameraFrame(CvCameraViewFrame inputFrame);
+        public Mat onCameraFrame(Mat inputFrame);
     }
 
     ;
@@ -409,7 +412,9 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
         Mat modified;
 
         if (mListener != null) {
-            modified = mListener.onCameraFrame(frame);
+            modified = frame.rgba();
+            Core.rotate(modified,modified,Core.ROTATE_90_COUNTERCLOCKWISE);
+            modified = mListener.onCameraFrame(modified);
         } else {
             modified = frame.rgba();
         }
@@ -431,7 +436,6 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
             if (canvas != null) {
                 canvas.drawColor(0, android.graphics.PorterDuff.Mode.CLEAR);
                 canvas.save();
-                canvas.rotate(mUserRotation, (int) (canvas.getWidth() / 2), (int) (canvas.getHeight() / 2));
                 if (BuildConfig.DEBUG)
                     Log.d(TAG, "mStretch value: " + mScale);
 

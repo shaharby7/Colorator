@@ -5,14 +5,14 @@ import android.util.Log;
 import android.view.MotionEvent;
 
 import com.colorator.ColoratorImageProc.Detector.DetectorAbstractClass;
-import com.colorator.ColoratorImageProc.Detector.TestDetector;
 import com.colorator.ColoratorImageProc.Detector.TouchDetector;
+import com.colorator.ColoratorImageProc.Detector.__TouchDetector;
 import com.colorator.ColoratorImageProc.Emphasizer.RainbowEmphasizer;
 
 import org.json.JSONObject;
 import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.core.Point;
 import org.opencv.imgproc.Imgproc;
 
 import java.lang.reflect.Constructor;
@@ -38,7 +38,7 @@ public class ColoratorImageProc {
         }
     }
 
-    public Mat pipeline(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
+    public Mat pipeline(Mat inputFrame) {
         mPreviewFormat = inputFrame.getPreviewFormat();
         standardizeCameraImage(inputFrame);
         mColoratorMatManager.resizeAllMats(mFrameInProcess.height(), mFrameInProcess.width());
@@ -71,11 +71,19 @@ public class ColoratorImageProc {
         mFrameInProcess.release();
     }
 
-    public void onTouch(MotionEvent event, int cameraViewHeight, int cameraViewWidth) {
-        mDetector.onTouch(event, cameraViewHeight, cameraViewWidth);
+    public void onTouch(MotionEvent event, Point actualTouchPoint) {
+        mDetector.onTouch(event, actualTouchPoint);
     }
 
     public void allocateFrameImProcess() {
         mFrameInProcess = mColoratorMatManager.allocateNewMat();
+    }
+
+    public int getFrameWidth() {
+        return mColoratorMatManager.getWidth();
+    }
+
+    public int getFrameHeight() {
+        return mColoratorMatManager.getHeight();
     }
 }
