@@ -1,5 +1,6 @@
 package com.colorator.ColoratorImageProc.Detector;
 
+import android.util.Log;
 import android.view.MotionEvent;
 
 import com.colorator.ColoratorImageProc.ColoratorMatManager;
@@ -14,6 +15,7 @@ import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 
 public class TouchDetector extends DetectorAbstractClass {
+    private static final String TAG = "TouchDetector";
     private Mat mOutput, mCircleMask, mTouchedSample, mLastFrame, mSingleChannel;
     private Core.MinMaxLocResult mMinMaxResultsForChannel;
     private boolean isFirstRun = true;
@@ -23,7 +25,7 @@ public class TouchDetector extends DetectorAbstractClass {
     private double[] mMaxColor = new double[3];
     private Scalar mMinColorScalar = new Scalar(0, 0, 0);
     private Scalar mMaxColorScalar = new Scalar(0, 0, 0);
-    static private final int FINGER_RADIUS = 30;
+    static private final int FINGER_RADIUS = 200;
 
     public TouchDetector(ColoratorMatManager coloratorMatManager, JSONObject detectorArgs) {
         super(coloratorMatManager, detectorArgs);
@@ -44,19 +46,22 @@ public class TouchDetector extends DetectorAbstractClass {
 
     private void setMinMaxColorScalars() {
         setTouchedSample();
-//        Core.split(mTouchedSample, mHSVChannels);
-        for (int channelIndex = 0; channelIndex < 3; channelIndex++) {
-            setMinMaxForChannel(channelIndex);
-        }
-        mMaxColorScalar.set(mMaxColor);
-        mMinColorScalar.set(mMinColor);
+//        for (int channelIndex = 0; channelIndex < 3; channelIndex++) {
+//            setMinMaxForChannel(channelIndex);
+//        }
+//        mMaxColorScalar.set(mMaxColor);
+//        mMinColorScalar.set(mMinColor);
     }
 
     private void setTouchedSample() {
         mCircleMask.setTo(CommonScalars.Zeros);
         mTouchedSample.setTo(CommonScalars.Zeros3C);
-        Imgproc.circle(mCircleMask, mLastTouchPoint, FINGER_RADIUS, CommonScalars.Ones, -1);
-        mLastFrame.copyTo(mTouchedSample, mCircleMask);
+//        Imgproc.circle(mTouchedSample, mLastTouchPoint, FINGER_RADIUS, new Scalar(120,255,255), -1);
+//        Imgproc.circle(mCircleMask, mLastTouchPoint, FINGER_RADIUS, CommonScalars.Ones, -1);
+        mLastFrame.copyTo(mTouchedSample
+//                , mCircleMask
+        );
+        Log.i(TAG, "hi");
     }
 
     private void setMinMaxForChannel(int channelIndex) {
@@ -83,13 +88,20 @@ public class TouchDetector extends DetectorAbstractClass {
         synchronized (this) {
             mLastFrame = inputImage;
             allocateAtFirstRun();
-            mOutput.setTo(CommonScalars.Zeros);
-            Core.inRange(inputImage, mMinColorScalar, mMaxColorScalar, mOutput);
+//            mOutput.setTo(CommonScalars.Zeros);
+//            Core.inRange(inputImage, mMinColorScalar, mMaxColorScalar, mOutput);
+//            if (mIsTouched) {
+//                Core.bitwise_or(mOutput, mCircleMask, mOutput);
+//            }
+        }
+//        return mOutput;
+        synchronized (this) {
             if (mIsTouched) {
-                Core.bitwise_or(mOutput, mCircleMask, mOutput);
+                return mTouchedSample;
+            } else {
+                return mLastFrame;
             }
         }
-        return mOutput;
     }
 
     private void allocateAtFirstRun() {
@@ -97,7 +109,7 @@ public class TouchDetector extends DetectorAbstractClass {
             mOutput = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
             mCircleMask = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
             mSingleChannel = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
-            mTouchedSample = mColoratorMatManager.allocateNewMat();
+            mTouchedSample = mColoratorMatManager.allocateNewMat(CvType.CV_8UC3);
             isFirstRun = false;
         }
     }
