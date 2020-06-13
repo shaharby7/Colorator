@@ -38,7 +38,7 @@ public class ColoratorImageProc {
         }
     }
 
-    public Mat pipeline(Mat inputFrame) {
+    public Mat pipeline(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
         mPreviewFormat = inputFrame.getPreviewFormat();
         standardizeCameraImage(inputFrame);
         mColoratorMatManager.resizeAllMats(mFrameInProcess.height(), mFrameInProcess.width());
@@ -56,14 +56,14 @@ public class ColoratorImageProc {
 
     private void standardizeCameraImage(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
         mFrameInProcess = inputFrame.rgba();
-        Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_RGB2HSV);
+        Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_RGB2HSV, 3);
     }
 
     private void standardizeImageToPreview() {
         if (mPreviewFormat == ImageFormat.NV21)
-            Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_HSV2RGB, 4);
+            Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_HSV2RGB, 3);
         else if (mPreviewFormat == ImageFormat.YV12)
-            Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_HSV2BGR, 4);
+            Imgproc.cvtColor(mFrameInProcess, mFrameInProcess, Imgproc.COLOR_HSV2BGR, 3);
     }
 
     public void releaseResources() {
@@ -71,8 +71,8 @@ public class ColoratorImageProc {
         mFrameInProcess.release();
     }
 
-    public void onTouch(MotionEvent event, Point actualTouchPoint) {
-        mDetector.onTouch(event, actualTouchPoint);
+    public void onTouch(MotionEvent event, Point touchedPoint) {
+        mDetector.onTouch(event, touchedPoint);
     }
 
     public void allocateFrameImProcess() {

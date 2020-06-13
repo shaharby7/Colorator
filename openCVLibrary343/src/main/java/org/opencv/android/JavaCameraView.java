@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.ViewGroup.LayoutParams;
 
 import org.opencv.BuildConfig;
+import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Size;
@@ -316,12 +317,14 @@ public class JavaCameraView extends CameraBridgeViewBase implements PreviewCallb
         @Override
         public Mat rgba() {
             if (mPreviewFormat == ImageFormat.NV21)
-                Imgproc.cvtColor(mYuvFrameData, mRgba, Imgproc.COLOR_YUV2RGBA_NV21, 4);
+                Imgproc.cvtColor(mYuvFrameData, mRgba, Imgproc.COLOR_YUV2RGBA_NV21, 3);
             else if (mPreviewFormat == ImageFormat.YV12)
-                Imgproc.cvtColor(mYuvFrameData, mRgba, Imgproc.COLOR_YUV2RGB_I420, 4);  // COLOR_YUV2RGBA_YV12 produces inverted colors
-            else
+                Imgproc.cvtColor(mYuvFrameData, mRgba, Imgproc.COLOR_YUV2RGB_I420, 3);  // COLOR_YUV2RGBA_YV12 produces inverted colors
+            else {
                 throw new IllegalArgumentException("Preview Format can be NV21 or YV12");
+            }
 
+            Core.rotate(mRgba, mRgba, Core.ROTATE_90_CLOCKWISE);
             return mRgba;
         }
 

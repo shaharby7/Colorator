@@ -24,6 +24,6 @@ public abstract class DetectorAbstractClass {
 
     abstract public Mat detect(Mat inputImage);
 
-    public void onTouch(MotionEvent event, Point actualTouchPoint) {
+    public void onTouch(MotionEvent event, Point touchedPoint) {
     }
 }

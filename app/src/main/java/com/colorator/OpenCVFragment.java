@@ -1,7 +1,6 @@
 package com.colorator;
 
 import com.colorator.ColoratorImageProc.ColoratorImageProc;
-import com.colorator.utils.OpenCvHelpers;
 
 import androidx.fragment.app.Fragment;
 
@@ -39,11 +38,9 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
     private CameraBridgeViewBase mOpenCvCameraView;
     private Switch mCommitProcessSwitch;
     private Context mAppContext;
-    private double[] mTouchCoordinates = new double[2];
-    private double[] mRotatedTouchCoordinates = new double[2];
-    private double[] mPreviewOffset = new double[2];
-    private double[] mImageCenterCoordinates = new double[2];
-    private Point mRotatedTouchedPoint = new Point();
+    private double[] mTouchedCoordinates = new double[2];
+    private double[] mCameraOffset = new double[2];
+    private Point mTouchedPoint = new Point();
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(mAppContext) {
         @Override
@@ -126,24 +123,27 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
         mColoratorImageProc.releaseResources();
     }
 
-    public Mat onCameraFrame(Mat inputFrame) {
+    public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
         return mColoratorImageProc.pipeline(inputFrame);
-    }
-    public Mat onCameraFrame(Mat inputFrame) {
     }
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-        mPreviewOffset[0] = (mOpenCvCameraView.getWidth() - mColoratorImageProc.getFrameWidth()) / 2.;
-        mPreviewOffset[1] = (mOpenCvCameraView.getHeight() - mColoratorImageProc.getFrameHeight()) / 2.;
-        mTouchCoordinates[0] = event.getX() - mPreviewOffset[0];
-        mTouchCoordinates[1] = event.getY() - mPreviewOffset[1];
-        mImageCenterCoordinates[0] = mColoratorImageProc.getFrameWidth() / 2.;
-        mImageCenterCoordinates[1] = mColoratorImageProc.getFrameHeight() / 2.;
-        mRotatedTouchCoordinates = OpenCvHelpers.rotatePoint(mTouchCoordinates, mImageCenterCoordinates, -90);
-        mRotatedTouchedPoint.set(mRotatedTouchCoordinates);
-        mColoratorImageProc.onTouch(event, mRotatedTouchedPoint);
+//        mColoratorImageProc.onTouch(event, mOpenCvCameraView.getHeight(), mOpenCvCameraView.getWidth());
+        mCameraOffset[0] = (mOpenCvCameraView.getWidth() - mColoratorImageProc.getFrameWidth())/2.;
+        mCameraOffset[1] = (mOpenCvCameraView.getHeight() - mColoratorImageProc.getFrameHeight())/2.;
+        mTouchedCoordinates[0] = event.getX() - mCameraOffset[0];
+        mTouchedCoordinates[1] = event.getY() - mCameraOffset[1];
+        mTouchedPoint.set(mTouchedCoordinates);
+        mColoratorImageProc.onTouch(event, mTouchedPoint);
         return true;
     }
 }
+
+
+//    int xOffset = (cameraViewWidth - mColoratorMatManager.getWidth()) / 2;
+//    int yOffset = (cameraViewHeight - mColoratorMatManager.getHeight()) / 2;
+//        mTouchCoordinates[0] = (int) (event).getX() - xOffset;
+//                mTouchCoordinates[1] = (int) (event).getY() - yOffset;
+//                mTouchedPoint.set(mTouchCoordinates);

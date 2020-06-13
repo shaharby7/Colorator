@@ -91,8 +91,7 @@ public class __TouchDetector extends DetectorAbstractClass {
 
     @Override
     public Mat detect(Mat inputImage) {
-        allocationsOfFirstRun();
-        mLastInputFrame = inputImage;
+        allocationsOfFirstRun(inputImage);
         mOutput.setTo(CommonScalars.Zeros);
         try {
             for (int i = 0; i < mSampledRanges.length(); i++) {
@@ -105,13 +104,13 @@ public class __TouchDetector extends DetectorAbstractClass {
         return mOutput;
     }
 
-    private void allocationsOfFirstRun() {
+    private void allocationsOfFirstRun(Mat inputImage) {
+        mLastInputFrame = inputImage;
         if (isFirstRun) {
             mOutput = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
             mCircleMask = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
             mRangeMask = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
             mTouchMask = mColoratorMatManager.allocateNewMat(CvType.CV_8UC3);
-            mLastInputFrame = mColoratorMatManager.allocateNewMat(CvType.CV_8UC3);
             isFirstRun = false;
         }
     }

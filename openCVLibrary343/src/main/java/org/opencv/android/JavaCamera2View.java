@@ -22,6 +22,7 @@ import android.util.Log;
 import android.view.Surface;
 import android.view.ViewGroup.LayoutParams;
 
+import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.imgproc.Imgproc;
@@ -337,9 +338,11 @@ public class JavaCamera2View extends CameraBridgeViewBase {
             else if (mPreviewFormat == ImageFormat.YUV_420_888) {
                 assert (mUVFrameData != null);
                 Imgproc.cvtColorTwoPlane(mYuvFrameData, mUVFrameData, mRgba, Imgproc.COLOR_YUV2RGBA_NV21);
-            } else
+            } else {
                 throw new IllegalArgumentException("Preview Format can be NV21 or YV12");
+            }
 
+            Core.rotate(mRgba, mRgba, Core.ROTATE_90_CLOCKWISE);
             return mRgba;
         }
 

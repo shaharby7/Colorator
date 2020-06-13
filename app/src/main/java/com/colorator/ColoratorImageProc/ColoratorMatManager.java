@@ -4,6 +4,7 @@ import com.colorator.utils.CommonScalars;
 
 import org.opencv.core.Mat;
 import org.opencv.core.CvType;
+import org.opencv.core.Point;
 
 import java.util.ArrayList;
 
@@ -27,12 +28,12 @@ public class ColoratorMatManager {
 
     public Mat allocateNewMat(int matType) {
         Mat newMat = new Mat(mHeight, mWidth, matType);
-        switch (matType){
+        switch (matType) {
             case 0:
                 newMat.setTo(CommonScalars.Zeros);
                 break;
             case 16:
-                newMat.setTo(CommonScalars.Ones3C);
+                newMat.setTo(CommonScalars.Zeros3C);
                 break;
             default:
                 break;
