@@ -43,11 +43,10 @@ public class ColoratorImageProc {
         standardizeCameraImage(inputFrame);
         mColoratorMatManager.resizeAllMats(mFrameInProcess.height(), mFrameInProcess.width());
         if (mCommitProcess) {
-//            Mat mask = mDetector.detect(mFrameInProcess);
-//            mEmphasizer.emphasize(mFrameInProcess, mask);
-            mFrameInProcess = mDetector.detect(mFrameInProcess);
+            Mat mask = mDetector.detect(mFrameInProcess);
+            mEmphasizer.emphasize(mFrameInProcess, mask);
         }
-//        standardizeImageToPreview();
+        standardizeImageToPreview();
         return mFrameInProcess;
     }
 

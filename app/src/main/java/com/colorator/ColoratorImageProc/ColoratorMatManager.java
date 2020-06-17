@@ -47,7 +47,9 @@ public class ColoratorMatManager {
             mHeight = height;
             mWidth = width;
             for (Mat mat : mAllMats) {
-                mat = new Mat(height, width, mat.type());
+                synchronized (this) {
+                    mat = new Mat(height, width, mat.type());
+                }
             }
         }
     }
@@ -58,7 +60,7 @@ public class ColoratorMatManager {
         }
     }
 
-    public int getHeight(){
+    public int getHeight() {
         return mHeight;
     }
 

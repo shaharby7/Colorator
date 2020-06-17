@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-8:12
-INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-8:12
+ADDED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:2:1-9:12
 	package
 		ADDED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:3:7-27
 		INJECTED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml
@@ -25,3 +25,7 @@ uses-sdk
 ADDED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:7:5-47
 	android:targetSdkVersion
 		ADDED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:7:15-44
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from C:\Users\ssppa\AndroidStudioProjects\Colorator\openCVLibrary343\src\main\AndroidManifest.xml:8:22-62

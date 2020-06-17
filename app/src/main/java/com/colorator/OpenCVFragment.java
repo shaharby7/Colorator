@@ -1,6 +1,7 @@
 package com.colorator;
 
 import com.colorator.ColoratorImageProc.ColoratorImageProc;
+import com.colorator.utils.LogoCreator;
 
 import androidx.fragment.app.Fragment;
 
@@ -13,18 +14,19 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.CompoundButton;
 import android.view.MotionEvent;
 import android.view.View.OnTouchListener;
 
-import org.opencv.android.JavaCameraView;
+
 import org.opencv.android.BaseLoaderCallback;
-import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
+import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
 
@@ -35,7 +37,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
     private static final String TAG = "OCVSample::Fragment";
     private View mView;
     private ColoratorImageProc mColoratorImageProc;
-    private CameraBridgeViewBase mOpenCvCameraView;
+    private ZoomCameraView mOpenCvCameraView;
     private Switch mCommitProcessSwitch;
     private Context mAppContext;
     private double[] mTouchedCoordinates = new double[2];
@@ -73,11 +75,12 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
         mAppContext = Objects.requireNonNull(getActivity()).getApplicationContext();
         super.onCreate(savedInstanceState);
         mView = inflater.inflate(R.layout.camera_fragment, container, false);
-        mOpenCvCameraView = (JavaCameraView) mView.findViewById(R.id.show_camera_activity_java_surface_view);
+        mOpenCvCameraView = mView.findViewById(R.id.show_camera_activity_java_surface_view);
+        mOpenCvCameraView.setZoomControl((SeekBar) mView.findViewById(R.id.zoom_seekbar));
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
         mOpenCvCameraView.setOnTouchListener(this);
-        mCommitProcessSwitch = (Switch) mView.findViewById(R.id.commit_process_switch);
+        mCommitProcessSwitch = mView.findViewById(R.id.commit_process_switch);
         mCommitProcessSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -124,26 +127,22 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
     }
 
     public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
+        LogoCreator.create(200);
         return mColoratorImageProc.pipeline(inputFrame);
     }
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-//        mColoratorImageProc.onTouch(event, mOpenCvCameraView.getHeight(), mOpenCvCameraView.getWidth());
-        mCameraOffset[0] = (mOpenCvCameraView.getWidth() - mColoratorImageProc.getFrameWidth())/2.;
-        mCameraOffset[1] = (mOpenCvCameraView.getHeight() - mColoratorImageProc.getFrameHeight())/2.;
+        mCameraOffset[0] = (mOpenCvCameraView.getWidth() - mColoratorImageProc.getFrameWidth()) / 2.;
+        mCameraOffset[1] = (mOpenCvCameraView.getHeight() - mColoratorImageProc.getFrameHeight()) / 2.;
         mTouchedCoordinates[0] = event.getX() - mCameraOffset[0];
         mTouchedCoordinates[1] = event.getY() - mCameraOffset[1];
         mTouchedPoint.set(mTouchedCoordinates);
         mColoratorImageProc.onTouch(event, mTouchedPoint);
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            mOpenCvCameraView.setFocus(mTouchedCoordinates);
+        }
         return true;
     }
 }
-
-
-//    int xOffset = (cameraViewWidth - mColoratorMatManager.getWidth()) / 2;
-//    int yOffset = (cameraViewHeight - mColoratorMatManager.getHeight()) / 2;
-//        mTouchCoordinates[0] = (int) (event).getX() - xOffset;
-//                mTouchCoordinates[1] = (int) (event).getY() - yOffset;
-//                mTouchedPoint.set(mTouchCoordinates);
