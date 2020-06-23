@@ -5,11 +5,10 @@ import android.util.Log;
 import android.view.MotionEvent;
 
 import com.colorator.ColoratorImageProc.Detector.DetectorAbstractClass;
+import com.colorator.ColoratorImageProc.Detector.RangesDetector;
 import com.colorator.ColoratorImageProc.Detector.TouchDetector;
-import com.colorator.ColoratorImageProc.Detector.__TouchDetector;
 import com.colorator.ColoratorImageProc.Emphasizer.RainbowEmphasizer;
 
-import org.json.JSONObject;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
@@ -27,10 +26,10 @@ public class ColoratorImageProc {
     private boolean mCommitProcess;
     private int mPreviewFormat;
 
-    public void setDetector(String detectorClassName, JSONObject detectorArgs) {
+    public void setDetector(String detectorClassName, Object detectorArgs) {
         try {
             Class<?> detectorClass = Class.forName(detectorClassName);
-            Constructor<?> detectorConstructor = detectorClass.getConstructor(ColoratorMatManager.class, JSONObject.class);
+            Constructor<?> detectorConstructor = detectorClass.getConstructor(ColoratorMatManager.class, detectorArgs.getClass());
             mDetector = (DetectorAbstractClass) detectorConstructor.newInstance(mColoratorMatManager, detectorArgs);
         } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException ex) {
             Log.e(TAG, "Unknown Detector class " + detectorClassName);

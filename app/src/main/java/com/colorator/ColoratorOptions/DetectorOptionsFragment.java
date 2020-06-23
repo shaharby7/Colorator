@@ -78,9 +78,8 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
             String actualDetectorClass = mDetectorsConfiguration
                     .getJSONObject(mDetectBySpinner.getSelectedItem().toString())
                     .getString("ActualDetectorClass");
-            JSONObject detectorArgs = mDetectorArgsFragment.getDetectorsArgs();
+            Object detectorArgs = mDetectorArgsFragment.getDetectorsArgs();
             mColoratorImageProc.setDetector(actualDetectorClass, detectorArgs);
-
         } catch (JSONException ex) {
             ex.printStackTrace();
         }

@@ -3,6 +3,7 @@ package com.colorator.ColoratorOptions.DetectorOptions;
 import com.colorator.R;
 import com.colorator.customviews.MyRangeSeekbar;
 import com.colorator.customviews.PaletteView;
+import com.colorator.utils.ColorRange;
 import com.crystal.crystalrangeseekbar.interfaces.OnRangeSeekbarChangeListener;
 import com.crystal.crystalrangeseekbar.interfaces.OnSeekbarChangeListener;
 import com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar;
@@ -16,9 +17,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
     public static final String TAG = "ColorPickerFragment";
@@ -124,23 +122,12 @@ public class ColorpickerDetectorArgsFragment extends DetectorArgsAbstractClass {
     }
 
     @Override
-    public JSONObject getDetectorsArgs() {
-        try {
-            JSONObject range = new JSONObject();
-            range.put("minH", mMinH);
-            range.put("maxH", mMaxH);
-            range.put("minS", mMinS);
-            range.put("maxS", mMaxS);
-            range.put("minV", mMinV);
-            range.put("maxV", mMaxV);
-            JSONArray allRanges = new JSONArray();
-            allRanges.put(range);
-            JSONObject detectorArgs = new JSONObject();
-            detectorArgs.put("Ranges", allRanges);
-            return detectorArgs;
-        } catch (JSONException ex) {
-            ex.printStackTrace();
-            return null;
-        }
+    public Object getDetectorsArgs() {
+        return new ColorRange((int) (mMinH / 360. * 179.),
+                (int) (mMaxH / 360. * 179.),
+                (int) (mMinS / 100. * 255.),
+                (int) (mMaxS / 100. * 255.),
+                (int) (mMinV / 100. * 255.),
+                (int) (mMaxV / 100. * 255.));
     }
 }

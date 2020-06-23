@@ -1,6 +1,7 @@
 {
-  "default": [
+  "saved_colors": [
     {
+      "name": "default",
       "minH": 0,
       "maxH": 30,
       "minS": 0,

@@ -127,7 +127,6 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
     }
 
     public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
-        LogoCreator.create(200);
         return mColoratorImageProc.pipeline(inputFrame);
     }
 

@@ -15,16 +15,13 @@ import android.widget.SearchView;
 import androidx.annotation.NonNull;
 
 import com.colorator.R;
-import com.colorator.customviews.ColorRangesJsonAdapter;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.colorator.customviews.ColorRangesAdapter;
 
 public class ColorNamesDetectorArgsFragment extends DetectorArgsAbstractClass {
     private View mRootView;
     private SearchView mColorSearchBox;
     private ListView mListView;
-    private ColorRangesJsonAdapter mAdapter;
+    private ColorRangesAdapter mAdapter;
     public static final String TAG = "ColorNamesDetectorArgsFragment";
 
     @Override
@@ -41,7 +38,7 @@ public class ColorNamesDetectorArgsFragment extends DetectorArgsAbstractClass {
 
     private void setAdapterToListview() {
         mListView = mRootView.findViewById(R.id.color_names_listview);
-        mAdapter = new ColorRangesJsonAdapter(getContext(), "color_names");
+        mAdapter = new ColorRangesAdapter(getContext(), "color_names");
         mListView.setAdapter(mAdapter);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -91,14 +88,7 @@ public class ColorNamesDetectorArgsFragment extends DetectorArgsAbstractClass {
     }
 
     @Override
-    public JSONObject getDetectorsArgs() {
-        JSONObject results = new JSONObject();
-        try {
-
-            results.put("Ranges", mAdapter.getSelectedRanges());
-        } catch (JSONException js) {
-            js.printStackTrace();
-        }
-        return results;
+    public Object getDetectorsArgs() {
+        return mAdapter.getSelectedRanges();
     }
 }

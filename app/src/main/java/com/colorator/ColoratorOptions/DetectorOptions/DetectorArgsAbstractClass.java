@@ -7,5 +7,5 @@ import org.json.JSONObject;
 
 
 public abstract class DetectorArgsAbstractClass extends FragmentWithFragments {
-    public abstract JSONObject getDetectorsArgs();
+    public abstract Object getDetectorsArgs();
 }
