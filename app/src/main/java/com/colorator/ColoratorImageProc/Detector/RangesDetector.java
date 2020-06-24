@@ -53,22 +53,18 @@ public class RangesDetector extends DetectorAbstractClass {
     @Override
     public Mat detect(Mat inputImage) {
         super.detect(inputImage);
+        Mat blurredImage = super.getBlurredImage(inputImage);
         mOutput.setTo(CommonScalars.Zeros);
         for (ColorRange colorRange : mColorRanges) {
-            Core.bitwise_or(mOutput, getMaskOfRange(inputImage, colorRange), mOutput);
-
+            Core.bitwise_or(mOutput, getMaskOfRange(blurredImage, colorRange), mOutput);
         }
         return mOutput;
     }
 
     @Override
     void allocationsOfFirstDetection() {
+        super.allocationsOfFirstDetection();
         mOutput = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
         mRangeMask = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
-    }
-
-    void setNewColorRanges(ArrayList<ColorRange> colorRanges) {
-        mColorRanges.clear();
-        mColorRanges.addAll(colorRanges);
     }
 }

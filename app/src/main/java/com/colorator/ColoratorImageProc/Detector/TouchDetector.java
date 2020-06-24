@@ -15,7 +15,6 @@ import org.opencv.imgproc.Imgproc;
 public class TouchDetector extends RangesDetector {
     private Mat mCircleMask, mTouchedSample, mLastFrame, mSingleChannel;
     private Core.MinMaxLocResult mMinMaxResultsForChannel;
-    private boolean isFirstRun = true;
     private boolean mIsTouched = false;
     private Point mLastTouchPoint = new Point();
     private double[] mMinColor = new double[3];
