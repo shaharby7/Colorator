@@ -7,4 +7,5 @@ public class CommonScalars {
     public static Scalar Zeros = new Scalar(0);
     public static Scalar Ones3C = new Scalar(1, 1, 1);
     public static Scalar Zeros3C = new Scalar(0, 0, 0);
+    public static Scalar Negative3C = new Scalar(-1, -1, -1);
 }

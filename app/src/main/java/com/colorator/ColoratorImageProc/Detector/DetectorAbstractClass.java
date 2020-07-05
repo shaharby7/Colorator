@@ -1,6 +1,7 @@
 package com.colorator.ColoratorImageProc.Detector;
 
 import android.view.MotionEvent;
+import android.widget.ImageView;
 
 import com.colorator.ColoratorImageProc.ColoratorMatManager;
 
@@ -29,6 +30,9 @@ public abstract class DetectorAbstractClass {
 
     public Mat detect(Mat inputImage) {
         allocationsOfFirstDetectionWrapper();
+        if (generateBlurredImage()) {
+            Imgproc.GaussianBlur(inputImage, mBlurredImage, mBlurSize, 0);
+        }
         return null;
     }
 
@@ -42,13 +46,10 @@ public abstract class DetectorAbstractClass {
         hasNotRanYet = false;
     }
 
-    void allocationsOfFirstDetection(){
+    void allocationsOfFirstDetection() {
         mBlurredImage = mColoratorMatManager.allocateNewMat(CvType.CV_8UC3);
-        mBlurSize = new Size(5,5);
-    };
-
-    Mat getBlurredImage(Mat inputImage){
-        Imgproc.GaussianBlur(inputImage, mBlurredImage, mBlurSize, 0);
-        return mBlurredImage;
+        mBlurSize = new Size(5, 5);
     }
+
+    abstract boolean generateBlurredImage();
 }

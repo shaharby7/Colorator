@@ -68,6 +68,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
     }
 
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -119,6 +120,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
 
     public void onCameraViewStarted(int width, int height) {
         mColoratorImageProc.allocateFrameImProcess();
+        mColoratorImageProc.forceMatResizing(height, width);
         mColoratorImageProc.setCommitProcess(mCommitProcessSwitch.isChecked());
     }
 

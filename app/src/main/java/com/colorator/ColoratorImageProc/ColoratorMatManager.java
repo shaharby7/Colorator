@@ -1,10 +1,14 @@
 package com.colorator.ColoratorImageProc;
 
+import android.widget.ImageView;
+
 import com.colorator.utils.CommonScalars;
 
 import org.opencv.core.Mat;
 import org.opencv.core.CvType;
 import org.opencv.core.Point;
+import org.opencv.core.Size;
+import org.opencv.imgproc.Imgproc;
 
 import java.util.ArrayList;
 
@@ -42,16 +46,20 @@ public class ColoratorMatManager {
         return newMat;
     }
 
-    public void resizeAllMats(int height, int width) {
-        if (mWidth != width || mHeight != height) {
+    public void resizeAllMats(int height, int width, boolean forced) {
+        if ((mWidth != width || mHeight != height) || forced) {
             mHeight = height;
             mWidth = width;
             for (Mat mat : mAllMats) {
                 synchronized (this) {
-                    mat = new Mat(height, width, mat.type());
+//                    Imgproc.resize(mat, mat, new Size(mWidth, mHeight), 0,0, Imgproc.INTER_CUBIC);
                 }
             }
         }
+    }
+
+    public void resizeAllMats(int height, int width) {
+        resizeAllMats(height, width, false);
     }
 
     public void releaseAllMats() {

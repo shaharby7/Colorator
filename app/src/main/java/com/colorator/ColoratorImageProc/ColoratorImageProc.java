@@ -8,23 +8,32 @@ import com.colorator.ColoratorImageProc.Detector.DetectorAbstractClass;
 import com.colorator.ColoratorImageProc.Detector.RangesDetector;
 import com.colorator.ColoratorImageProc.Detector.TouchDetector;
 import com.colorator.ColoratorImageProc.Emphasizer.RainbowEmphasizer;
+import com.colorator.utils.CommonScalars;
 
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.core.Mat;
+import org.opencv.core.MatOfInt;
+import org.opencv.core.MatOfPoint;
 import org.opencv.core.Point;
+import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
+import org.opencv.photo.Photo;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ColoratorImageProc {
     public String TAG = "ColoratorImageProc";
     private ColoratorMatManager mColoratorMatManager = new ColoratorMatManager();
     private DetectorAbstractClass mDetector = new TouchDetector(mColoratorMatManager);
     private RainbowEmphasizer mEmphasizer = new RainbowEmphasizer(mColoratorMatManager);
-    private Mat mFrameInProcess;
+    private Mat mFrameInProcess, mHierarchy;
     private boolean mCommitProcess;
     private int mPreviewFormat;
+    List<MatOfPoint> mContours;
+
 
     public void setDetector(String detectorClassName, Object detectorArgs) {
         try {
@@ -43,10 +52,22 @@ public class ColoratorImageProc {
         mColoratorMatManager.resizeAllMats(mFrameInProcess.height(), mFrameInProcess.width());
         if (mCommitProcess) {
             Mat mask = mDetector.detect(mFrameInProcess);
+//            denoise(mask, mask);
             mEmphasizer.emphasize(mFrameInProcess, mask);
         }
         standardizeImageToPreview();
         return mFrameInProcess;
+    }
+
+    private void denoise(Mat src, Mat dst) {
+//        Imgproc.Canny(src, dst, 250, 256);
+//        Imgproc.findContours(src, mContours, mHierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE);
+//        mHierarchy.release();
+//        Imgproc.drawContours(dst, mContours, -1, CommonScalars.Ones, -1);
+//        MatOfInt hull = new MatOfInt();
+//        for (int i = 0; i < mContours.size(); i++) {
+//            Imgproc.convexHull(mContours.get(i),hull);
+//        }
     }
 
     public void setCommitProcess(boolean commitProcess) {
@@ -76,6 +97,8 @@ public class ColoratorImageProc {
 
     public void allocateFrameImProcess() {
         mFrameInProcess = mColoratorMatManager.allocateNewMat();
+        mHierarchy = new Mat();
+        mContours = new ArrayList<MatOfPoint>();
     }
 
     public int getFrameWidth() {
@@ -84,5 +107,9 @@ public class ColoratorImageProc {
 
     public int getFrameHeight() {
         return mColoratorMatManager.getHeight();
+    }
+
+    public void forceMatResizing(int height, int width){
+        mColoratorMatManager.resizeAllMats(height, width, true);
     }
 }
