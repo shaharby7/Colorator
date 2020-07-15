@@ -26,7 +26,7 @@ public class ColoratorMatManager {
         mWidth = width;
     }
 
-    public Mat allocateNewMat() {
+    Mat allocateNewMat() {
         return allocateNewMat(CvType.CV_8UC3);
     }
 
@@ -50,19 +50,24 @@ public class ColoratorMatManager {
         if ((mWidth != width || mHeight != height) || forced) {
             mHeight = height;
             mWidth = width;
+            Size newSize = new Size(mWidth, mHeight);
             for (Mat mat : mAllMats) {
                 synchronized (this) {
-//                    Imgproc.resize(mat, mat, new Size(mWidth, mHeight), 0,0, Imgproc.INTER_CUBIC);
+                    if (mat.size().empty()) {
+                        mat = new Mat(newSize, mat.type());
+                    } else {
+                        Imgproc.resize(mat, mat, newSize);
+                    }
                 }
             }
         }
     }
 
-    public void resizeAllMats(int height, int width) {
+    void resizeAllMats(int height, int width) {
         resizeAllMats(height, width, false);
     }
 
-    public void releaseAllMats() {
+    void releaseAllMats() {
         for (Mat mat : mAllMats) {
             mat.release();
         }

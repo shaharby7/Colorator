@@ -36,9 +36,53 @@ public class OpenCVHelpers {
         MatOfInt firstChannel = new MatOfInt(0);
         Core.MinMaxLocResult minMax = Core.minMaxLoc(input);
         MatOfInt histSize = new MatOfInt((int) (minMax.maxVal - minMax.minVal) + 1);
-        float[] range = {(int) minMax.minVal, (int) minMax.maxVal+1};
+        float[] range = {(int) minMax.minVal, (int) minMax.maxVal + 1};
         MatOfFloat histRange = new MatOfFloat(range);
         Imgproc.calcHist(listOfMat, firstChannel, new Mat(), hist, histSize, histRange);
         return hist;
+    }
+
+    public static class LocalMinMaxResults {
+        public List<Integer> maxLocs = new ArrayList<>();
+        public List<Integer> minLocs = new ArrayList<>();
+        public List<Double> maxVals = new ArrayList<>();
+        public List<Double> minVals = new ArrayList<>();
+
+        LocalMinMaxResults() {
+        }
+
+        void addLocalMin(int loc, double val) {
+            minLocs.add(loc);
+            minVals.add(val);
+        }
+
+        void addLocalMax(int loc, double val) {
+            maxLocs.add(loc);
+            maxVals.add(val);
+        }
+    }
+
+    public static LocalMinMaxResults localMinMax(Mat oneDimMat) {
+        return localMinMax(oneDimMat, 1);
+    }
+
+    public static LocalMinMaxResults localMinMax(Mat oneDimMat, int precise) {
+        double prev = 0;
+        double current = 0;
+        double next = 0;
+        LocalMinMaxResults results = new LocalMinMaxResults();
+        for (int i = 0; i < oneDimMat.rows(); i++) {
+            prev = current;
+            current = next;
+            next = (double) oneDimMat.get(i, 0)[0];
+            next = (double) Math.round(next * precise) / precise;
+            if (current > prev && current > next) {
+                results.addLocalMax(i, current);
+            }
+            if (current < prev && current < next) {
+                results.addLocalMin(i, current);
+            }
+        }
+        return results;
     }
 }

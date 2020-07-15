@@ -16,7 +16,7 @@ import java.util.List;
 public class MainColorsFinder {
     private static List<Mat> listOfMat = new ArrayList<>();
     private static MatOfInt channels = new MatOfInt(0, 1);
-    private static MatOfInt histSize = new MatOfInt(18, 18);
+    private static MatOfInt histSize = new MatOfInt(36, 36);
     private static MatOfFloat histRange = new MatOfFloat(0f, 180f, 0f, 256f);
 
     public static class MainColorFinderResults {
@@ -104,7 +104,7 @@ public class MainColorsFinder {
             return new MainColorFinderResults();
         }
         MainColorFinderResults results = new MainColorFinderResults(totalPixelAmount, meanBrightness);
-        results = findRelevantColorRanges(hist, results, 80);
+        results = findRelevantColorRanges(hist, results, 50);
         hist.release();
         return results;
     }
