@@ -22,12 +22,12 @@ public class RelativeDetector extends DetectorAbstractClass {
     private Mat mDistances, mChannelRef, mSingleChannel, mOutput, mEmptyMask, mHist;
     private List<Mat> mHistInput = new ArrayList<>();
     private static MatOfInt mHistChannels;
-    private static int mHistBins = 400;
+    private static int mHistBins = 600;
     private static MatOfInt mHistSize;
     private static MatOfFloat mHistRanges;
     private OpenCVHelpers.LocalMinMaxResults mHistMinMax;
     float mDistanceThreshold = 0;
-    private static int mMaxBinCounted = (int) mHistBins / 5;
+    private static int mMaxBinCounted = (int) mHistBins / 3;
     private Mat mHueAbove90, mNewHueVals;
     private static double mHueExtraWeight = 4;
     private static Scalar m179, mHueExtraWeightScalar;

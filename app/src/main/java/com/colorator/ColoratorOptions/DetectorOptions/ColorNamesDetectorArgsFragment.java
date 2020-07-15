@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -15,13 +14,13 @@ import android.widget.SearchView;
 import androidx.annotation.NonNull;
 
 import com.colorator.R;
-import com.colorator.customviews.ColorRangesAdapter;
+import com.colorator.customviews.ColorNamesAdapter;
 
 public class ColorNamesDetectorArgsFragment extends DetectorArgsAbstractClass {
     private View mRootView;
     private SearchView mColorSearchBox;
     private ListView mListView;
-    private ColorRangesAdapter mAdapter;
+    private ColorNamesAdapter mAdapter;
     public static final String TAG = "ColorNamesDetectorArgsFragment";
 
     @Override
@@ -32,13 +31,12 @@ public class ColorNamesDetectorArgsFragment extends DetectorArgsAbstractClass {
         mRootView = inflater.inflate(R.layout.choose_color_names_fragment, container, false);
         setAdapterToListview();
         setSearchBoxView();
-        setButtons();
         return mRootView;
     }
 
     private void setAdapterToListview() {
         mListView = mRootView.findViewById(R.id.color_names_listview);
-        mAdapter = new ColorRangesAdapter(getContext(), "color_names");
+        mAdapter = new ColorNamesAdapter(getContext(), "color_names");
         mListView.setAdapter(mAdapter);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -70,25 +68,8 @@ public class ColorNamesDetectorArgsFragment extends DetectorArgsAbstractClass {
         });
     }
 
-    private void setButtons() {
-        Button selectAll = mRootView.findViewById(R.id.choose_all_button);
-        selectAll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mAdapter.selectAllShownColors();
-            }
-        });
-        Button unSelectAll = mRootView.findViewById(R.id.clear_all_button);
-        unSelectAll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mAdapter.unSelectAllShownColors();
-            }
-        });
-    }
-
     @Override
     public Object getDetectorsArgs() {
-        return mAdapter.getSelectedRanges();
+        return mAdapter.getSelectedColor();
     }
 }
