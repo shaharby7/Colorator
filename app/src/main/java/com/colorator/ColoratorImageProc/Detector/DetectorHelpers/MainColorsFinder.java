@@ -1,5 +1,7 @@
 package com.colorator.ColoratorImageProc.Detector.DetectorHelpers;
 
+import android.widget.Switch;
+
 import com.colorator.utils.ColorRange;
 
 import org.opencv.core.Core;
@@ -18,6 +20,11 @@ public class MainColorsFinder {
     private static MatOfInt channels = new MatOfInt(0, 1);
     private static MatOfInt histSize = new MatOfInt(36, 36);
     private static MatOfFloat histRange = new MatOfFloat(0f, 180f, 0f, 256f);
+
+    public enum METHOD {
+        TOP_SINGLE_COLOR,
+        COVER_PERCENTAGE
+    }
 
     public static class MainColorFinderResults {
         private float coverPercent;
@@ -57,9 +64,9 @@ public class MainColorsFinder {
         listOfMat.clear();
     }
 
-    private static MainColorFinderResults findRelevantColorRanges(Mat hist,
-                                                                  MainColorFinderResults previousResults,
-                                                                  int minimalRequiredCoverPercent) {
+    private static MainColorFinderResults findByCoverPercentage(Mat hist,
+                                                                MainColorFinderResults previousResults,
+                                                                int minimalRequiredCoverPercent) {
         Core.MinMaxLocResult minMaxLoc = Core.minMaxLoc(hist);
         ColorRange maxBinColorRange = getColorRangeOfBin(minMaxLoc.maxLoc, previousResults.meanBrightness);
         previousResults.addColorRange(maxBinColorRange, (int) minMaxLoc.maxVal);
@@ -67,7 +74,7 @@ public class MainColorsFinder {
             return previousResults;
         }
         hist.put((int) minMaxLoc.maxLoc.y, (int) minMaxLoc.maxLoc.x, 0);
-        return findRelevantColorRanges(hist, previousResults, minimalRequiredCoverPercent);
+        return findByCoverPercentage(hist, previousResults, minimalRequiredCoverPercent);
     }
 
     private static ColorRange getColorRangeOfBin(Point binPoint, int meanBrightness) {
@@ -95,16 +102,24 @@ public class MainColorsFinder {
         return meanBrightness;
     }
 
-    public static MainColorFinderResults find(Mat inputImage, Mat mask) {
+    public static MainColorFinderResults find(Mat inputImage, Mat mask, METHOD method, int minimalCoverPercentage) {
         Mat hist = new Mat();
         calcHist(inputImage, hist, mask);
         int totalPixelAmount = (int) Core.sumElems(hist).val[0];
         int meanBrightness = calcMeanBrightness(inputImage, mask);
         if (totalPixelAmount == 0) {
+            hist.release();
             return new MainColorFinderResults();
         }
         MainColorFinderResults results = new MainColorFinderResults(totalPixelAmount, meanBrightness);
-        results = findRelevantColorRanges(hist, results, 50);
+        switch (method) {
+            case COVER_PERCENTAGE:
+                results = findByCoverPercentage(hist, results, minimalCoverPercentage);
+            case TOP_SINGLE_COLOR:
+                Core.MinMaxLocResult minMaxLoc = Core.minMaxLoc(hist);
+                ColorRange maxBinColorRange = getColorRangeOfBin(minMaxLoc.maxLoc, results.meanBrightness);
+                results.addColorRange(maxBinColorRange, (int) minMaxLoc.maxVal);
+        }
         hist.release();
         return results;
     }

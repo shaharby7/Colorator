@@ -17,9 +17,9 @@ import java.util.List;
 import java.lang.Math;
 
 public class RelativeDetector extends DetectorAbstractClass {
-    private Scalar mDetectedColor, mImageSize, mDetectedColorChannel;
+    private Scalar mDetectedColor, mImageSize, mDetectedColorChannel, m179, mHistMultiply, mHueExtraWeightScalar;
+    private Mat mDistances, mChannelRef, mSingleChannel, mOutput, mEmptyMask, mHist, mHueAbove90, mNewHueVals;
     private double[] mDetectedColorChannelValue = new double[1];
-    private Mat mDistances, mChannelRef, mSingleChannel, mOutput, mEmptyMask, mHist;
     private List<Mat> mHistInput = new ArrayList<>();
     private static MatOfInt mHistChannels;
     private static int mHistBins = 600;
@@ -27,10 +27,8 @@ public class RelativeDetector extends DetectorAbstractClass {
     private static MatOfFloat mHistRanges;
     private OpenCVHelpers.LocalMinMaxResults mHistMinMax;
     float mDistanceThreshold = 0;
-    private static int mMaxBinCounted = (int) mHistBins / 3;
-    private Mat mHueAbove90, mNewHueVals;
+    private static int mMaxBinCounted = (int) mHistBins / 4;
     private static double mHueExtraWeight = 4;
-    private static Scalar m179, mHueExtraWeightScalar;
     private static double mMaxColorDistance = Math.sqrt(Math.pow((90 * mHueExtraWeight), 2) + Math.pow(255, 2) + Math.pow(255, 2));
     private static double mHistStep = mMaxColorDistance / mHistBins;
 
@@ -52,6 +50,9 @@ public class RelativeDetector extends DetectorAbstractClass {
         mDetectedColorChannel = new Scalar(0);
         mImageSize = new Scalar((int) (mColoratorMatManager.getWidth() * mColoratorMatManager.getHeight()));
         mHueExtraWeightScalar = new Scalar(mHueExtraWeight);
+        mHistMultiply = new Scalar(10000);
+        mHistInput.clear();
+        mHistInput.add(mDistances);
     }
 
     public RelativeDetector(ColoratorMatManager coloratorMatManager, Scalar hsvColor) {
@@ -59,13 +60,23 @@ public class RelativeDetector extends DetectorAbstractClass {
         mDetectedColor = hsvColor;
     }
 
+    public RelativeDetector(ColoratorMatManager coloratorMatManager) {
+        super(coloratorMatManager);
+        mDetectedColor = null;
+    }
+
     @Override
     public Mat detect(Mat inputImage) {
         super.detect(inputImage);
-        calcDistanceMat();
-        calcDistanceThreshold();
-        Imgproc.threshold(mDistances, mOutput, mDistanceThreshold, 1, Imgproc.THRESH_BINARY_INV);
-        mOutput.convertTo(mOutput, CvType.CV_8UC1);
+        if (mDetectedColor != null) {
+            calcDistanceMat();
+            calcDistanceHist();
+            calcDistanceThreshold();
+            Imgproc.threshold(mDistances, mOutput, mDistanceThreshold, 1, Imgproc.THRESH_BINARY_INV);
+            mOutput.convertTo(mOutput, CvType.CV_8UC1);
+        } else {
+            mOutput.setTo(CommonScalars.Zeros);
+        }
         return mOutput;
     }
 
@@ -95,14 +106,17 @@ public class RelativeDetector extends DetectorAbstractClass {
         Core.multiply(mSingleChannel, mHueExtraWeightScalar, mSingleChannel);
     }
 
-
-    private void calcDistanceThreshold() {
-        mHistInput.clear();
-        mHistInput.add(mDistances);
+    private void calcDistanceHist() {
         Imgproc.calcHist(mHistInput, mHistChannels, mEmptyMask, mHist, mHistSize, mHistRanges);
         Core.divide(mHist, mImageSize, mHist);
-        mHistMinMax = OpenCVHelpers.localMinMax(mHist, 10000);
-        if (mHistMinMax.minLocs.size() == 0) {
+        Core.multiply(mHist, mHistMultiply, mHist);
+        mHist.convertTo(mHist, CvType.CV_32F);
+        Imgproc.medianBlur(mHist, mHist, 5);
+    }
+
+    private void calcDistanceThreshold() {
+        mHistMinMax = OpenCVHelpers.localMinMax(mHist);
+        if (mHistMinMax.minLocs.size() == 0 || mHistMinMax.maxLocs.size() == 0) {
             mDistanceThreshold = 0;
             return;
         }
@@ -120,5 +134,9 @@ public class RelativeDetector extends DetectorAbstractClass {
     @Override
     boolean generateBlurredImage() {
         return true;
+    }
+
+    void setDetectedColor(Scalar newColor) {
+        mDetectedColor = newColor;
     }
 }

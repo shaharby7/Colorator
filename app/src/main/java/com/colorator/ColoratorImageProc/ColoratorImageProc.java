@@ -22,7 +22,7 @@ import java.lang.reflect.InvocationTargetException;
 public class ColoratorImageProc {
     public String TAG = "ColoratorImageProc";
     private ColoratorMatManager mColoratorMatManager = new ColoratorMatManager();
-    private DetectorAbstractClass mDetector = new RelativeDetector(mColoratorMatManager, new Scalar(120, 255, 255));
+    private DetectorAbstractClass mDetector = new TouchDetector(mColoratorMatManager);
     private RainbowEmphasizer mEmphasizer = new RainbowEmphasizer(mColoratorMatManager);
     private MaskDenoiser mMaskDenoiser = new MaskDenoiser(mColoratorMatManager);
     private Mat mFrameInProcess;

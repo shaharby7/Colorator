@@ -63,10 +63,6 @@ public class OpenCVHelpers {
     }
 
     public static LocalMinMaxResults localMinMax(Mat oneDimMat) {
-        return localMinMax(oneDimMat, 1);
-    }
-
-    public static LocalMinMaxResults localMinMax(Mat oneDimMat, int precise) {
         double prev = 0;
         double current = 0;
         double next = 0;
@@ -75,7 +71,6 @@ public class OpenCVHelpers {
             prev = current;
             current = next;
             next = (double) oneDimMat.get(i, 0)[0];
-            next = (double) Math.round(next * precise) / precise;
             if (current > prev && current > next) {
                 results.addLocalMax(i, current);
             }
