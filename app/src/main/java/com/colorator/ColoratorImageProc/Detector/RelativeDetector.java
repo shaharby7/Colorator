@@ -17,12 +17,14 @@ import java.util.List;
 import java.lang.Math;
 
 public class RelativeDetector extends DetectorAbstractClass {
-    private Scalar mDetectedColor, mImageSize, mDetectedColorChannel, m179, mHistMultiply, mHueExtraWeightScalar;
-    private Mat mDistances, mChannelRef, mSingleChannel, mOutput, mEmptyMask, mHist, mHueAbove90, mNewHueVals;
+    private Scalar mDetectedColor, mImageSize, mDetectedColorChannel, m179, mHistMultiply, mHueExtraWeightScalar, mMin, mMax;
+    private Mat mDistances, mChannelRef, mSingleChannel, mOutput, mEmptyMask, mHist, mHueAbove90, mNewHueVals, mInRange, mGray,mRgb;
     private double[] mDetectedColorChannelValue = new double[1];
+    private double[] mMinVal = new double[1];
+    private double[] mMaxVal = new double[1];
     private List<Mat> mHistInput = new ArrayList<>();
     private static MatOfInt mHistChannels;
-    private static int mHistBins = 600;
+    private static int mHistBins = 1000;
     private static MatOfInt mHistSize;
     private static MatOfFloat mHistRanges;
     private OpenCVHelpers.LocalMinMaxResults mHistMinMax;
@@ -38,7 +40,11 @@ public class RelativeDetector extends DetectorAbstractClass {
         mDistances = mColoratorMatManager.allocateNewMat(CvType.CV_32F);
         mSingleChannel = mColoratorMatManager.allocateNewMat(CvType.CV_32F);
         mHueAbove90 = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
+        mInRange = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
         mNewHueVals = mColoratorMatManager.allocateNewMat(CvType.CV_32F);
+        mOutput = mColoratorMatManager.allocateNewMat(CvType.CV_8SC1);
+        mGray = mColoratorMatManager.allocateNewMat(CvType.CV_8SC3);
+        mRgb = mColoratorMatManager.allocateNewMat(CvType.CV_8UC3);
         mOutput = mColoratorMatManager.allocateNewMat(CvType.CV_8SC1);
         mChannelRef = new Mat();
         mEmptyMask = new Mat();
@@ -48,6 +54,8 @@ public class RelativeDetector extends DetectorAbstractClass {
         mHistChannels = new MatOfInt(0);
         m179 = new Scalar(179);
         mDetectedColorChannel = new Scalar(0);
+        mMin = new Scalar(0);
+        mMax = new Scalar(0);
         mImageSize = new Scalar((int) (mColoratorMatManager.getWidth() * mColoratorMatManager.getHeight()));
         mHueExtraWeightScalar = new Scalar(mHueExtraWeight);
         mHistMultiply = new Scalar(10000);
@@ -71,13 +79,38 @@ public class RelativeDetector extends DetectorAbstractClass {
         if (mDetectedColor != null) {
             calcDistanceMat();
             calcDistanceHist();
-            calcDistanceThreshold();
-            Imgproc.threshold(mDistances, mOutput, mDistanceThreshold, 1, Imgproc.THRESH_BINARY_INV);
+            watershedByDistances();
             mOutput.convertTo(mOutput, CvType.CV_8UC1);
         } else {
             mOutput.setTo(CommonScalars.Zeros);
         }
         return mOutput;
+    }
+
+    private void watershedByDistances() {
+        mHistMinMax = OpenCVHelpers.localMinMax(mHist);
+        mOutput.convertTo(mOutput, CvType.CV_32SC1);
+        mOutput.setTo(CommonScalars.Zeros);
+        applyInRange(mHistMinMax.maxLocs.get(0));
+        mOutput.setTo(CommonScalars.Twos, mInRange);
+        for (int i = 1; i < mHistMinMax.maxLocs.size(); i++) {
+            applyInRange(mHistMinMax.maxLocs.get(i));
+            mOutput.setTo(CommonScalars.Ones, mInRange);
+        }
+        Imgproc.cvtColor(mBlurredImage, mRgb, Imgproc.COLOR_HSV2RGB);
+        Imgproc.cvtColor(mRgb, mGray,Imgproc.COLOR_RGB2GRAY);
+        Imgproc.watershed(mGray, mOutput);
+        mOutput.convertTo(mOutput, CvType.CV_8UC1);
+        Imgproc.threshold(mOutput, mOutput, 1, 1, Imgproc.THRESH_BINARY);
+    }
+
+    private void applyInRange(int bin) {
+        mInRange.setTo(CommonScalars.Zeros);
+        mMinVal[0] = bin * mHistStep;
+        mMaxVal[0] = (bin + 1) * mHistStep;
+        mMin.set(mMinVal);
+        mMax.set(mMaxVal);
+        Core.inRange(mDistances, mMin, mMax, mInRange);
     }
 
     private void calcDistanceMat() {
