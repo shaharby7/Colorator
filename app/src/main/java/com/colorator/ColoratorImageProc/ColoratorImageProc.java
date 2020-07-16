@@ -41,6 +41,17 @@ public class ColoratorImageProc {
         }
     }
 
+    public void setDetector(String detectorClassName) {
+        try {
+            Class<?> detectorClass = Class.forName(detectorClassName);
+            Constructor<?> detectorConstructor = detectorClass.getConstructor(ColoratorMatManager.class);
+            mDetector = (DetectorAbstractClass) detectorConstructor.newInstance(mColoratorMatManager);
+        } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException ex) {
+            Log.e(TAG, "Unknown Detector class " + detectorClassName);
+            ex.printStackTrace();
+        }
+    }
+
     public Mat pipeline(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
         mPreviewFormat = inputFrame.getPreviewFormat();
         standardizeCameraImage(inputFrame);

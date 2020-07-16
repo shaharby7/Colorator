@@ -1,10 +1,14 @@
 {
-  "color picker": {
-    "ActualDetectorClass": "com.colorator.ColoratorImageProc.Detector.RangesDetector",
-    "options_fragment_name": "com.colorator.ColoratorOptions.DetectorOptions.ColorpickerDetectorArgsFragment"
-  },
   "color names": {
     "ActualDetectorClass": "com.colorator.ColoratorImageProc.Detector.RelativeDetector",
-    "options_fragment_name": "com.colorator.ColoratorOptions.DetectorOptions.ColorNamesDetectorArgsFragment"
+    "OptionsFragmentClass": "com.colorator.ColoratorOptions.DetectorOptions.ColorNamesDetectorArgsFragment"
+  },
+  "touch samples": {
+    "ActualDetectorClass": "com.colorator.ColoratorImageProc.Detector.TouchDetector",
+    "OptionsFragmentClass": null
+  },
+  "color picker": {
+    "ActualDetectorClass": "com.colorator.ColoratorImageProc.Detector.RangesDetector",
+    "OptionsFragmentClass": "com.colorator.ColoratorOptions.DetectorOptions.ColorpickerDetectorArgsFragment"
   }
 }

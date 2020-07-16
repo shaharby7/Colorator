@@ -4,49 +4,102 @@ import com.colorator.ColoratorImageProc.ColoratorImageProc;
 import com.colorator.ColoratorOptions.DetectorOptionsFragment;
 import com.colorator.utils.ConfigurationReader;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Iterator;
+
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     public static ConfigurationReader appConfigurationReader;
     public ColoratorImageProc mColoratorImageProc;
+    private JSONObject mDetectorConfig;
+    private String mDetectorName = "touch samples";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         appConfigurationReader = new ConfigurationReader(getApplicationContext());
         mColoratorImageProc = new ColoratorImageProc();
+        mDetectorConfig = readConfiguration("detectors_config");
         setContentView(R.layout.activity_main);
         loadFragment(new OpenCVFragment(mColoratorImageProc));
+        setDetectorsMenu();
+        markSelectedButton();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return true;
+    private void setDetectorsMenu() {
+        ViewGroup menu = findViewById(R.id.detectors_menu);
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        Iterator<String> keys = mDetectorConfig.keys();
+        while (keys.hasNext()) {
+            final String detectorName = keys.next();
+            View itemHolder = newDetectorMenuItem(inflater, detectorName);
+            menu.addView(itemHolder);
+        }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
-            case R.id.open_detector_options:
-                loadFragment(new DetectorOptionsFragment(mColoratorImageProc));
-                return true;
-            case R.id.open_emphasizer_options:
-                Toast.makeText(getApplicationContext(), "Item 2 Selected", Toast.LENGTH_LONG).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+    private View newDetectorMenuItem(LayoutInflater inflater, final String detectorName) {
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(0, 100);
+        layoutParams.weight = 1;
+        View itemHolder = inflater.inflate(R.layout.detector_menu_item, null);
+        Button item = itemHolder.findViewById(R.id.detectors_menu_item);
+        item.setText(detectorName);
+        item.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onDetectorMenuItemSelected(detectorName);
+            }
+        });
+        itemHolder.setLayoutParams(layoutParams);
+        return itemHolder;
+    }
+
+    private void onDetectorMenuItemSelected(String detectorName) {
+        if (mDetectorName.equals(detectorName)) {
+            return;
+        } else {
+            try {
+                mDetectorName = detectorName;
+                markSelectedButton();
+                if (!mDetectorConfig.getJSONObject(detectorName).getString("OptionsFragmentClass").equals("null")) {
+                    loadFragment(new DetectorOptionsFragment(mColoratorImageProc, detectorName));
+                } else {
+                    mColoratorImageProc.setDetector(mDetectorConfig.getJSONObject(detectorName).getString("ActualDetectorClass"));
+                    loadFragment(new OpenCVFragment(mColoratorImageProc));
+                }
+            } catch (JSONException ex) {
+                Log.e(TAG, "Detector config is invalid");
+            }
+        }
+    }
+
+    private void markSelectedButton() {
+        ViewGroup menu = findViewById(R.id.detectors_menu);
+        for (int i = 0; i < menu.getChildCount(); i++) {
+            Button item = menu.getChildAt(i).findViewById(R.id.detectors_menu_item);
+            String name = item.getText().toString();
+            if (name.equals(mDetectorName)) {
+                item.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.halfTransparent));
+            } else {
+                item.setBackgroundColor(Color.TRANSPARENT);
+            }
         }
     }
 

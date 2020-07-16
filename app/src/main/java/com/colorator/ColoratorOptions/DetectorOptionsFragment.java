@@ -30,13 +30,14 @@ import java.util.Objects;
 public class DetectorOptionsFragment extends FragmentWithFragments {
     public ColoratorImageProc mColoratorImageProc;
     private static final String TAG = "DetectorOptions::Fragment";
-    private Spinner mDetectBySpinner;
     private Button mSubmitButton;
     private static JSONObject mDetectorsConfiguration = MainActivity.readConfiguration("detectors_config");
+    private final String mDetectorName;
     private DetectorArgsAbstractClass mDetectorArgsFragment;
 
-    public DetectorOptionsFragment(ColoratorImageProc mainActivityImageProc) {
+    public DetectorOptionsFragment(ColoratorImageProc mainActivityImageProc, String detectorName) {
         mColoratorImageProc = mainActivityImageProc;
+        mDetectorName = detectorName;
     }
 
     @Override
@@ -45,7 +46,6 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
         Log.i(TAG, "called onCreateView");
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.detector_options_layout, container, false);
-        setDetectBySpinner(view);
         mSubmitButton = view.findViewById(R.id.button_submit_detectors_options);
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,24 +59,10 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
         return view;
     }
 
-    private void setDetectBySpinner(View rootView) {
-        mDetectBySpinner = rootView.findViewById(R.id.detectors_spinner);
-        mDetectBySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                setDetectorsArgsView();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
-    }
-
     private void updateDetector() {
         try {
             String actualDetectorClass = mDetectorsConfiguration
-                    .getJSONObject(mDetectBySpinner.getSelectedItem().toString())
+                    .getJSONObject(mDetectorName)
                     .getString("ActualDetectorClass");
             Object detectorArgs = mDetectorArgsFragment.getDetectorsArgs();
             mColoratorImageProc.setDetector(actualDetectorClass, detectorArgs);
@@ -89,12 +75,11 @@ public class DetectorOptionsFragment extends FragmentWithFragments {
     private void setDetectorsArgsView() {
         try {
             String fragmentName = mDetectorsConfiguration
-                    .getJSONObject(mDetectBySpinner.getSelectedItem().toString())
-                    .getString("options_fragment_name");
+                    .getJSONObject(mDetectorName)
+                    .getString("OptionsFragmentClass");
             Class<?> detectorArgsFragment = Class.forName(fragmentName);
             mDetectorArgsFragment = (DetectorArgsAbstractClass) detectorArgsFragment.newInstance();
             loadFragment((Fragment) mDetectorArgsFragment, R.id.detectors_args_container);
-
         } catch (ClassNotFoundException | IllegalAccessException | java.lang.InstantiationException | JSONException ex) {
             Log.e(TAG, "Unknown DetectorArgs class");
             ex.printStackTrace();
