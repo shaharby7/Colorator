@@ -13,6 +13,8 @@ import org.opencv.core.Mat;
 import org.opencv.core.Point;
 import org.opencv.imgproc.Imgproc;
 
+import java.util.List;
+
 public class TouchDetector extends RelativeDetector {
     private Mat mCircleMask, mOutput;
     private boolean mIsTouched = false;
@@ -33,17 +35,15 @@ public class TouchDetector extends RelativeDetector {
     }
 
     private void setDetectedColor() {
-        if (mCircleMask.height() != mBlurredImage.height() || mCircleMask.width() != mBlurredImage.width()) {
-            mCircleMask.release();
-            mCircleMask = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
-        }
         mCircleMask.setTo(CommonScalars.Zeros);
         Imgproc.circle(mCircleMask, mLastTouchPoint, FINGER_RADIUS, CommonScalars.Ones, -1);
-        ColorRange mainColor = MainColorsFinder.find(mBlurredImage,
+        List<ColorRange> mainColors = MainColorsFinder.find(mBlurredImage,
                 mCircleMask,
                 MainColorsFinder.METHOD.TOP_SINGLE_COLOR,
-                0).getColorRanges().get(0);
-        super.setDetectedColor(mainColor.getCenterColor());
+                0).getColorRanges();
+        if (mainColors.size() > 0) {
+            super.setDetectedColor(mainColors.get(0).getCenterColor());
+        }
     }
 
     private void setIsTouched(MotionEvent event) {

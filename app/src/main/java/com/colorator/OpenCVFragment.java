@@ -120,12 +120,13 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
 
     public void onCameraViewStarted(int width, int height) {
         mColoratorImageProc.allocateFrameImProcess();
-        mColoratorImageProc.forceMatResizing(height, width);
+//        mColoratorImageProc.forceMatResizing(height, width);
         mColoratorImageProc.setCommitProcess(mCommitProcessSwitch.isChecked());
     }
 
     public void onCameraViewStopped() {
-        mColoratorImageProc.releaseResources();
+//        mColoratorImageProc.releaseResources();
+        //TODO: fix "Resize Mat" of coloratorMatManager, doesn't really resizing anything so the app crashes anytime
     }
 
     public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
