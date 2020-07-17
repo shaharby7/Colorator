@@ -73,5 +73,6 @@ public class TouchDetector extends RelativeDetector {
     void allocationsOfFirstDetection() {
         super.allocationsOfFirstDetection();
         mCircleMask = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
+        mOutput = mColoratorMatManager.allocateNewMat(CvType.CV_8UC1);
     }
 }

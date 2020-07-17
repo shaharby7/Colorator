@@ -71,10 +71,10 @@ public class OpenCVHelpers {
             prev = current;
             current = next;
             next = (double) oneDimMat.get(i, 0)[0];
-            if (current > prev && current > next) {
+            if (current >= prev && current > next) {
                 results.addLocalMax(i, current);
             }
-            if (current < prev && current < next) {
+            if (current <= prev && current < next) {
                 results.addLocalMin(i, current);
             }
         }

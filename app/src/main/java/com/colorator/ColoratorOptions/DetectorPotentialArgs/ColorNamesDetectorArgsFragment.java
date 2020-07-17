@@ -1,4 +1,4 @@
-package com.colorator.ColoratorOptions.DetectorOptions;
+package com.colorator.ColoratorOptions.DetectorPotentialArgs;
 
 import android.graphics.Color;
 import android.os.Bundle;

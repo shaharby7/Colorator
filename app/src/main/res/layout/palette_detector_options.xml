@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.colorator.customviews.PaletteView
+        android:id="@+id/hsv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="50dp" />
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+        android:id="@+id/hue_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/hue_scale"
+        app:bar_color="#F7BB88"
+        app:bar_highlight_color="#E07416"
+        app:corner_radius="10"
+        app:data_type="_integer"
+        app:max_value="179"
+        app:min_start_value="0"
+        app:min_value="0"
+        app:thumb_image="@drawable/thumb"
+        app:thumb_image_pressed="@drawable/thumb_pressed" />
+</LinearLayout>

@@ -1,9 +1,7 @@
-package com.colorator.ColoratorOptions.DetectorOptions;
+package com.colorator.ColoratorOptions.DetectorPotentialArgs;
 
 
 import com.colorator.utils.FragmentWithFragments;
-
-import org.json.JSONObject;
 
 
 public abstract class DetectorArgsAbstractClass extends FragmentWithFragments {
