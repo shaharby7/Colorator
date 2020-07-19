@@ -1,12 +1,17 @@
 package com.colorator;
 
 import com.colorator.ColoratorImageProc.ColoratorImageProc;
-import com.colorator.utils.LogoCreator;
+import com.colorator.customviews.CustomCameraView;
+import com.colorator.utils.OpenCVHelpers;
 
 import androidx.fragment.app.Fragment;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.ImageFormat;
+import android.icu.text.SimpleDateFormat;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,11 +19,13 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.CompoundButton;
 import android.view.MotionEvent;
 import android.view.View.OnTouchListener;
+import android.widget.Toast;
 
 
 import org.opencv.android.BaseLoaderCallback;
@@ -26,10 +33,12 @@ import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
-import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
+import org.opencv.imgproc.Imgproc;
 
+import java.io.IOException;
+import java.util.Date;
 import java.util.Objects;
 
 public class OpenCVFragment extends Fragment implements CvCameraViewListener2, OnTouchListener {
@@ -37,7 +46,7 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
     private static final String TAG = "OCVSample::Fragment";
     private View mView;
     private ColoratorImageProc mColoratorImageProc;
-    private ZoomCameraView mOpenCvCameraView;
+    private CustomCameraView mOpenCvCameraView;
     private Switch mCommitProcessSwitch;
     private Context mAppContext;
     private double[] mTouchedCoordinates = new double[2];
@@ -88,13 +97,22 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
                 mColoratorImageProc.setCommitProcess(isChecked);
             }
         });
+        final Button takePictureButton = mView.findViewById(R.id.take_picture_button);
+        takePictureButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                takePicture();
+            }
+        });
         return mView;
     }
+
 
     @Override
     public void onPause() {
         super.onPause();
-        getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        Objects.requireNonNull(getActivity()).getWindow()
+                .clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
     }
@@ -102,7 +120,8 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
     @Override
     public void onResume() {
         super.onResume();
-        getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        Objects.requireNonNull(getActivity()).getWindow()
+                .addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         if (!OpenCVLoader.initDebug()) {
             Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
             OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, mAppContext, mLoaderCallback);
@@ -119,19 +138,35 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
     }
 
     public void onCameraViewStarted(int width, int height) {
-        mColoratorImageProc.allocateFrameImProcess();
-//        mColoratorImageProc.forceMatResizing(height, width);
+        mColoratorImageProc.allocateMatsBeforeRunning();
         mColoratorImageProc.setCommitProcess(mCommitProcessSwitch.isChecked());
     }
 
     public void onCameraViewStopped() {
-//        mColoratorImageProc.releaseResources();
         //TODO: fix "Resize Mat" of coloratorMatManager, doesn't really resizing anything so the app crashes anytime
     }
 
     public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
         return mColoratorImageProc.pipeline(inputFrame);
     }
+
+    @SuppressLint("SimpleDateFormat")
+    private void takePicture() {
+        mOpenCvCameraView.freezePicture();
+        ((MainActivity) Objects.requireNonNull(getActivity()))
+                .checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        Mat lastResult = mColoratorImageProc.getLastResult();
+        Bitmap image = OpenCVHelpers.mat2Bitmap(lastResult);
+        String imageName = new SimpleDateFormat("ddMMyyyy_HHmm").format(new Date());
+        try {
+            OpenCVHelpers.saveImage(image, imageName, mAppContext.getContentResolver());
+        } catch (IOException e) {
+            Toast.makeText(mAppContext,
+                    "For some reason image could not be written",
+                    Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -142,9 +177,6 @@ public class OpenCVFragment extends Fragment implements CvCameraViewListener2, O
         mTouchedCoordinates[1] = event.getY() - mCameraOffset[1];
         mTouchedPoint.set(mTouchedCoordinates);
         mColoratorImageProc.onTouch(event, mTouchedPoint);
-        if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            mOpenCvCameraView.setFocus(mTouchedCoordinates);
-        }
         return true;
     }
 }

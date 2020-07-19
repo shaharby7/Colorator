@@ -1,6 +1,10 @@
 package com.colorator.utils;
 
+import android.content.ContentResolver;
 import android.graphics.Bitmap;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.widget.Toast;
 
 import org.opencv.android.Utils;
 import org.opencv.core.Core;
@@ -10,6 +14,11 @@ import org.opencv.core.MatOfInt;
 import org.opencv.core.MatOfPoint;
 import org.opencv.imgproc.Imgproc;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,21 +72,30 @@ public class OpenCVHelpers {
     }
 
     public static LocalMinMaxResults localMinMax(Mat oneDimMat) {
-        double prev = 0;
-        double current = 0;
-        double next = 0;
+        double prev = oneDimMat.get(0, 0)[0];
+        double current = oneDimMat.get(1, 0)[0];
+        double next = oneDimMat.get(2, 0)[0];
         LocalMinMaxResults results = new LocalMinMaxResults();
-        for (int i = 0; i < oneDimMat.rows(); i++) {
-            prev = current;
-            current = next;
-            next = (double) oneDimMat.get(i, 0)[0];
+        for (int i = 1; i < oneDimMat.rows() - 1; i++) {
             if (current >= prev && current > next) {
                 results.addLocalMax(i, current);
             }
             if (current <= prev && current < next) {
                 results.addLocalMin(i, current);
             }
+            prev = current;
+            current = next;
+            next = oneDimMat.get(i + 1, 0)[0];
         }
         return results;
+    }
+
+    public static void saveImage(Bitmap image, String fileName, ContentResolver contentResolver) throws IOException {
+        String path = Environment.getExternalStorageDirectory().toString();
+        File file = new File(path, fileName + ".png");
+        OutputStream fOut = new FileOutputStream(file);
+        image.compress(Bitmap.CompressFormat.JPEG, 85, fOut);
+        fOut.close();
+        MediaStore.Images.Media.insertImage(contentResolver, file.getAbsolutePath(), file.getName(), file.getName());
     }
 }

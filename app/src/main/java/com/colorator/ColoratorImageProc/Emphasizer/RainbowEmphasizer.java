@@ -21,10 +21,6 @@ public class RainbowEmphasizer extends EmphasizerAbstractClass {
         mHColor = (mHColor + 1) % 179;
         mColorArray[0] = mHColor;
         mColorScalar.set(mColorArray);
-        try {
-            inputImage.setTo(mColorScalar, mask);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
+        inputImage.setTo(mColorScalar, mask);
     }
 }

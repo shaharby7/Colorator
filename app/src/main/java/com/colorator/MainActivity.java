@@ -4,6 +4,7 @@ import com.colorator.ColoratorImageProc.ColoratorImageProc;
 import com.colorator.ColoratorOptions.DetectorOptionsFragment;
 import com.colorator.utils.ConfigurationReader;
 
+import android.Manifest;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -31,9 +32,11 @@ public class MainActivity extends AppCompatActivity {
     public ColoratorImageProc mColoratorImageProc;
     private JSONObject mDetectorConfig;
     private String mDetectorName = "touch samples";
+    private PermissionsHandler mPermissionsHandler = new PermissionsHandler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        checkPermission(Manifest.permission.CAMERA);
         super.onCreate(savedInstanceState);
         appConfigurationReader = new ConfigurationReader(getApplicationContext());
         mColoratorImageProc = new ColoratorImageProc();
@@ -115,5 +118,19 @@ public class MainActivity extends AppCompatActivity {
 
     public static JSONObject readConfiguration(String configName) {
         return appConfigurationReader.getConfigJson(configName);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String[] permissions,
+                                           int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode,
+                permissions,
+                grantResults);
+        mPermissionsHandler.onRequestPermissionsResult(grantResults);
+    }
+
+    public void checkPermission(String permission){
+        mPermissionsHandler.checkPermission(permission);
     }
 }

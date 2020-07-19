@@ -22,7 +22,7 @@ public class RelativeDetector extends DetectorAbstractClass {
     private double[] mDetectedColorChannelValue = new double[1];
     private List<Mat> mHistInput = new ArrayList<>();
     private static MatOfInt mHistChannels;
-    private static int mHistBins = 600;
+    private static int mHistBins = 400;
     private static MatOfInt mHistSize;
     private static MatOfFloat mHistRanges;
     private OpenCVHelpers.LocalMinMaxResults mHistMinMax;
@@ -75,6 +75,7 @@ public class RelativeDetector extends DetectorAbstractClass {
             applyDistanceThreshold();
         } else {
             mOutput.setTo(CommonScalars.Zeros);
+            mOutput.convertTo(mOutput, CvType.CV_8UC1);
         }
         return mOutput;
     }

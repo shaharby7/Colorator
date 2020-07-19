@@ -25,7 +25,7 @@ public class ColoratorImageProc {
     private DetectorAbstractClass mDetector = new TouchDetector(mColoratorMatManager);
     private RainbowEmphasizer mEmphasizer = new RainbowEmphasizer(mColoratorMatManager);
     private MaskDenoiser mMaskDenoiser = new MaskDenoiser(mColoratorMatManager);
-    private Mat mFrameInProcess;
+    private Mat mFrameInProcess, mLastResult;
     private boolean mCommitProcess;
     private int mPreviewFormat;
 
@@ -61,6 +61,7 @@ public class ColoratorImageProc {
             mMaskDenoiser.denoise(mask, mFrameInProcess);
             mEmphasizer.emphasize(mFrameInProcess, mask);
         }
+        mFrameInProcess.copyTo(mLastResult);
         standardizeImageToPreview();
         return mFrameInProcess;
     }
@@ -90,8 +91,9 @@ public class ColoratorImageProc {
         mDetector.onTouch(event, touchedPoint);
     }
 
-    public void allocateFrameImProcess() {
+    public void allocateMatsBeforeRunning() {
         mFrameInProcess = mColoratorMatManager.allocateNewMat();
+        mLastResult = mColoratorMatManager.allocateNewMat();
     }
 
     public int getFrameWidth() {
@@ -104,5 +106,13 @@ public class ColoratorImageProc {
 
     public void forceMatResizing(int height, int width) {
         mColoratorMatManager.resizeAllMats(height, width, true);
+    }
+
+    public Mat getLastResult() {
+        return mLastResult;
+    }
+
+    public int getPreviewFormat(){
+        return mPreviewFormat;
     }
 }
