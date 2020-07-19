@@ -32,6 +32,10 @@ public class ColoratorImageProc {
 
     public void setDetector(String detectorClassName, Object detectorArgs) {
         try {
+            if (detectorArgs==null){
+                setDetector(detectorClassName);
+                return;
+            }
             Class<?> detectorClass = Class.forName(detectorClassName);
             Constructor<?> detectorConstructor = detectorClass.getConstructor(ColoratorMatManager.class, detectorArgs.getClass());
             mDetector = (DetectorAbstractClass) detectorConstructor.newInstance(mColoratorMatManager, detectorArgs);
@@ -110,9 +114,5 @@ public class ColoratorImageProc {
 
     public Mat getLastResult() {
         return mLastResult;
-    }
-
-    public int getPreviewFormat(){
-        return mPreviewFormat;
     }
 }

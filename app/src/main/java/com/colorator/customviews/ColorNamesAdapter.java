@@ -120,6 +120,9 @@ public class ColorNamesAdapter extends BaseAdapter {
     }
 
     public Scalar getSelectedColor() {
-        return new Scalar(mSelectedColor.h, mSelectedColor.s, mSelectedColor.v);
+        if (mSelectedColor != null) {
+            return new Scalar(mSelectedColor.h, mSelectedColor.s, mSelectedColor.v);
+        }
+        return null;
     }
 }

@@ -6,4 +6,6 @@
     <string name="chose_detector_spinner">Detect by</string>
     <string name="go">GO!</string>
     <string name="take_picture">take picture</string>
+    <string name="zoom">Zoom</string>
+    <string name="enabled">Enabled</string>
 </resources>

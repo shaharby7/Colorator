@@ -9,8 +9,7 @@
     <com.colorator.customviews.PaletteView
         android:id="@+id/hsv_preview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingStart="50dp" />
+        android:layout_height="match_parent" />
 
     <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
         android:id="@+id/hue_seekbar"

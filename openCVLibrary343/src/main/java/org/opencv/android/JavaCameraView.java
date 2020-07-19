@@ -206,6 +206,7 @@ public class JavaCameraView extends CameraBridgeViewBase implements PreviewCallb
 
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                         mSurfaceTexture = new SurfaceTexture(MAGIC_TEXTURE_ID);
+                        updateTextureViewSize(params.getPreviewSize().width, params.getPreviewSize().height);
                         mCamera.setPreviewTexture(mSurfaceTexture);
                     } else
                         mCamera.setPreviewDisplay(null);
@@ -381,5 +382,9 @@ public class JavaCameraView extends CameraBridgeViewBase implements PreviewCallb
             } while (!mStopThread);
             Log.d(TAG, "Finish processing thread");
         }
+    }
+
+    private void updateTextureViewSize(int viewWidth, int viewHeight) {
+        getHolder().setFixedSize(viewWidth, viewHeight);
     }
 }
